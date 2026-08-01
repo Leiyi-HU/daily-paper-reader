@@ -41,17 +41,17 @@
 <section class="dpr-home-dashboard-card dpr-home-report-card">
   <div class="dpr-home-dashboard-header">
     <div>
-      <span class="dpr-home-dashboard-kicker">2026-07-03 ~ 2026-08-01</span>
+      <span class="dpr-home-dashboard-kicker">2026-08-01</span>
       <h3 class="dpr-home-dashboard-title">今日汇总</h3>
     </div>
-    <strong class="dpr-home-dashboard-count">共 64 篇</strong>
+    <strong class="dpr-home-dashboard-count">共 29 篇</strong>
   </div>
   <dl class="dpr-home-dashboard-stats">
     <div class="dpr-home-dashboard-stat"><dt>累计更新</dt><dd>1 次</dd></div>
-    <div class="dpr-home-dashboard-stat"><dt>精读</dt><dd>53</dd></div>
+    <div class="dpr-home-dashboard-stat"><dt>精读</dt><dd>18</dd></div>
     <div class="dpr-home-dashboard-stat"><dt>速读</dt><dd>11</dd></div>
   </dl>
-  <p class="dpr-home-dashboard-body">最近更新：2026-08-01 02:00:02 UTC<br>状态：成功</p>
+  <p class="dpr-home-dashboard-body">最近更新：2026-08-01 21:18:28 UTC<br>状态：成功</p>
 </section>
 <section class="dpr-home-dashboard-card dpr-home-brief-card">
   <div class="dpr-home-dashboard-header">
@@ -62,9 +62,9 @@
     <strong class="dpr-home-dashboard-count">AI</strong>
   </div>
   <div class="dpr-home-dashboard-body">
-<p>今日共处理64篇论文，精读53篇、速读11篇，重点聚焦视觉-语言-动作模型与遥感图像理解。</p>
-<p>最值得精读的是《Exp2VLA》9.0分，用专家演示驱动无人机导航的VLA方法，以及《LBTCap》9.0分，轻量双边Transformer实现实时遥感变化描述。</p>
-<p>普通读者可顺带浏览速读列表中视觉语言模型的高效压缩与弹性表示方向，有助于提升大模型应用效率。</p>
+<p>今日共读29篇论文，精读18篇，重点聚焦视觉-语言-动作模型与具身智能方向。</p>
+<p>最值得看：满分论文《CoTinyVLA》实现亚十亿参数VLA的思维链蒸馏，9分论文则评估空中MLLM智能体的零样本任务能力。</p>
+<p>建议优先精读这两篇高分工作，再速读视觉统一生成与多智能体控制相关论文。</p>
   </div>
 </section>
 <section class="dpr-home-dashboard-card dpr-home-deep-card">
@@ -73,12 +73,12 @@
       <span class="dpr-home-dashboard-kicker">今日累计</span>
       <h3 class="dpr-home-dashboard-title">精读推荐</h3>
     </div>
-    <strong class="dpr-home-dashboard-count">53 篇</strong>
+    <strong class="dpr-home-dashboard-count">18 篇</strong>
   </div>
   <div class="dpr-home-dashboard-body">
-<ul class="dpr-home-dashboard-paper-list"><li><span class="dpr-home-dashboard-paper-title" title="Exp2VLA: Enabling Vision-Language-Action for Drone Navigation from Expert Demonstrations">Exp2VLA: Enabling Vision-Language-Action for Drone Navigation from Expert Demonstrations</span></li><li><span class="dpr-home-dashboard-paper-title" title="LBTCap: A Lightweight Bilateral Transformer for Real-Time Remote Sensing Image Change Captioning">LBTCap: A Lightweight Bilateral Transformer for Real-Time Remote Sensing Image Change Captioning</span></li><li><span class="dpr-home-dashboard-paper-title" title="HiMe: Hierarchical Embodied Memory for Long-Horizon Vision-Language-Action Control">HiMe: Hierarchical Embodied Memory for Long-Horizon Vision-Language-Action Control</span></li></ul>
+<ul class="dpr-home-dashboard-paper-list"><li><span class="dpr-home-dashboard-paper-title" title="CoTinyVLA: Chain-of-Thought Distillation for a Sub-Billion-Parameter Vision-Language-Action Model">CoTinyVLA: Chain-of-Thought Distillation for a Sub-Billion-Parameter Vision-Language-Action Model</span></li><li><span class="dpr-home-dashboard-paper-title" title="Zero-Shot Mission-Level Evaluation for Aerial MLLM Agents">Zero-Shot Mission-Level Evaluation for Aerial MLLM Agents</span></li><li><span class="dpr-home-dashboard-paper-title" title="Scaling Native Multimodal Pre-Training From Scratch">Scaling Native Multimodal Pre-Training From Scratch</span></li></ul>
   </div>
-  <div class="dpr-home-dashboard-tags"><span class="dpr-home-dashboard-tag">vvvpg <strong>53</strong></span></div>
+  <div class="dpr-home-dashboard-tags"><span class="dpr-home-dashboard-tag">vvvpg <strong>18</strong></span></div>
 </section>
 <section class="dpr-home-dashboard-card dpr-home-skim-card">
   <div class="dpr-home-dashboard-header">
@@ -89,7 +89,7 @@
     <strong class="dpr-home-dashboard-count">11 篇</strong>
   </div>
   <div class="dpr-home-dashboard-body">
-<ul class="dpr-home-dashboard-paper-list"><li><span class="dpr-home-dashboard-paper-title" title="Text as Partial Constraint: Core-Residual Alignment for Robust Vision-Language Learning">Text as Partial Constraint: Core-Residual Alignment for Robust Vision-Language Learning</span></li><li><span class="dpr-home-dashboard-paper-title" title="RADIO1D: Elastic Representations for Condensed Vision Modeling">RADIO1D: Elastic Representations for Condensed Vision Modeling</span></li><li><span class="dpr-home-dashboard-paper-title" title="TORINO: Token Reduction via Interpretable Concept Overlap in Vision-Language Models">TORINO: Token Reduction via Interpretable Concept Overlap in Vision-Language Models</span></li></ul>
+<ul class="dpr-home-dashboard-paper-list"><li><span class="dpr-home-dashboard-paper-title" title="Vision as Unified Multimodal Generation">Vision as Unified Multimodal Generation</span></li><li><span class="dpr-home-dashboard-paper-title" title="Multi-Agent Robotic Control with Onboard Vision-Language Models">Multi-Agent Robotic Control with Onboard Vision-Language Models</span></li><li><span class="dpr-home-dashboard-paper-title" title="Breaking Déjà Vu: Independent Auditing of Visual Place Recognition through Vision-Language Reasoning">Breaking Déjà Vu: Independent Auditing of Visual Place Recognition through Vision-Language Reasoning</span></li></ul>
   </div>
   <div class="dpr-home-dashboard-tags"><span class="dpr-home-dashboard-tag">vvvpg <strong>11</strong></span></div>
 </section>

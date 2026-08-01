@@ -1,0 +1,233 @@
+Title: Theia: Large-Scale Multimodal Captioning and Automated Validation of the Incidents1M Dataset for Data-Free Distillation
+
+URL Source: https://arxiv.org/pdf/2607.28269v1
+
+Published Time: Fri, 31 Jul 2026 01:24:46 GMT
+
+Number of Pages: 26
+
+Markdown Content:
+# Theia: Large-Scale Multimodal Captioning and Automated Validation of the Incidents1M Dataset for Data-Free Distillation 
+
+Simone Giano a, Lorenzo Severini a, Alessandro Galdelli a, Adriano Mancini a
+
+> aDipartimento di Ingegneria dell’Informazione, Università Politecnica delle Marche, Via Brecce Bianche 12, Ancona, 60121, Marche, Italy
+
+Abstract 
+
+The deployment of Vision-Language Models (VLMs) in critical domains like disaster management requires high-quality multimodal datasets, especially for transferring knowledge via Data-Free Knowledge Distillation (DFKD). However, existing datasets in this domain either entirely lack descriptive text, such as Incidents1M, or suffer from severe text-image semantic mis-alignment, such as CrisisMMD. In this work, we present a novel methodol-ogy to construct and automatically validate a large-scale multimodal dataset for disaster response. Starting from the vision-only Incidents1M, we success-fully recovered 100,000 images and generated high-fidelity textual descrip-tions using two distinct Qwen3.5 architectures: a 4B dense model and a 35B Mixture-of-Experts (MoE) model. To ensure the generated captions provide reliable semantic anchoring for DFKD, we introduce an image-blind LLM-as-a-Judge validation pipeline leveraging Qwen3.5-9B. By intentionally obscur-ing the original image from the judge, this evaluator accurately simulates the modality gap of the student model during data-free distillation. Our eval-uation across 173,179 label pairs demonstrates a high semantic agreement (78.65/100) between the two architectures. Furthermore, the automated evaluation reveals a conservative captioning behaviour, characterized by a high Precision (77.6%) and low Recall (46.0%). This minimizes the false positive noise, while simultaneously exposing underlying human annotation inconsistencies in the original ground truth. This work provides a scalable, LLM-validated multimodal dataset and a reproducible framework to advance cross-modal knowledge distillation. 
+
+Keywords: Vision-Language Models, Data-Free Knowledge Distillation, arXiv:2607.28269v1 [cs.CV] 30 Jul 2026 LLM-as-a-Judge, Disaster Management, Dataset Generation, Mixture-of-Experts 
+
+1. Introduction 
+
+The contemporary landscape of Artificial Intelligence has been profoundly reshaped by the transition from specialized unimodal systems to unified Vision-Language Models (VLMs) [1, 2]. By projecting visual and textual inputs into a shared semantic space, foundational VLMs are now capable of perceiving, understanding, and reasoning simultaneously over heterogeneous data streams [3, 4]. This architectural convergence has unlocked unprece-dented zero-shot capabilities across diverse fields, ranging from multimodal search engines [5, 6] to autonomous robotics [7, 8], medical diagnostics [9, 10], and digital accessibility [11, 12]. Despite these theoretical advancements, the operational efficacy of VLMs remains strictly bound to the availability of high-quality multimodal data. This reliance becomes critical in sensitive and high-stakes domains, such as disaster management and emergency response [13]. Recognizing a disaster scenario, distinguishing a flooded area from a normal coastline or a collapsed building from a construction site, requires complex contextual reasoning [14]. However, existing datasets in this domain suffer from significant structural limitations. For instance, while CrisisMMD [15] provides genuine social me-dia imagery, its textual annotations are often noisy, sarcastic, or entirely dis-connected from the visual content. On the contrary, the Incidents1M dataset [16] offers a massive, rigorously verified collection of over a million images depicting 43 disaster categories, but lacks entirely textual descriptions. The absence of dense, explanatory textual annotations poses a severe bot-tleneck for transferring knowledge from massive cloud-based VLMs [17, 18] to compact models suitable for edge computing or drones. This transfer is typ-ically achieved via Knowledge Distillation [19, 20], and specifically through Data-Free Knowledge Distillation (DFKD) [21, 22, 23] when original training images are unavailable due to privacy or licensing constraints. In a multi-modal DFKD scenario, the textual modality acts as the sole semantic anchor to synthesize surrogate visual data. Without highly accurate and objective captions, the generative process is compromised, forcing the student model to inherit flawed representations. Furthermore, recent studies highlight the propensity of VLMs to suffer from object hallucinations [24], making the automated generation of these anchors a delicate task. 2To bridge this gap, we present a large-scale multimodal extension of the Incidents1M dataset. Starting from the original vision-only ground truth, we successfully recovered 100,000 images and enriched them with 200,000 high-fidelity captions. To evaluate the impact of different architectural paradigms on the captioning task, we employed two distinct implementations of the state-of-the-art open-source Qwen3.5 family: a dense 4B parameter model and a 35B parameter Mixture-of-Experts (MoE) model. The MoE paradigm allows accessing a vastly larger parametric knowledge base while maintaining competitive inference times through sparse routing [25, 26]. Finally, to rigorously validate the generated text without resorting to unscalable human annotation or rigid syntactic metrics, we implemented an automated evaluation pipeline leveraging the LLM-as-a-Judge paradigm [27, 28, 29]. Crucially, our evaluator (Qwen3.5-9B) is intentionally kept image-blind. By forcing the judge to extract disaster labels relying solely on the generated text, we accurately simulate the modality gap that a student model faces during Data-Free Distillation. This work makes the following main contributions: 
+
+• We provide a massive multimodal disaster dataset comprising 100,000 images and 200,000 descriptive captions, bridging the critical gap be-tween visual incidents data and semantic text. 
+
+• We present a comparative analysis of captioning behaviour between dense and Mixture-of-Experts (MoE) VLM architectures in a continu-ous batching inference scenario. 
+
+• We introduce an image-blind LLM-as-a-Judge validation framework that quantifies the transferability of essential visual information into text, demonstrating a conservative, high-precision generative behaviour suitable for DFKD. 
+
+• We expose hidden human-annotation inconsistencies within the original Incidents1M ground truth, demonstrating the efficacy of modern VLMs in auditing existing large-scale benchmarks. 
+
+2. Related Work 
+
+2.1. Vision-Language Models and Mixture-of-Experts 
+
+The evolution of multimodal artificial intelligence has been driven by the development of Vision-Language Models (VLMs) capable of aligning vi-3sual representations with textual semantics [1]. Pioneering architectures like Flamingo [2] and BLIP-2 [3] demonstrated the effectiveness of bridging frozen image encoders with Large Language Models (LLMs) to achieve powerful zero-shot generalization. This paradigm was further standardized by visual instruction tuning techniques, notably LLaVA [4], which empowered models to follow complex multimodal human instructions. As VLMs scaled, the com-putational bottleneck was mitigated by the adoption of sparse architectures, specifically the Mixture-of-Experts (MoE) paradigm [25]. By dynamically routing tokens to a subset of specialized neural networks, MoE models like Mixtral [26] achieve the representational capacity of massive dense models while maintaining highly efficient inference costs. In this work, we leverage the state-of-the-art Qwen family [17, 18], exploiting both its dense and MoE variations to generate high-fidelity annotations at scale. 
+
+2.2. Datasets for Disaster Response 
+
+Applying deep learning to disaster management requires robust datasets to train models capable of understanding chaotic and unstructured environ-ments [14]. Early efforts heavily relied on social media scraping. For instance, CrisisMMD [15] and related baselines [13] provided multimodal datasets com-prising images and textual tweets collected during natural disasters. How-ever, the inherent noise of social media, where images are frequently paired with unrelated text, severely limits their utility for strict visual-semantic alignment. To overcome textual ambiguity, the Incidents1M dataset [16] introduced a massive, vision-only benchmark. It provides over a million rig-orously verified images annotated with 43 multi-label incident categories, deliberately discarding the noisy textual component. While Incidents1M represents the gold standard for visual disaster classification, its strictly uni-modal nature prevents its direct application in modern cross-modal training pipelines. 
+
+2.3. Data-Free Knowledge Distillation 
+
+Knowledge Distillation (KD) [19] is a well-established technique to com-press large, unwieldy models (Teachers) into compact, deployable ones (Stu-dents) [20]. However, traditional KD assumes full access to the original training data. When privacy constraints, copyright issues, or sheer dataset sizes make the original images unavailable, Data-Free Knowledge Distilla-tion (DFKD) is used. Foundational DFKD approaches [21, 22] invert the 4pre-trained Teacher to synthesize surrogate training data. Recent advance-ments have successfully accelerated this process [23]. In multimodal DFKD, the textual domain is strictly required to anchor the generation of surro-gate images. If the text is missing or overly generic, the synthesized visual distribution collapses. Therefore, synthesizing a dense textual modality for established vision-only datasets like Incidents1M is a mandatory step to en-able DFKD in critical scenarios. 
+
+2.4. Automated Evaluation and LLM-as-a-Judge 
+
+Evaluating the quality of generated multimodal text at an industrial scale poses a significant challenge. Traditional n-gram metrics (e.g., BLEU, ROUGE) exhibit severe limitations, as they penalize paraphrasing and fail to grasp logic negations. Moreover, VLMs are highly prone to object hallu-cinations, generating plausible but factually incorrect visual details [24]. To achieve scalable, semantic-aware validation, recent literature introduced the LLM-as-a-Judge paradigm [27]. Strong language models can be prompted to evaluate generated text against specific criteria with a high correlation to human judgment [28]. Frameworks like Prometheus [29] demonstrated that providing an LLM with fine-grained evaluation rubrics yields highly repro-ducible assessments. 
+
+2.5. Research Context and Our contribution 
+
+Our research bridges the gaps identified across these domains. Unlike ex-isting literature that either relies on noisy social media text [15] or abandons text entirely [16], we synthesize a clean multimodal dataset by pairing the rigorous visual taxonomy of Incidents1M with state-of-the-art VLM capabili-ties [17]. Furthermore, we advance the LLM-as-a-Judge methodology [27, 29] by introducing an image-blind evaluation protocol. Instead of standard vi-sual QA, our judge evaluates caption fidelity by verifying the persistence of ground-truth labels purely from text, thereby simulating the modality gap inherent to multimodal DFKD [23]. This ensures that our dataset is not merely descriptive, but strictly optimized for data-free knowledge transfer. 
+
+3. Dataset Reconstruction and VLLM Pipeline 
+
+To enable Data-Free Knowledge Distillation (DFKD), the visual domain must be paired with high-fidelity semantic annotations [21]. Since the original 5Incidents1M dataset [16] is strictly vision-only, we engineered a comprehen-sive pipeline to physically reconstruct a subset of the dataset and generate the missing textual modality using state-of-the-art Vision-Language Models [17]. 
+
+3.1. Mitigating Link Rot and Atomic Dataset Reconstruction 
+
+The public release of Incidents1M does not distribute raw image files due to copyright and bandwidth constraints; instead, it provides a JSON file mapping multi-label annotations to the original hosting URLs [16]. Conse-quently, retrieving the dataset requires large-scale web scraping, a process severely hindered by link rot (e.g., 404 Not Found errors due to deleted con-tent) and server-side bot protections. To overcome these challenges and secure a clean visual foundation, we developed a highly concurrent, fault-tolerant downloading orchestrator. To prevent the quiet accumulation of corrupted files, such as partial downloads or HTML error pages disguised as images, our system implements an atomic write strategy. Images are streamed in 64-kilobyte chunks into a temporary file ( .tmp ) and are renamed to their final .jpg extension only upon successful and complete byte verification. Furthermore, simply processing the first 100,000 URLs would result in a heavily truncated dataset due to the unpredictable rate of dead links. To guarantee an exact number of 100,000 intact images, the orchestrator utilizes a dynamic reservation mechanism. Whenever a download irreversibly fails after exponential backoff retries, its reserved slot is released, and a new URL is automatically pulled from the remaining 1.7 million available links. This ensures the final dataset volume is precisely met with 100% valid visual data, ready for multimodal inference (Fig. 1). 
+
+3.2. VLLM Architectures: Dense vs. Mixture-of-Experts 
+
+For the generation of textual captions, we selected the Qwen3.5 vision-language family [18], which natively supports early fusion of visual and tex-tual tokens, projecting them into a shared representation space from the initial layers. To investigate how architectural scaling impacts the quality of semantic anchoring, we evaluated two distinct implementations on the same 100,000 images: 
+
+• Qwen3.5-4B (Dense): A compact architecture featuring 4 billion pa-rameters uniformly activated for every processed token. With 32 layers 6Figure 1: Image examples extracted from Incidents1M [16]. 
+
+and a hidden dimension of 2560, it alternates linear attention (Gated DeltaNet) with traditional quadratic attention, optimizing latency and hardware footprint. 
+
+• Qwen3.5-35B-A3B (Mixture-of-Experts): A highly sparse archi-tecture designed to expand the parametric knowledge base without a linear increase in computational cost. While it contains 35 billion pa-rameters across 40 layers, its feed-forward networks act as routers, dy-namically activating only 9 out of 256 experts (yielding approximately 3 billion active parameters) per token [26]. The inference infrastructure was deployed on a server equipped with mul-tiple NVIDIA H100 GPUs. To maximize throughput, the models were phys-ically isolated on separate GPUs and orchestrated via the vLLM framework. The client-side application leveraged asynchronous Input/Output, pushing up to 48 concurrent workers to maintain the server in a state of continuous batching. An asynchronous one-shot warmup mechanism was also imple-mented to mathematically isolate structural formatting tokens (ChatML) from the KV cache, ensuring precise tracking of the computational cost for each individual image. Examples of generations given by the two architec-tures are shown in Fig. 2. 
+
+3.3. Prompt Configuration for Spatial Objectivity 
+
+When generating captions for Data-Free Knowledge Distillation, conver-sational and highly creative outputs are detrimental, as they introduce se-7Generation Qwen3.5-4B 
+
+"The image shows a pleasure boat, partially submerged in dark water, with the bow pointing to the left and the stern tilted to the right. The boat is light gray, with metallic details visible on the internal structure and outer edges. On the main deck, a small circular platform, probably an anchor windlass or a fastening device, is located in the center of the boat. On the right side, near the stern, there is a cylindrical object, similar to a tank or container, in off-white. The background is dominated by a dark blue night sky, with scattered clouds creating a dynamic effect. No other objects or subjects are present, and the scene is illuminated by artificial light coming from an unseen source, creating reflections on the water and the boat’s surface. The composition is static, with the boat as the central and unique element, positioned slightly to the left of the center." 
+
+Generation Qwen3.5-35B-A3B 
+
+"The image shows, in the center and slightly tilted to the left, the wreckage of an abandoned military aircraft on dark, flat terrain, probably sandy or volcanic. The fuselage is partially destroyed: the nose is crushed and missing the cockpit, while the tail is visible on the right, with circular openings and signs of corrosion. On the left side of the aircraft, an intense light emanates from the ground, illuminating the gray, oxidized metal structure, which exhibits rough textures and irregular holes. Two bright white lines, resembling lightning trails or photographic effects, extend horizontally from both sides of the aircraft, originating from light sources on the ground. The background consists of a dark blue, uniform, starless night sky, creating a stark contrast with the illuminated elements. The entire scene is plunged into darkness, with the aircraft as the central focal point, surrounded by artificial lights that accentuate its contours and deformations." 
+
+Figure 2: Qualitative comparison between dense and MoE generations regarding an image from the Incidents1M dataset [16]. While the 4B model misclassifies the crashed plane as a boat, the 35B-A3B model accurately recognizes the military aircraft, the structural damage and contextual texts. The generations were translated from the italian language. 
+
+8mantic noise into the student model’s training targets. To enforce strict objectivity, we constrained the generative temperature to 0.2, effectively min-imizing entropy and reducing the risk of object hallucination [24]. The core semantic constraint was applied through a rigidly structured system prompt. The models were instructed to act as objective disaster re-sponse analysts, avoiding any subjective deductions or emotional language. Crucially, the prompt mandated the inclusion of exact spatial coordinates (e.g., "in the foreground", "in the top left corner", "in the background") . This forced spatial mapping functions as an architectural prerequisite be-cause, in a multimodal DFKD framework, encoding specific positional re-lationships within the text is essential to guide the synthetic generation of spatial features in the surrogate visual data. This ensures proper alignment between the teacher’s latent space and the student’s representations. 
+
+4. Methodology: Image-Blind LLM-as-a-Judge 
+
+Validating 200,000 generated captions via human annotation is econom-ically and temporally unfeasible. Consequently, an automated evaluation protocol is required. In this section, we outline our automated validation framework, detailing why traditional metrics fall short and how an image-blind LLM-as-a-Judge paradigm perfectly simulates the constraints of Data-Free Knowledge Distillation (DFKD). 
+
+4.1. The Bottleneck of Syntactic Metrics 
+
+Historically, automated caption evaluation has relied on n-gram overlap metrics such as BLEU [30], ROUGE [31], or METEOR [32]. However, these syntactic metrics evaluate the surface form of a sentence rather than its semantic meaning. In the critical domain of disaster response, this rigidity introduces two severe failure modes: 1. Inability to handle logic negations: Phrases like “a fire is visible on the building” and “no fire is visible on the building” share nearly identical vocabulary. Syntactic metrics assign an extremely high sim-ilarity score to this pair, masking a critical polarity error that would fatally corrupt the student model in DFKD. 2. Insensitivity to synonymy: Descriptions such as “a vehicle engulfed in flames” and “a burning car” describe the exact same scene. Since lexical overlap is minimal, standard metrics penalize these paraphrases, failing to recognize their semantic equivalence. 9To overcome these bottlenecks, we deployed a dedicated Qwen3.5-9B instance operating as an LLM-as-a-Judge [27, 28]. A foundational language model can naturally reason over synonyms, negations, and spatial relations, providing a scalable and semantic-aware evaluation. 
+
+4.2. Simulating the Modality Gap: The Image-Blind Paradigm 
+
+A counter-intuitive but foundational design choice of our methodology is that the evaluator LLM (Qwen3.5-9B) is entirely deprived of the original im-age. The judge operates exclusively on the textual outputs generated by the 4B and 35B models. This image-blind approach serves two specific purposes: first, it prevents the judge from forming a third, biased visual interpretation of the scene. If the judge were multimodal, it would inherently compare the generated captions against its own visual perception rather than objectively measuring the textual agreement between the two models. Second, and most importantly, it replicates the operational condition of the Student model dur-ing DFKD [23]. In a data-free scenario, the Student model never accesses the original training images; it must construct its entire visual understanding derived solely from the text synthesized by the Teacher. By making sure the judge cannot see the image, we measure exactly what the DFKD process requires, which is whether the essential information survived the transition from the visual domain to the textual representation. 
+
+4.3. Task Formulation: Qualitative and Quantitative Assessment 
+
+The evaluation pipeline forces the judge to perform two distinct analytical tasks on the generated dataset: 
+
+1. Qualitative Task (Semantic Similarity): To measure the internal agreement between the dense and MoE architectures, the judge receives both Caption A and Caption B simultaneously. We designed a highly constrained prompt instructing the LLM to output a JSON object evaluating four specific criteria on a 0-10 scale: Objects and Subjects, Position and Action, Style and Detail, and Global Similarity. 10 Qualitative JSON Prompt Structure    
+
+> System: You are an expert judge in semantic and linguistic evaluation of Computer Vision models. Compare Caption A and Caption B generated for the SAME image.
+> IMPORTANT: You will NOT see the image. Your goal is not to determine which model is right, but to analyze the degree of agreement, similarities, and differences. Evaluate based on: 1. OBJECTS/SUBJECTS: Do they identify the same main elements? 2. POSITION/ACTION: Do spatial relations and actions match? 3. STYLE/DETAIL: Is the granularity similar? 4. GLOBAL SIMILARITY: Overall semantic agreement (0-10).
+> Output strictly in JSON format.
+
+2. Quantitative Task (Binary Label Validation): To ground the evaluation against an objective external reference, we validate the generated text against the original Incidents1M multi-label annotations. The judge is prompted iteratively for each associated ground-truth label using a direct binary question: “Does the following text contain/describe a {label}?” . This procedural design (one label, one question) minimizes the LLM’s cognitive load. By processing 173,179 unique label pairs, this task explicitly quantifies how many critical disaster features were successfully retained in the textual representations of both the 4B and 35B models. 
+
+5. Results and Analysis 
+
+The automated evaluation pipeline processed 100,000 images, yielding 99,980 valid qualitative comparisons and 173,179 quantitative label verifica-tion pairs. The LLM-as-a-Judge formatting success rate exceeded 99.98%, confirming the extreme stability of the JSON-constrained evaluation prompt. 
+
+5.1. Qualitative Assessment: Semantic Agreement 
+
+The qualitative task measured the internal semantic alignment between the dense (4B) and MoE (35B-A3B) architectures without referencing the original ground truth. The Final Score, computed as a weighted average of four criteria, reached a mean of 78.65/100 (median 82), with over 59% of the dataset concentrating in the 80-95 range, as illustrated in Figure 3. Breaking down the criteria reveals where the models converge: 
+
+• Objects and Subjects: This metric recorded the highest agreement (mean 8.20/10), with 76.1% of comparisons scoring 8 or above. Both architectures robustly identified the same primary disaster elements (e.g., vehicles, fire, water) regardless of their parameter count. 11 Figure 3: Distribution of the Final Semantic Agreement Score (0-100) between the 4B and 35B-A3B models. 
+
+• Style and Detail: This parameter showed the lowest dispersion (stan-dard deviation 0.99) and negligible correlation with the other metrics. This confirms that while the 35B model occasionally employs a richer vocabulary, the stylistic divergence does not alter the fundamental se-mantic interpretation of the scene. 
+
+5.2. Quantitative Assessment: Label Validation for DFKD 
+
+The quantitative assessment verified whether the essential disaster fea-tures (ground-truth labels) survived the translation from image to text. Table 1 aggregates the micro-average performance across all 43 categories. Figure 4 highlights the severe natural imbalance of positive and negative labels across these categories, a critical factor when analyzing aggregate metrics.                            
+
+> Model TP TN FP FN Precision Recall F1-score Accuracy Specificity
+> Qwen3.5-4B 34,205 88,969 9,859 40,140 77.6% 46.0% 57.8% 71.1% 90.0% Qwen3.5-35B 34,836 88,555 10,275 39,511 77.2% 46.9% 58.3% 71.3% 89.6%
+
+Table 1: Aggregate micro-average performance of the generated captions evaluated against the 173,179 label pairs of the Incidents1M ground truth. 
+
+A systematic trade-off emerges: both models exhibit high Precision (77.6% and 77.2%) but low Recall (46.0% and 46.9%). This delineates a highly con-servative captioning behavior: the models rarely hallucinate non-existent 12 Figure 4: Distribution of positive and negative labels across the 43 incident categories in the evaluated dataset. 
+
+disasters (Specificity 90%), but frequently omit explicit mentions of visu-ally present secondary incidents, as further detailed by the per-image error distributions in Figure 5. In the context of Data-Free Knowledge Distillation, this conservative bias is highly advantageous. A dataset with sparse but highly accurate semantic anchors (low false-positive noise) is strictly preferable to one with exhaustive but hallucinated descriptions, as it prevents the student model from inherit-ing fabricated cross-modal correlations. 
+
+5.3. Architectural Scaling and the Long Tail of Rare Events 
+
+While the aggregate metrics (Table 1) suggest virtual parity between the 4B and 35B architectures, a macro-average analysis exposes the impact of parametric scaling. Figure 6 illustrates the F1-score across all 43 categories, revealing a steep gradient. On highly salient categories (e.g., on fire , snow covered ), both models perform identically, achieving F1-scores above 83%. Conversely, complex meteorological events (e.g., derecho , storm surge ) col-lapse to near-zero accuracy. This severe degradation suggests that broad, system-level meteorological phenomena (e.g., storm surges) lack the isolated, localized visual anchors that VLMs typically rely on for zero-shot classifica-tion. Table 2 explicitly summarizes these extremes, demonstrating how visual prominence dictates textual retrieval. 13 Figure 5: Log-scale distribution of correctly identified labels per image (left) and total errors (False Positives + False Negatives) per image (right). 
+
+Label Positive Cases (GT) F1 4B F1 35B Recall 4B Recall 35B on fire 3,756 83.2% 83.0% 84.6% 84.2% 
+
+snow covered 5,896 83.3% 83.0% 85.6% 84.8% 
+
+car accident 3,933 79.3% 77.6% 74.4% 71.4% 
+
+with smoke 3,234 78.4% 77.7% 82.6% 81.6% 
+
+damaged 2,511 76.8% 77.7% 77.2% 79.2% 
+
+tropical cyclone 1,427 13.8% 13.1% 8.3% 7.8% 
+
+mudslide mudflow 812 7.1% 9.9% 3.8% 5.4% 
+
+earthquake 3,404 7.1% 8.9% 3.7% 4.7% 
+
+snowslide avalanche 526 1.8% 3.6% 1.0% 1.9% 
+
+storm surge 671 1.7% 1.4% 0.9% 0.7% 
+
+derecho 691 1.1% 1.4% 0.6% 0.7% 
+
+Table 2: Performance extremes for both models. Visually distinct categories achieve high accuracy, while broad contextual disasters suffer from severe recall degradation. 
+
+14 Figure 6: F1-score comparison between the Qwen3.5-4B and 35B-A3B models across the 43 Incidents1M labels, ordered by increasing average performance. 
+
+15 The primary advantage of the Mixture-of-Experts architecture emerges strictly within the long tail of rare, semantically specific categories. As shown in Figure 7, the 35B-A3B model demonstrates a systematic improvement over the 4B model precisely where lexical precision is crucial. The most prominent gains are observed in classes like hailstorm (+20.3% F1), dust devil 
+
+(+8.8%), and landslide (+7.5%). This confirms that the broader knowledge base accessed via sparse routing provides the advanced technical vocabulary required to successfully caption rare disaster events, without disrupting the baseline perception of common scenarios. 16 Figure 7: Variation of the F1-score per label (35B-A3B minus 4B). The MoE architecture exhibits a systematic advantage specifically on the long tail of rare categories. 
+
+17 6. Discussion: Ground Truth Inconsistencies 
+
+A fundamental assumption in supervised evaluation is that the original dataset annotations, the ground truth, serve as a flawless reference. However, during a manual inspection of the divergent cases where our LLM-as-a-Judge pipeline registered False Positives or False Negatives against the Incidents1M labels, a critical phenomenon emerged: numerous discrepancies were not caused by VLM hallucinations, but by intrinsic inconsistencies in the original human annotations. 
+
+6.1. Human Annotation Fallacies 
+
+The original Incidents1M dataset was labeled via crowdsourcing (Amazon Mechanical Turk), where operators were asked binary questions about the presence of specific incidents. Our analysis revealed two distinct typologies of human error that actively corrupted the evaluation metrics. First, we observed a severe lack of consistency in defining ambiguous sce-narios. For example, regarding the on fire category, visually nearly identical images depicting small, contained fires (such as outdoor braziers or camp-fires) were labeled oppositely by human annotators. As shown in Figure 8, one image was labeled as True while the other as False , despite the lack of any objective visual criterion justifying the discrepancy.      
+
+> (a) Ground Truth: on fire = False (b) Ground Truth: on fire = True
+> Figure 8: Inconsistent ground truth labeling in Incidents1M [16]. Both images depict outdoor contained fires, yet they received contradictory human annotations.
+
+18 Second, we found instances of severe omission (human False Negatives). In several cases, the Qwen teacher models correctly identified and extensively detailed incidents, such as a bicycle accident, that were clearly visible in the imagery but completely absent from the original positive labels (see Figure 9). When our automated judge evaluated the accurate generated text against this incomplete ground truth, it inevitably registered a False Positive. Conse-quently, the generative models were mathematically penalized for accurately describing a scene that the human annotators had missed.    
+
+> (a) Missing label: bicycle accident (b) Missing label: bicycle accident
+> Figure 9: Ground truth omissions. In both images, the VLMs correctly described severe bicycle accidents. However, since the human annotators missed these labels, the automated evaluation unfairly penalized the generative models with False Positives.
+
+6.2. Implications for Future Benchmarks 
+
+This discovery carries a methodological implication. The Precision, Re-call, and F1-score metrics reported in Section 5 must be interpreted as a lower bound of the VLMs’ true descriptive capabilities. A non-quantifiable portion of the recorded errors derives directly from ground truth inaccuracies rather than genuine generative flaws. Ultimately, this demonstrates that modern, highly capable VLMs possess a level of zero-shot visual reasoning that rivals, and sometimes exceeds, the reliability of crowdsourced human workers. Moving forward, robust Vision-Language Models should be systematically employed not merely to train on or consume existing multimodal datasets, but to actively audit, clean, and refine large-scale human-annotated benchmarks before they are used for downstream tasks or Knowledge Distillation. 19 7. Conclusion and Future Work 
+
+In this work, we addressed the critical shortage of high-quality multi-modal datasets for disaster response, a mandatory prerequisite for Data-Free Knowledge Distillation (DFKD). By engineering an atomic dataset recon-struction pipeline, we successfully recovered 100,000 images from the vision-only Incidents1M dataset and enriched them with 200,000 highly objective, spatially-aware textual captions using two distinct Qwen3.5 architectures. To overcome the fragility of traditional syntactic metrics and strictly simulate the modality gap inherent to DFKD, we introduced an innovative image-blind LLM-as-a-Judge validation framework. Our extensive evalua-tion demonstrated a massive semantic agreement (78.65/100) between the 4B dense and 35B Mixture-of-Experts models. While both architectures ex-hibit a conservative generative behavior that minimizes fatal false-positive hallucinations, our analysis revealed that the sparse MoE paradigm provides a decisive advantage in captioning the long tail of rare and semantically com-plex disaster events. Crucially, our automated evaluation enabled us to discover underlying human-annotation fallacies within the original ground truth, highlighting the capability of modern VLMs to act as rigorous benchmark auditors. The resulting dataset and the reproducible validation methodology presented in this paper establish a clean, LLM-validated semantic foundation to advance cross-modal knowledge distillation in mission-critical environments. Building upon these findings, our future work will focus on executing the end-to-end Data-Free Knowledge Distillation pipeline. We aim to leverage this validated multimodal dataset to train compact student networks capable of real-time visual disaster classification on resource-constrained edge devices, such as search-and-rescue drones. Furthermore, expanding our VLM-driven auditing framework to systematically clean, re-annotate, and expand the entirety of the Incidents1M benchmark represents a critical next step toward providing the community with a robust multimodal resource. 20 References 
+
+[1] C. Jia, Y. Yang, Y. Xia, Y. Chen, Z. Parekh, H. Pham, Q. V. Le, Y. Sung, Z. Li, T. Duerig, Scaling up visual and vision-language rep-resentation learning with noisy text supervision, CoRR abs/2102.05918 (2021). arXiv:2102.05918. URL https://arxiv.org/abs/2102.05918 
+
+[2] J.-B. Alayrac, J. Donahue, P. Luc, A. Miech, I. Barr, Y. Hasson, K. Lenc, A. Mensch, K. Millicah, M. Reynolds, R. Ring, E. Rutherford, S. Cabi, T. Han, Z. Gong, S. Samangooei, M. Monteiro, J. Menick, S. Borgeaud, A. Brock, A. Nematzadeh, S. Sharifzadeh, M. Binkowski, R. Barreira, O. Vinyals, A. Zisserman, K. Simonyan, Flamingo: a visual language model for few-shot learning, in: Proceedings of the 36th International Conference on Neural Information Processing Systems, NIPS ’22, Cur-ran Associates Inc., Red Hook, NY, USA, 2022. [3] J. Li, D. Li, S. Savarese, S. Hoi, Blip-2: bootstrapping language-image pre-training with frozen image encoders and large language models, in: Proceedings of the 40th International Conference on Machine Learning, ICML’23, JMLR.org, 2023. [4] H. Liu, C. Li, Q. Wu, Y. J. Lee, Visual instruction tuning, in: Thirty-seventh Conference on Neural Information Processing Systems, 2023. URL https://openreview.net/forum?id=w0H2xGHlkw 
+
+[5] M. Du, A. Ramisa, A. K. K C, S. Chanda, M. Wang, N. Rajesh, S. Li, Y. Hu, T. Zhou, N. Lakshminarayana, S. Tran, D. Gray, Amazon shop the look: A visual search system for fashion and home, KDD ’22, As-sociation for Computing Machinery, New York, NY, USA, 2022, p. 2822–2830. doi:10.1145/3534678.3539071. URL https://doi.org/10.1145/3534678.3539071 
+
+[6] A. Radford, J. W. Kim, C. Hallacy, A. Ramesh, G. Goh, S. Agarwal, G. Sastry, A. Askell, P. Mishkin, J. Clark, G. Krueger, I. Sutskever, Learning transferable visual models from natural language supervision, CoRR abs/2103.00020 (2021). arXiv:2103.00020. URL https://arxiv.org/abs/2103.00020 
+
+21 [7] B. Zitkovich, T. Yu, S. Xu, P. Xu, T. Xiao, F. Xia, J. Wu, P. Wohlhart, S. Welker, A. Wahid, Q. Vuong, V. Vanhoucke, H. Tran, R. Soricut, A. Singh, J. Singh, P. Sermanet, P. R. Sanketi, G. Salazar, M. S. Ryoo, K. Reymann, K. Rao, K. Pertsch, I. Mordatch, H. Michalewski, Y. Lu, S. Levine, L. Lee, T.-W. E. Lee, I. Leal, Y. Kuang, D. Kalash-nikov, R. Julian, N. J. Joshi, A. Irpan, B. Ichter, J. Hsu, A. Herzog, K. Hausman, K. Gopalakrishnan, C. Fu, P. Florence, C. Finn, K. A. Dubey, D. Driess, T. Ding, K. M. Choromanski, X. Chen, Y. Chebo-tar, J. Carbajal, N. Brown, A. Brohan, M. G. Arenas, K. Han, Rt-2: Vision-language-action models transfer web knowledge to robotic con-trol, in: J. Tan, M. Toussaint, K. Darvish (Eds.), Proceedings of The 7th Conference on Robot Learning, Vol. 229 of Proceedings of Machine Learning Research, PMLR, 2023, pp. 2165–2183. URL https://proceedings.mlr.press/v229/zitkovich23a.html 
+
+[8] D. Driess, F. Xia, M. S. M. Sajjadi, C. Lynch, A. Chowdhery, B. Ichter, A. Wahid, J. Tompson, Q. Vuong, T. Yu, W. Huang, Y. Chebotar, P. Sermanet, D. Duckworth, S. Levine, V. Vanhoucke, K. Hausman, M. Toussaint, K. Greff, A. Zeng, I. Mordatch, P. Florence, Palm-e: an embodied multimodal language model, in: Proceedings of the 40th Inter-national Conference on Machine Learning, ICML’23, JMLR.org, 2023. [9] T. Tu, S. Azizi, D. Driess, M. Schaekermann, M. Amin, P.-C. Chang, A. Carroll, C. Lau, R. Tanno, I. Ktena, A. Palepu, B. Mustafa, A. Chowdhery, Y. Liu, S. Kornblith, D. Fleet, P. Mansfield, S. Prakash, R. Wong, S. Virmani, C. Semturs, S. S. Mahdavi, B. Green, E. Domi-nowska, B. A. y Arcas, J. Barral, D. Webster, G. S. Corrado, Y. Matias, K. Singhal, P. Florence, A. Karthikesalingam, V. Natarajan, Towards generalist biomedical ai, NEJM AI 1 (3) (2024) AIoa2300138. arXiv:https://ai.nejm.org/doi/pdf/10.1056/AIoa2300138, doi:10.1056/AIoa2300138. URL https://ai.nejm.org/doi/full/10.1056/AIoa2300138 
+
+[10] M. Y. Lu, B. Chen, D. F. K. Williamson, R. J. Chen, I. Liang, T. Ding, G. Jaume, I. Odintsov, L. P. Le, G. Gerber, A. V. Parwani, A. Zhang, F. Mahmood, A visual-language foundation model for computational pathology, Nature Medicine 30 (3) (2024) 863–874. doi:10.1038/s41591-024-02856-4. 22 [11] D. Gurari, Q. Li, A. J. Stangl, A. Guo, C. Lin, K. Grauman, J. Luo, J. P. Bigham, Vizwiz grand challenge: Answering visual questions from blind people, CoRR abs/1802.08218 (2018). arXiv:1802.08218. URL http://arxiv.org/abs/1802.08218 
+
+[12] D. Gurari, Y. Zhao, M. Zhang, N. Bhattacharya, Captioning images taken by people who are blind, in: A. Vedaldi, H. Bischof, T. Brox, J.-M. Frahm (Eds.), Computer Vision – ECCV 2020, Springer International Publishing, Cham, 2020, pp. 417–434. [13] F. Ofli, F. Alam, M. Imran, Analysis of social media data using multi-modal deep learning for disaster response, in: 17th International Con-ference on Information Systems for Crisis Response and Management, ISCRAM, ISCRAM, 2020. [14] E. Weber, N. Marzo, D. P. Papadopoulos, A. Biswas, A. Lapedriza, F. Ofli, M. Imran, A. Torralba, Detecting natural disasters, damage, and incidents in the wild, in: A. Vedaldi, H. Bischof, T. Brox, J.-M. Frahm (Eds.), Computer Vision – ECCV 2020, Springer International Publishing, Cham, 2020, pp. 331–350. [15] F. Alam, F. Ofli, M. Imran, Crisismmd: Multimodal twitter datasets from natural disasters, Proceedings of the International AAAI Conference on Web and Social Media 12 (1) (Jun. 2018). doi:10.1609/icwsm.v12i1.14983. URL https://ojs.aaai.org/index.php/ICWSM/article/view/14983 
+
+[16] E. Weber, D. P. Papadopoulos, A. Lapedriza, F. Ofli, M. Imran, A. Torralba, Incidents1m: A large-scale dataset of images with nat-ural disasters, damage, and incidents, IEEE Transactions on Pat-tern Analysis and Machine Intelligence 45 (4) (2023) 4768–4781. doi:10.1109/TPAMI.2022.3191996. [17] J. Bai, S. Bai, S. Yang, S. Wang, S. Tan, P. Wang, J. Lin, C. Zhou, J. Zhou, Qwen-vl: A versatile vision-language model for understanding, localization, text reading, and beyond (2023). arXiv:2308.12966. URL https://arxiv.org/abs/2308.12966 
+
+[18] Qwen, :, A. Yang, B. Yang, B. Zhang, B. Hui, B. Zheng, B. Yu, C. Li, D. Liu, F. Huang, H. Wei, H. Lin, J. Yang, J. Tu, J. Zhang, J. Yang, 23 J. Yang, J. Zhou, J. Lin, K. Dang, K. Lu, K. Bao, K. Yang, L. Yu, M. Li, M. Xue, P. Zhang, Q. Zhu, R. Men, R. Lin, T. Li, T. Tang, T. Xia, X. Ren, X. Ren, Y. Fan, Y. Su, Y. Zhang, Y. Wan, Y. Liu, Z. Cui, Z. Zhang, Z. Qiu, Qwen2.5 technical report (2025). arXiv:2412.15115. URL https://arxiv.org/abs/2412.15115 
+
+[19] G. Hinton, O. Vinyals, J. Dean, Distilling the knowledge in a neural network (2015). arXiv:1503.02531. URL https://arxiv.org/abs/1503.02531 
+
+[20] J. Gou, B. Yu, S. J. Maybank, D. Tao, Knowledge distillation: A survey, CoRR abs/2006.05525 (2020). arXiv:2006.05525. URL https://arxiv.org/abs/2006.05525 
+
+[21] H. Chen, Y. Wang, C. Xu, Z. Yang, C. Liu, B. Shi, C. Xu, C. Xu, Q. Tian, Data-free learning of student networks, in: 2019 IEEE/CVF International Conference on Computer Vision (ICCV), 2019, pp. 3513– 3521. doi:10.1109/ICCV.2019.00361. [22] H. Yin, P. Molchanov, J. M. Alvarez, Z. Li, A. Mallya, D. Hoiem, N. K. Jha, J. Kautz, Dreaming to distill: Data-free knowledge trans-fer via deepinversion, in: 2020 IEEE/CVF Conference on Com-puter Vision and Pattern Recognition (CVPR), 2020, pp. 8712–8721. doi:10.1109/CVPR42600.2020.00874. [23] G. Fang, K. Mo, X. Wang, J. Song, S. Bei, H. Zhang, M. Song, Up to 100x faster data-free knowledge distillation, Proceedings of the AAAI Conference on Artificial Intelligence 36 (6) (2022) 6597–6604. doi:10.1609/aaai.v36i6.20613. URL https://ojs.aaai.org/index.php/AAAI/article/view/20613 
+
+[24] Y. Li, Y. Du, K. Zhou, J. Wang, X. Zhao, J.-R. Wen, Evaluating object hallucination in large vision-language models, in: H. Bouamor, J. Pino, K. Bali (Eds.), Proceedings of the 2023 Conference on Empirical Meth-ods in Natural Language Processing, Association for Computational Linguistics, Singapore, 2023, pp. 292–305. doi:10.18653/v1/2023.emnlp-main.20. URL https://aclanthology.org/2023.emnlp-main.20/ 
+
+24 [25] N. Shazeer, A. Mirhoseini, K. Maziarz, A. Davis, Q. V. Le, G. E. Hinton, J. Dean, Outrageously large neural networks: The sparsely-gated mixture-of-experts layer, CoRR abs/1701.06538 (2017). arXiv:1701.06538. URL http://arxiv.org/abs/1701.06538 
+
+[26] A. Q. Jiang, A. Sablayrolles, A. Roux, A. Mensch, B. Savary, C. Bam-ford, D. S. Chaplot, D. de las Casas, E. B. Hanna, F. Bressand, G. Lengyel, G. Bour, G. Lample, L. R. Lavaud, L. Saulnier, M.-A. Lachaux, P. Stock, S. Subramanian, S. Yang, S. Antoniak, T. L. Scao, T. Gervet, T. Lavril, T. Wang, T. Lacroix, W. E. Sayed, Mixtral of experts (2024). arXiv:2401.04088. URL https://arxiv.org/abs/2401.04088 
+
+[27] L. Zheng, W.-L. Chiang, Y. Sheng, S. Zhuang, Z. Wu, Y. Zhuang, Z. Lin, Z. Li, D. Li, E. P. Xing, H. Zhang, J. E. Gonzalez, I. Stoica, Judging llm-as-a-judge with mt-bench and chatbot arena, in: Proceedings of the 37th International Conference on Neural Information Processing Sys-tems, NIPS ’23, Curran Associates Inc., Red Hook, NY, USA, 2023. [28] Y. Liu, D. Iter, Y. Xu, S. Wang, R. Xu, C. Zhu, G-eval: NLG evalua-tion using gpt-4 with better human alignment, in: H. Bouamor, J. Pino, K. Bali (Eds.), Proceedings of the 2023 Conference on Empirical Meth-ods in Natural Language Processing, Association for Computational Lin-guistics, Singapore, 2023, pp. 2511–2522. doi:10.18653/v1/2023.emnlp-main.153. URL https://aclanthology.org/2023.emnlp-main.153/ 
+
+[29] S. Kim, J. Shin, Y. Cho, J. Jang, S. Longpre, H. Lee, S. Yun, S. Shin, S. Kim, J. Thorne, M. Seo, Prometheus: Inducing fine-grained evalua-tion capability in language models, in: The Twelfth International Con-ference on Learning Representations, 2024. URL https://openreview.net/forum?id=8euJaTveKw 
+
+[30] K. Papineni, S. Roukos, T. Ward, W.-J. Zhu, Bleu: a method for auto-matic evaluation of machine translation, in: Proceedings of the 40th Annual Meeting on Association for Computational Linguistics, ACL ’02, Association for Computational Linguistics, USA, 2002, p. 311–318. doi:10.3115/1073083.1073135. URL https://doi.org/10.3115/1073083.1073135 
+
+25 [31] C.-Y. Lin, ROUGE: A package for automatic evaluation of summaries, in: Text Summarization Branches Out, Association for Computational Linguistics, Barcelona, Spain, 2004, pp. 74–81. URL https://aclanthology.org/W04-1013/ 
+
+[32] A. Lavie, A. Agarwal, Meteor: an automatic metric for mt evaluation with high levels of correlation with human judgments, in: Proceedings of the Second Workshop on Statistical Machine Translation, StatMT ’07, Association for Computational Linguistics, USA, 2007, p. 228–231. 26

@@ -1,140 +1,12 @@
 {
-  "generated_at": "2026-08-01T01:15:55.303291+00:00",
-  "updated_date": "20260703-20260801",
+  "generated_at": "2026-08-01T21:02:31.137120+00:00",
+  "updated_date": "20260801",
   "carryover_days": 9,
   "tag_states": {
     "vvvpg": {
-      "updated_date": "20260703-20260801",
+      "updated_date": "20260801",
       "carryover_days": 9,
       "items": [
-        {
-          "id": "2607.25106v1",
-          "source": "arxiv",
-          "title": "IMPRINT: Image-Conditioned Query Enrichment for Long-Tail Object Goal Navigation",
-          "abstract": "Embodied AI increasingly relies on queryable semantic maps built from pre-trained vision-language models to enable zero-shot Object Goal Navigation (ObjectNav). However, existing approaches typically depend on text-only queries, which become less reliable as semantic specificity increases toward fine-grained object categories. We introduce IMPRINT, a zero-shot plug-and-play framework that enriches textual object queries with web-sourced images to improve grounding in queryable maps. Retrieved images are encoded using a vision-language model, matched against the semantic map to produce similarity maps, and aggregated to yield context-aware localization. Notably, this requires no training or modification of the underlying navigation policy. To explicitly evaluate long-tail behavior, we present HSSD-rare, a new ObjectNav benchmark built on Habitat Synthetic Scenes and featuring semantically specific subcategories. Across both OVON and HSSD-rare, image-conditioned queries consistently improve object grounding and yield end-to-end navigation gains. Further analysis reveals that translating localization gains to navigation performance depends critically on downstream detection quality, highlighting a key systems bottleneck in long-tail embodied navigation.",
-          "authors": [
-            "Jelin Raphael Akkara",
-            "Filippo Ziliotto",
-            "Luciano Serafini",
-            "Lamberto Ballan",
-            "Tommaso Campari"
-          ],
-          "primary_category": "cs.CV",
-          "categories": [
-            "cs.CV"
-          ],
-          "published": "2026-07-27T22:09:32+00:00",
-          "link": "https://arxiv.org/pdf/2607.25106v1",
-          "tags": [
-            "keyword:vvvpg",
-            "query:vvvpg"
-          ],
-          "llm_score": 8.0,
-          "llm_evidence_en": "Image-conditioned query enrichment for Object Goal Navigation in embodied AI",
-          "llm_evidence_cn": "用于具身智能物体目标导航的图文条件查询增强",
-          "llm_evidence": "用于具身智能物体目标导航的图文条件查询增强",
-          "canonical_evidence": "用于具身智能物体目标导航的图文条件查询增强",
-          "llm_tldr_en": "IMPRINT is a plug-and-play framework for zero-shot Object Goal Navigation that enriches textual object queries with web-sourced images, encodes them with a vision-language model, and aggregates similarity maps against the semantic map, improving fine-grained grounding without any training.",
-          "llm_tldr_cn": "现有零样本物体目标导航依赖文本查询在语义地图中定位，但细粒度类别仅凭文本不够可靠。IMPRINT提出即插即用框架，从网络获取示例图片丰富查询，用视觉-语言模型编码并与语义地图匹配，聚合得到上下文感知的定位结果。该方法无需训练或修改导航策略，显著提升对长尾细粒度物体的接地能力，为具身导航提供了低成本增强手段。",
-          "llm_tldr": "现有零样本物体目标导航依赖文本查询在语义地图中定位，但细粒度类别仅凭文本不够可靠。IMPRINT提出即插即用框架，从网络获取示例图片丰富查询，用视觉-语言模型编码并与语义地图匹配，聚合得到上下文感知的定位结果。该方法无需训练或修改导航策略，显著提升对长尾细粒度物体的接地能力，为具身导航提供了低成本增强手段。",
-          "llm_tags": [
-            "query:vvvpg"
-          ],
-          "matched_query_tag": "query:vvvpg",
-          "matched_query_text": "grounded navigation of agents guided by visual observations and language instructions",
-          "matched_requirement_id": "req-6",
-          "selection_source": "carryover_cache",
-          "paper_id": "2607.25106v1",
-          "carry_days": 1
-        },
-        {
-          "id": "2607.07403v1",
-          "source": "arxiv",
-          "title": "Multi-Agent Robotic Control with Onboard Vision-Language Models",
-          "abstract": "Vision Language Models (VLMs) and Vision Language Action (VLA) models have shown promise in robotic control. Yet, they face significant challenges regarding explainability, generalization, and compute requirements. This paper presents a Multi-Agent System (MAS) architecture that addresses these limitations by deploying specialized agents on onboard hardware - eliminating dependence on external compute. The system controls a multi-purpose autonomous mobile manipulator in a simulated industrial warehouse, fulfilling five task categories: safety inspection, warehouse maintenance, warehouse search, package quality verification, and responding to human requests. Compact VLMs (3-20B parameters) are used throughout, with fine-tuning applied to improve package inspection accuracy. A novel \"Megamind\" orchestration agent mitigates context retention issues inherent to long-horizon planning with smaller models. The system was validated in a hardware-in-the-loop simulation using an AMD Ryzen(TM) AI mini PC. Results demonstrate that a fully onboard MAS architecture is a viable, cost-efficient alternative to cloud-dependent deployments, with strong potential for real-world transfer. The simulation environment has been released as open source under the Apache 2.0 licence.",
-          "authors": [
-            "Kajetan Rachwał",
-            "Maciej Majek",
-            "Bartłomiej Boczek",
-            "Jakub Matejczyk",
-            "Dominik Matejkowski",
-            "Adam Dąbrowski",
-            "Tim Seyde",
-            "Alexander Amini",
-            "Maria Ganzha"
-          ],
-          "primary_category": "cs.MA",
-          "categories": [
-            "cs.MA",
-            "cs.RO"
-          ],
-          "published": "2026-07-08T13:37:31+00:00",
-          "link": "https://arxiv.org/pdf/2607.07403v1",
-          "tags": [
-            "keyword:vvvpg",
-            "query:vvvpg"
-          ],
-          "llm_score": 8.0,
-          "llm_evidence_en": "VLM/VLA-driven multi-agent robot control for action commands",
-          "llm_evidence_cn": "视觉语言模型/视觉语言行动模型驱动的多智能体机器人动作命令控制",
-          "llm_evidence": "视觉语言模型/视觉语言行动模型驱动的多智能体机器人动作命令控制",
-          "canonical_evidence": "视觉语言模型/视觉语言行动模型驱动的多智能体机器人动作命令控制",
-          "llm_tldr_en": "A multi-agent system deploys compact onboard VLMs/VLAs to control a mobile manipulator in warehouse safety inspection, maintenance, search, quality checks, and human-request tasks, reducing external compute dependence.",
-          "llm_tldr_cn": "针对视觉语言模型在机器人控制中可解释性、泛化与算力开销的问题，本文提出多智能体系统架构，将专用智能体部署于车载硬件，消除对外部算力的依赖。系统在模拟工业仓库中控制自主移动机械手完成安全巡检、仓库维护、搜索、包裹质检和响应人类请求等五类任务。使用3-20B参数的小型视觉语言模型，通过微调提升包裹质检等任务效果。该工作展示了车载视觉语言模型在具身控制场景中的可行性。",
-          "llm_tldr": "针对视觉语言模型在机器人控制中可解释性、泛化与算力开销的问题，本文提出多智能体系统架构，将专用智能体部署于车载硬件，消除对外部算力的依赖。系统在模拟工业仓库中控制自主移动机械手完成安全巡检、仓库维护、搜索、包裹质检和响应人类请求等五类任务。使用3-20B参数的小型视觉语言模型，通过微调提升包裹质检等任务效果。该工作展示了车载视觉语言模型在具身控制场景中的可行性。",
-          "llm_tags": [
-            "query:vvvpg"
-          ],
-          "matched_query_tag": "query:vvvpg",
-          "matched_query_text": "model using visual and language inputs to produce action commands for embodied agents",
-          "matched_requirement_id": "req-2",
-          "selection_source": "carryover_cache",
-          "paper_id": "2607.07403v1",
-          "carry_days": 1
-        },
-        {
-          "id": "2607.14635v1",
-          "source": "arxiv",
-          "title": "Action QFormer: Structured Representation Shaping under Action Supervision in Vision-Language-Action Models",
-          "abstract": "Action supervision in vision-language-action (VLA) models is often treated as a downstream objective for learning action prediction. In this paper, we study it instead as a force that shapes inherited multimodal representations. We show that this shaping has a dual effect: it is necessary for forming action-compatible representations, but when action supervision is applied too directly to the inherited multimodal pathway, it can also destabilize representations that support language-side processing and object grounding. To address this tension, we introduce Action QFormer, a query-based action-facing interface that uses instruction-conditioned queries to reorganize inherited multimodal information into action-facing representations before downstream action generation. In zero-shot sim-to-real navigation, Action QFormer improves average closed-loop task success from 18.8% to 56.3%, raises fixed-instruction action-generation correctness from 22.5% to 75.5%, and nearly eliminates out-of-distribution instruction generations. Further analyses show that Action QFormer changes how action supervision shapes inherited multimodal representations, reducing broad upstream rewriting while preserving targeted and sometimes constructive action-supervised adaptation. These results suggest that improving VLA performance requires not only stronger pretrained backbones, but also better ways of selecting and organizing inherited multimodal information while controlling how it is shaped under action supervision.",
-          "authors": [
-            "Yufeng Ji",
-            "Wenhao Tang",
-            "Haoyi Niu",
-            "Koushil Sreenath",
-            "Yi Wu",
-            "Zhongyu Li"
-          ],
-          "primary_category": "cs.AI",
-          "categories": [
-            "cs.AI",
-            "cs.CV",
-            "cs.RO"
-          ],
-          "published": "2026-07-16T06:59:39+00:00",
-          "link": "https://arxiv.org/pdf/2607.14635v1",
-          "tags": [
-            "keyword:vvvpg",
-            "query:vvvpg"
-          ],
-          "llm_score": 8.0,
-          "llm_evidence_en": "Query-based interface to shape representations in VLA models",
-          "llm_evidence_cn": "用于视觉语言行动模型中的查询式表示塑造接口",
-          "llm_evidence": "用于视觉语言行动模型中的查询式表示塑造接口",
-          "canonical_evidence": "用于视觉语言行动模型中的查询式表示塑造接口",
-          "llm_tldr_en": "The paper studies how action supervision shapes multimodal representations in VLA models, showing that too-direct supervision can destabilize language grounding, and introduces Action QFormer, a query-based interface that reorganizes inherited multimodal information for action compatibility.",
-          "llm_tldr_cn": "针对视觉语言行动模型中动作监督对多模态表示的影响，本文发现动作监督既是形成动作兼容表示的必需条件，但过强的直接监督会破坏语言处理与目标接地。为此提出Action QFormer，一种查询式动作接口，利用指令条件查询重组继承的多模态信息，使其兼顾动作预测和语言侧能力。该机制为VLA模型的表示学习提供了一种结构性解决方案，平衡了动作监督带来的双重效应。",
-          "llm_tldr": "针对视觉语言行动模型中动作监督对多模态表示的影响，本文发现动作监督既是形成动作兼容表示的必需条件，但过强的直接监督会破坏语言处理与目标接地。为此提出Action QFormer，一种查询式动作接口，利用指令条件查询重组继承的多模态信息，使其兼顾动作预测和语言侧能力。该机制为VLA模型的表示学习提供了一种结构性解决方案，平衡了动作监督带来的双重效应。",
-          "llm_tags": [
-            "query:vvvpg"
-          ],
-          "matched_query_tag": "query:vvvpg",
-          "matched_query_text": "model using visual and language inputs to produce action commands for embodied agents",
-          "matched_requirement_id": "req-2",
-          "selection_source": "carryover_cache",
-          "paper_id": "2607.14635v1",
-          "carry_days": 1
-        },
         {
           "id": "2607.16305v1",
           "source": "arxiv",
@@ -178,58 +50,6 @@
           "matched_requirement_id": "req-1",
           "selection_source": "carryover_cache",
           "paper_id": "2607.16305v1",
-          "carry_days": 1
-        },
-        {
-          "id": "2607.06560v1",
-          "source": "arxiv",
-          "title": "Vision as Unified Multimodal Generation",
-          "abstract": "We formulate computer vision as unified multimodal generation, where heterogeneous visual tasks are expressed in the native text and image generation spaces of a unified multimodal model, without task-specific architectures. Under this formulation, SenseNova-Vision uses natural-language instructions and optional visual prompts to specify tasks, target regions or views, and decoding conventions, and generates responses as text for symbolic outputs, images for dense spatial predictions, or mixed text-and-image outputs for compositional tasks. To support large-scale training, we convert diverse computer vision annotations into instruction-response examples compatible with these generation spaces, resulting in the SenseNova-Vision Corpus, a computer-vision instruction-response corpus spanning text, image, and mixed targets. Starting from an off-the-shelf pretrained unified multimodal model, SenseNova-Vision is trained primarily on this corpus, with auxiliary multimodal data used as a capability-preserving mixture, and requires no task-specific prediction heads or architectural modifications. The resulting model covers a broad range of vision tasks, including detection, OCR, keypoint estimation, segmentation, depth estimation, surface normal prediction, point maps, and camera pose estimation, while supporting language-defined variants that combine category, color, region, and other visual cues. Experiments show that a single unified model can match leading task-specialized systems across structured visual understanding, dense geometric prediction, segmentation, and multi-view visual geometry. These results suggest unified multimodal generation as a scalable route for integrating computer vision capabilities into general-purpose foundation models. The model and corpus are publicly available.",
-          "authors": [
-            "Xiaoyang Han",
-            "Jianhua Li",
-            "Kewang Deng",
-            "Zukai Chen",
-            "Xuanke Shi",
-            "Sihan Wang",
-            "Boxuan Li",
-            "Linyan Wang",
-            "Siyi Xie",
-            "Xin You",
-            "Jinsheng Quan",
-            "Zhongang Cai",
-            "Haiwen Diao",
-            "Ziwei Liu",
-            "Lei Yang",
-            "Dahua Lin",
-            "Quan Wang"
-          ],
-          "primary_category": "cs.CV",
-          "categories": [
-            "cs.CV"
-          ],
-          "published": "2026-07-07T17:58:33+00:00",
-          "link": "https://arxiv.org/pdf/2607.06560v1",
-          "tags": [
-            "keyword:vvvpg",
-            "query:vvvpg"
-          ],
-          "llm_score": 8.0,
-          "llm_evidence_en": "Unified multimodal generation for diverse visual tasks with language and image outputs",
-          "llm_evidence_cn": "用统一多模态生成表达异构视觉任务并输出文本与图像",
-          "llm_evidence": "用统一多模态生成表达异构视觉任务并输出文本与图像",
-          "canonical_evidence": "用统一多模态生成表达异构视觉任务并输出文本与图像",
-          "llm_tldr_en": "SenseNova-Vision reframes computer vision as unified multimodal generation, using natural-language instructions and optional visual prompts to produce text, images, or mixed outputs, and introduces a large instruction-response corpus for training.",
-          "llm_tldr_cn": "本文将计算机视觉任务统一为多模态生成问题，在无需特定任务架构的情况下，使用SenseNova-Vision根据自然语言指令和可选视觉提示生成文本、图像或混合输出。为支持大规模训练，将多种计算机视觉标注转换成指令-回复样例，构建SenseNova-Vision语料库。该方法统一了符号输出、密集空间预测及组合式任务的表达，展示了以文本和图像生成作为通用视觉任务接口的可行性，为多模态基础模型的训练和统一评测提供新思路。",
-          "llm_tldr": "本文将计算机视觉任务统一为多模态生成问题，在无需特定任务架构的情况下，使用SenseNova-Vision根据自然语言指令和可选视觉提示生成文本、图像或混合输出。为支持大规模训练，将多种计算机视觉标注转换成指令-回复样例，构建SenseNova-Vision语料库。该方法统一了符号输出、密集空间预测及组合式任务的表达，展示了以文本和图像生成作为通用视觉任务接口的可行性，为多模态基础模型的训练和统一评测提供新思路。",
-          "llm_tags": [
-            "query:vvvpg"
-          ],
-          "matched_query_tag": "query:vvvpg",
-          "matched_query_text": "multimodal model integrating image and text understanding",
-          "matched_requirement_id": "req-1",
-          "selection_source": "carryover_cache",
-          "paper_id": "2607.06560v1",
           "carry_days": 1
         },
         {
@@ -317,49 +137,6 @@
           "matched_requirement_id": "req-6",
           "selection_source": "carryover_cache",
           "paper_id": "2607.15758v1",
-          "carry_days": 1
-        },
-        {
-          "id": "2607.23504v1",
-          "source": "arxiv",
-          "title": "MemVLN: Episodic and Procedural Memory for Vision-and-Language Navigation",
-          "abstract": "Vision-and-Language Navigation in Continuous Environments (VLN-CE) requires agents to maintain long-horizon visual history for trajectory consistency while executing actions with low latency. Existing video-based VLN approaches typically struggle to satisfy both demands simultaneously. To address these challenges, we propose MemVLN, a novel VLN framework that achieves state-of-the-art performance with real-time inference efficiency (14 FPS). MemVLN utilizes a visual encoder to process continuous observations and a Large Language Model (LLM) to interpret instructions and generate actions. Central to our approach is an Episodic Memory management that applies pyramidal resolutions. This mechanism concentrates computation on immediate percepts while retaining compressed long-term history. Complementing to this design, we introduce Procedural Memory for fast action with a compact vocabulary of atomic mid-level actions to bypass auto-regressive decoding latency. Experiments on VLN-CE show that MemVLN-4B surpasses the baseline Qwen3-VL-4B architecture by 5.8\\% SR in R2R and 9.7\\% SR in RxR, while achieving a 7$\\times$ speedup in inference latency.",
-          "authors": [
-            "Yuqi Liu",
-            "Shengju Qian",
-            "Tianyuan Qu",
-            "Mingxian Lin",
-            "Zixuan Wang",
-            "Xin Wang",
-            "Bei Yu",
-            "Jiaya Jia"
-          ],
-          "primary_category": "cs.CV",
-          "categories": [
-            "cs.CV"
-          ],
-          "published": "2026-07-26T07:08:30+00:00",
-          "link": "https://arxiv.org/pdf/2607.23504v1",
-          "tags": [
-            "keyword:vvvpg",
-            "query:vvvpg"
-          ],
-          "llm_score": 8.0,
-          "llm_evidence_en": "episodic memory for VLN-CE agents",
-          "llm_evidence_cn": "连续环境视觉-语言导航中的情景记忆",
-          "llm_evidence": "连续环境视觉-语言导航中的情景记忆",
-          "canonical_evidence": "连续环境视觉-语言导航中的情景记忆",
-          "llm_tldr_en": "MemVLN combines visual encoder and LLM with pyramidal episodic memory to achieve state-of-the-art VLN-CE performance at 14 FPS, balancing long-horizon history and real-time action generation.",
-          "llm_tldr_cn": "连续环境下的视觉-语言导航要求智能体同时维持长时程视觉历史并低延迟执行动作，现有视频方法难以兼顾。MemVLN利用视觉编码器处理连续观测，用LLM解释指令并生成动作，核心是金字塔分辨率的情景记忆管理，将计算集中在当前感知同时保留早期信息。该方法以14 FPS实时推理取得VLN-CE的最优性能，在记忆效率与推理延时之间实现了良好平衡。",
-          "llm_tldr": "连续环境下的视觉-语言导航要求智能体同时维持长时程视觉历史并低延迟执行动作，现有视频方法难以兼顾。MemVLN利用视觉编码器处理连续观测，用LLM解释指令并生成动作，核心是金字塔分辨率的情景记忆管理，将计算集中在当前感知同时保留早期信息。该方法以14 FPS实时推理取得VLN-CE的最优性能，在记忆效率与推理延时之间实现了良好平衡。",
-          "llm_tags": [
-            "query:vvvpg"
-          ],
-          "matched_query_tag": "query:vvvpg",
-          "matched_query_text": "grounded navigation of agents guided by visual observations and language instructions",
-          "matched_requirement_id": "req-6",
-          "selection_source": "carryover_cache",
-          "paper_id": "2607.23504v1",
           "carry_days": 1
         },
         {
@@ -451,45 +228,6 @@
           "carry_days": 1
         },
         {
-          "id": "2607.12818v2",
-          "source": "arxiv",
-          "title": "Breaking Déjà Vu: Independent Auditing of Visual Place Recognition through Vision-Language Reasoning",
-          "abstract": "Visual place recognition (VPR) is a key enabler of accurate localization and long-term autonomous navigation in robotics applications, such as loop closure detection for simultaneous localisation and mapping (SLAM). However, real-world VPR deployment relies on selecting an image matching threshold that balances precision and recall. These thresholds are typically tuned using labeled validation data and fixed during deployment, making them unreliable under environmental changes where ground truth is unavailable. This is particularly problematic in safety-critical robotics, where accepting a false loop closure can corrupt the estimated trajectory and map. In this work, we introduce Visual Place Recognition Auditing, an independent post-retrieval verification framework that leverages Vision-Language Models (VLMs) to assess retrieved matches by reasoning jointly over query and candidate images. Unlike conventional verification methods, our approach performs instance-level verification without requiring architecture-specific confidence measures, dataset-dependent thresholds, or prior knowledge of the deployment environment. We evaluate our method on six benchmark datasets using five state-of-the-art VPR methods and four VLMs. Results show that VLM-based auditing improves recall@1 by 13.6% on average as compared to state-of-the-art methods while reducing false acceptance rates to 12%, maintaining precision above 95% and coverage above 75%.",
-          "authors": [
-            "Sania Waheed",
-            "Michael Milford",
-            "Sarvapali D. Ramchurn",
-            "Shoaib Ehsan"
-          ],
-          "primary_category": "cs.CV",
-          "categories": [
-            "cs.CV"
-          ],
-          "published": "2026-07-14T14:30:24+00:00",
-          "link": "https://arxiv.org/pdf/2607.12818v2",
-          "tags": [
-            "keyword:vvvpg",
-            "query:vvvpg"
-          ],
-          "llm_score": 8.0,
-          "llm_evidence_en": "Vision-language reasoning for independent auditing in visual place recognition and autonomous navigation",
-          "llm_evidence_cn": "利用视觉-语言推理对视觉地点识别进行独立审计，关联自主导航中的定位可靠性",
-          "llm_evidence": "利用视觉-语言推理对视觉地点识别进行独立审计，关联自主导航中的定位可靠性",
-          "canonical_evidence": "利用视觉-语言推理对视觉地点识别进行独立审计，关联自主导航中的定位可靠性",
-          "llm_tldr_en": "Introduces VPR Auditing, an independent vision-language reasoning approach to detect unreliable thresholds in visual place recognition, enhancing localization robustness for autonomous navigation.",
-          "llm_tldr_cn": "视觉地点识别（VPR）在安全关键机器人中至关重要，但固定匹配阈值在环境变化时可能失效导致误匹配。本文提出基于视觉-语言推理的独立审计方法，在不依赖人工标注真值的情况下评估阈值可靠性，从而增强SLAM和平稳定位的鲁棒性，为自主导航提供新的安全保障思路。",
-          "llm_tldr": "视觉地点识别（VPR）在安全关键机器人中至关重要，但固定匹配阈值在环境变化时可能失效导致误匹配。本文提出基于视觉-语言推理的独立审计方法，在不依赖人工标注真值的情况下评估阈值可靠性，从而增强SLAM和平稳定位的鲁棒性，为自主导航提供新的安全保障思路。",
-          "llm_tags": [
-            "query:vvvpg"
-          ],
-          "matched_query_tag": "query:vvvpg",
-          "matched_query_text": "grounded navigation of agents guided by visual observations and language instructions",
-          "matched_requirement_id": "req-6",
-          "selection_source": "carryover_cache",
-          "paper_id": "2607.12818v2",
-          "carry_days": 1
-        },
-        {
           "id": "2607.21036v1",
           "source": "arxiv",
           "title": "GeoThreat: Transferable Targeted Adversarial Attacks on Large Vision-Language Models for Remote Sensing Image Interpretation",
@@ -527,6 +265,1005 @@
           "matched_requirement_id": "req-7",
           "selection_source": "carryover_cache",
           "paper_id": "2607.21036v1",
+          "carry_days": 1
+        },
+        {
+          "id": "2607.22355v1",
+          "source": "arxiv",
+          "title": "SiPhy: Single-Image Physical Property Reasoning",
+          "abstract": "Inferring physical properties such as mass, stiffness, and elasticity from a single image is essential for simulation and embodied AI, yet most existing approaches rely on multi-view reconstruction or physics-based supervision. We introduce SiPhy, a unified framework for single-image physical property reasoning that aligns 3D-aware visual cues, depth with language-based material knowledge. From one RGB image, SiPhy samples pseudo-voxel points, extracts CLIP features, and grounds them to material candidates proposed by a VLM. A part-based contrastive aggregator enforces region consistency, while a heaviness-aware refinement improves thickness and volume estimation for dense objects. Across ABO-500, MVImgNet-100, and PhysXNet-100, SiPhy achieves state-of-the-art single-image performance, surpassing multi-view reconstruction methods by improving mass MnRE by up to 93% (vs. PUGS), reducing density MAE by 35.5% (vs. NeRF2Physics), and lowering Young's modulus error by 23.5%. We further validate SiPhy on real hand-object interaction datasets, demonstrating its potential as a data annotation engine for physical understanding from single-view imagery.",
+          "authors": [
+            "Hoang Le",
+            "Joonwoo Kwon",
+            "Elkhan Ismayilzada",
+            "Yufei Zhang",
+            "Zijun Cui"
+          ],
+          "primary_category": "cs.CV",
+          "categories": [
+            "cs.CV",
+            "cs.AI"
+          ],
+          "published": "2026-07-24T14:36:37+00:00",
+          "link": "https://arxiv.org/pdf/2607.22355v1",
+          "tags": [
+            "keyword:vvvpg",
+            "query:vvvpg"
+          ],
+          "llm_score": 8.0,
+          "llm_evidence_en": "Uses VLM and CLIP to align visual cues with language material knowledge for physical property reasoning.",
+          "llm_evidence_cn": "利用VLM和CLIP对齐视觉线索与语言材料知识进行物理属性推理。",
+          "llm_evidence": "利用VLM和CLIP对齐视觉线索与语言材料知识进行物理属性推理。",
+          "canonical_evidence": "利用VLM和CLIP对齐视觉线索与语言材料知识进行物理属性推理。",
+          "llm_tldr_en": "SiPhy infers mass, stiffness, and elasticity from a single RGB image by combining 3D-aware visual cues with language-based material knowledge from a VLM, achieving SOTA on multiple benchmarks.",
+          "llm_tldr_cn": "现有物理属性推理多依赖多视图重建或物理监督，单图像推理难以利用材料知识。为此提出SiPhy框架，从单张RGB图像采样伪体素点，提取CLIP特征并利用VLM提出材料候选，通过部件级对比聚合与稠密物体重量感知细化，实现质量、刚度、弹性等属性的统一推理。在ABO-500、MVImgNet-100和PhysXNet-100上取得单图像推理的最优结果，为具身智能模拟提供支撑。",
+          "llm_tldr": "现有物理属性推理多依赖多视图重建或物理监督，单图像推理难以利用材料知识。为此提出SiPhy框架，从单张RGB图像采样伪体素点，提取CLIP特征并利用VLM提出材料候选，通过部件级对比聚合与稠密物体重量感知细化，实现质量、刚度、弹性等属性的统一推理。在ABO-500、MVImgNet-100和PhysXNet-100上取得单图像推理的最优结果，为具身智能模拟提供支撑。",
+          "llm_tags": [
+            "query:vvvpg"
+          ],
+          "matched_query_tag": "query:vvvpg",
+          "matched_query_text": "multimodal model integrating image and text understanding",
+          "matched_requirement_id": "req-1",
+          "selection_source": "carryover_cache",
+          "paper_id": "2607.22355v1",
+          "carry_days": 1
+        },
+        {
+          "id": "2607.28464v1",
+          "source": "arxiv",
+          "title": "Can Vision-Language Models Reason about AI Edits in Images?",
+          "abstract": "Detection and localization of AI-tampered images are critical for trustworthy AI, yet modern generative models have made such manipulations increasingly difficult to identify. While traditional binary classifiers can detect image tampering, they lack interpretability and generalization. Vision-Language Models (VLMs) offer a promising alternative due to their strong visual understanding and reasoning capabilities; however, existing approaches typically rely on supervised finetuning with curated explanations rather than exploiting their inherent reasoning capabilities. In this work, we investigate whether VLMs can be trained to reason about AI-generated image edits using reinforcement learning (RL) rather than explicit reasoning supervision. Motivated by the success in Group Relative Policy Optimization (GRPO), an RL technique that incentivizes the model to reason by generating thinking traces prior to giving the final answer, we propose a GRPO-based training framework that utilizes simple accuracy and format rewards. Given an input image, the model produces a structured reasoning trace and predicts whether the image has been tampered with. A lightweight segmentation model is then guided by the reasoning output to generate pixel-level localization masks. Experiments across multiple image manipulation datasets demonstrate that our approach achieves competitive detection and localization performance compared to state-of-the-art image forgery detectors, despite requiring substantially weaker supervision. We introduce effective intersection over union (eff-IoU), a unified metric to jointly evaluate detection and localization. These results suggest that reinforcement learning provides an effective and scalable mechanism for teaching VLMs to reason about AI-generated content.",
+          "authors": [
+            "Darsha Udayanga",
+            "Pin-Yu Chen",
+            "Payel Das",
+            "Qiang Ji"
+          ],
+          "primary_category": "cs.CV",
+          "categories": [
+            "cs.CV"
+          ],
+          "published": "2026-07-30T16:23:40+00:00",
+          "link": "https://arxiv.org/pdf/2607.28464v1",
+          "tags": [
+            "keyword:vvvpg",
+            "query:vvvpg"
+          ],
+          "llm_score": 8.0,
+          "llm_evidence_en": "Studies VLM reasoning for detecting and localizing AI-tampered images.",
+          "llm_evidence_cn": "研究视觉语言模型对AI编辑图像的检测与定位推理能力。",
+          "llm_evidence": "研究视觉语言模型对AI编辑图像的检测与定位推理能力。",
+          "canonical_evidence": "研究视觉语言模型对AI编辑图像的检测与定位推理能力。",
+          "llm_tldr_en": "Investigates whether VLMs can reason about AI-generated image edits using reinforcement learning without explicit reasoning supervision, aiming to improve tampering detection and interpretability.",
+          "llm_tldr_cn": "传统二元分类器虽能检测图像篡改但缺乏可解释性和泛化能力，视觉语言模型（VLM）具有视觉理解和推理潜力。该文探索在不使用显式推理监督的情况下，通过强化学习训练VLM，使其推理AI生成图像的编辑位置与性质。实验表明该方法可提升VLM对图像编辑的推理能力，为检测与定位提供可解释的途径。",
+          "llm_tldr": "传统二元分类器虽能检测图像篡改但缺乏可解释性和泛化能力，视觉语言模型（VLM）具有视觉理解和推理潜力。该文探索在不使用显式推理监督的情况下，通过强化学习训练VLM，使其推理AI生成图像的编辑位置与性质。实验表明该方法可提升VLM对图像编辑的推理能力，为检测与定位提供可解释的途径。",
+          "llm_tags": [
+            "query:vvvpg"
+          ],
+          "matched_query_tag": "query:vvvpg",
+          "matched_query_text": "multimodal model integrating image and text understanding",
+          "matched_requirement_id": "req-1",
+          "selection_source": "carryover_cache",
+          "paper_id": "2607.28464v1",
+          "carry_days": 1
+        },
+        {
+          "id": "2607.26107v1",
+          "source": "arxiv",
+          "title": "TraceCLIP: Recovering Local Semantics from Patch-to-CLS Contributions",
+          "abstract": "Dense vision-language understanding, including object localization, region recognition, and open-vocabulary semantic segmentation, requires associating language concepts with spatially grounded visual regions. CLIP provides a strong foundation for these tasks by learning a shared image-text embedding space from large-scale contrastive pre-training. However, its image-level objective aligns text with a CLS-derived global representation, leaving local vision-language correspondence only indirectly constrained. Existing methods either introduce additional supervision, external models, or task-specific adaptation, while training-free approaches mainly recover dense responses from existing patch features without examining where local semantics become most accessible within CLIP. We introduce TraceCLIP, a training-free framework that recovers latent patch-level semantic evidence by isolating the patch-specific terms written into the CLS attention output. TraceCLIP further converts contribution-derived semantic responses into a semantic-geodesic topology gate that calibrates final-layer patch affinity for dense feature reconstruction. Diagnostic experiments show that these contribution features exhibit strong local semantic discrimination and text-conditioned spatial alignment. On eight zero-shot semantic segmentation benchmarks, TraceCLIP achieves gains of 1.3 to 4.5 points in average mIoU over the strongest prior training-free methods across both backbones and background settings, without additional training, external vision foundation models, or region-level supervision. More broadly, these findings suggest that spatially localized semantics may remain accessible within the internal construction of globally aligned representations.",
+          "authors": [
+            "Xinran Liu",
+            "Shouqian Shi",
+            "Yutong Chen",
+            "Ge Wang",
+            "Xin-Wei Yao",
+            "Sheng Zhong"
+          ],
+          "primary_category": "cs.CV",
+          "categories": [
+            "cs.CV",
+            "cs.AI"
+          ],
+          "published": "2026-07-28T11:25:27+00:00",
+          "link": "https://arxiv.org/pdf/2607.26107v1",
+          "tags": [
+            "keyword:vvvpg",
+            "query:vvvpg"
+          ],
+          "llm_score": 8.0,
+          "llm_evidence_en": "Improves dense vision-language understanding using CLIP patch-to-CLS contributions.",
+          "llm_evidence_cn": "利用CLIP的Patch到CLS贡献改进稠密视觉语言理解。",
+          "llm_evidence": "利用CLIP的Patch到CLS贡献改进稠密视觉语言理解。",
+          "canonical_evidence": "利用CLIP的Patch到CLS贡献改进稠密视觉语言理解。",
+          "llm_tldr_en": "TraceCLIP analyzes patch-to-CLS contributions in CLIP to recover local semantics, enabling object localization and open-vocabulary segmentation without extra supervision.",
+          "llm_tldr_cn": "CLIP全局对比学习目标缺乏对局部视觉-语言对应关系的显式约束。该文提出TraceCLIP，通过分析patch对CLS标记的贡献，在无需额外监督或外部模型的情况下恢复局部语义。方法能有效地进行目标定位、区域识别与开放词汇分割，提升了CLIP在稠密视觉语言任务上的表现，为训练无关的局部语义挖掘提供了新思路。",
+          "llm_tldr": "CLIP全局对比学习目标缺乏对局部视觉-语言对应关系的显式约束。该文提出TraceCLIP，通过分析patch对CLS标记的贡献，在无需额外监督或外部模型的情况下恢复局部语义。方法能有效地进行目标定位、区域识别与开放词汇分割，提升了CLIP在稠密视觉语言任务上的表现，为训练无关的局部语义挖掘提供了新思路。",
+          "llm_tags": [
+            "query:vvvpg"
+          ],
+          "matched_query_tag": "query:vvvpg",
+          "matched_query_text": "multimodal model integrating image and text understanding",
+          "matched_requirement_id": "req-1",
+          "selection_source": "carryover_cache",
+          "paper_id": "2607.26107v1",
+          "carry_days": 1
+        },
+        {
+          "id": "2607.23125v1",
+          "source": "arxiv",
+          "title": "Self-Boosting Vision-Language Models with Noisy Student On-Policy Self-Distillation",
+          "abstract": "Post-training enables vision-language models (VLMs) to understand human instructions and perform various downstream tasks. Current post-training methods usually rely on human-annotated data, distillation from external models, reinforcement learning with human feedback, or verifiable answers. This limits their ability to improve without external supervision. To tackle this, we propose NOPD (Noisy Student On-Policy Self-Distillation), a simple yet effective self-distillation approach that improves VLMs without any external models or ground-truth answers. Our key insight is that prediction discrepancies between clean and corrupted inputs naturally induce a self-supervision signal. In NOPD, the model learns from corrupted inputs while using its own predictions under clean inputs as token-level supervision. We show the effectiveness of NOPD on five visual reasoning tasks; it can match and even outperform reinforcement learning approaches or distillation from external models. Notably, when trained with 2.1K samples from Geometry3K, NOPD improves Qwen2.5-VL-7B by 20 points on its validation set. It also shows generalization on out-of-distribution test sets and achieves 7.4 point gains on MathVista. Furthermore, we demonstrate that NOPD is a general approach to enhance VLMs, achieving improvements across three models on 12 benchmarks.",
+          "authors": [
+            "Shuai Wang",
+            "Daoan Zhang",
+            "Zhe Tang",
+            "Hao Cheng",
+            "Jiaheng Wei"
+          ],
+          "primary_category": "cs.LG",
+          "categories": [
+            "cs.LG"
+          ],
+          "published": "2026-07-25T10:00:33+00:00",
+          "link": "https://arxiv.org/pdf/2607.23125v1",
+          "tags": [
+            "keyword:vvvpg",
+            "query:vvvpg"
+          ],
+          "llm_score": 8.0,
+          "llm_evidence_en": "Improves VLM post-training via self-distillation from clean vs corrupted inputs.",
+          "llm_evidence_cn": "利用干净与损坏输入之间的预测差异进行VLM自蒸馏后训练。",
+          "llm_evidence": "利用干净与损坏输入之间的预测差异进行VLM自蒸馏后训练。",
+          "canonical_evidence": "利用干净与损坏输入之间的预测差异进行VLM自蒸馏后训练。",
+          "llm_tldr_en": "Proposes NOPD, a self-distillation method that improves VLMs without external supervision by exploiting prediction discrepancies between clean and corrupted inputs, enabling on-policy self-improvement.",
+          "llm_tldr_cn": "现有VLM后训练依赖人工标注或外部教师，限制了自我提升。该文提出噪声学生在线自蒸馏（NOPD），利用干净输入与带噪输入间的预测差异产生自监督信号，使模型从损坏输入中学习，不依赖外部模型或真实答案。实验显示NOPD可显著提高VLM在指令理解与下游任务上的表现，为VLM后训练提供了无需外部监督的途径。",
+          "llm_tldr": "现有VLM后训练依赖人工标注或外部教师，限制了自我提升。该文提出噪声学生在线自蒸馏（NOPD），利用干净输入与带噪输入间的预测差异产生自监督信号，使模型从损坏输入中学习，不依赖外部模型或真实答案。实验显示NOPD可显著提高VLM在指令理解与下游任务上的表现，为VLM后训练提供了无需外部监督的途径。",
+          "llm_tags": [
+            "query:vvvpg"
+          ],
+          "matched_query_tag": "query:vvvpg",
+          "matched_query_text": "multimodal model integrating image and text understanding",
+          "matched_requirement_id": "req-1",
+          "selection_source": "carryover_cache",
+          "paper_id": "2607.23125v1",
+          "carry_days": 1
+        },
+        {
+          "id": "2607.26326v1",
+          "source": "arxiv",
+          "title": "Seeing or Knowing? Visual Context Sensitivity in Multimodal Large Language Models",
+          "abstract": "Multimodal Large Language Models (MLLMs) achieve strong performance by integrating visual inputs with the rich priors of pretrained language models. However, they often fail on vision-centric tasks, especially when visual evidence conflicts with pretrained knowledge. We explore these failures separately using two diagnostic paradigms: (1) probing whether visual information is available, via image reconstruction, and (2) measuring multimodal context sensitivity, the extent to which the model follows visual context versus the language prior. To support the second, we introduce the WhatIfVis, a benchmark spanning five coarse-grained dimensions (spatial-temporal, color, count, size, and weight) whose questions admit answers from either the image or the prior. Our analysis yields three findings: (i) Coarse-grained visual evidence is preserved, as these attributes can be reconstructed from the final-layer image tokens of frozen MLLMs. Failures on questions about these attributes therefore point to post-perceptual utilization, rather than to degraded visual encoding during perception. (ii) Even when explicitly instructed to use or ignore visual evidence, vanilla models (without supervised fine-tuning on the WhatIfVis) show unstable visual context sensitivity. Supervised fine-tuning (SFT) improves this controllability and generalizes across domains, and activation patching further localizes the vision-versus-prior trade-off at architecture-specific depths across all six models. (iii) The vision-versus-prior trade-off is controllable along a learned vector. Applying this steering vector, even without any intent instruction, improves controllability over the vanilla model. Together, these results relocate the bottleneck, indicating that for the coarse attributes we study, MLLMs encode the visual evidence but cannot reliably control their reliance on it.",
+          "authors": [
+            "Jiaang Li",
+            "Chengzu Li",
+            "Zhaochong An",
+            "Yifei Yuan",
+            "Xi Liu",
+            "Serge Belongie",
+            "Vésteinn Snæbjarnarson"
+          ],
+          "primary_category": "cs.CV",
+          "categories": [
+            "cs.CV"
+          ],
+          "published": "2026-07-28T22:52:34+00:00",
+          "link": "https://arxiv.org/pdf/2607.26326v1",
+          "tags": [
+            "keyword:vvvpg",
+            "query:vvvpg"
+          ],
+          "llm_score": 8.0,
+          "llm_evidence_en": "Benchmarks MLLMs' sensitivity to visual context vs language priors.",
+          "llm_evidence_cn": "评估多模态大语言模型对视觉上下文与语言先验的敏感性。",
+          "llm_evidence": "评估多模态大语言模型对视觉上下文与语言先验的敏感性。",
+          "canonical_evidence": "评估多模态大语言模型对视觉上下文与语言先验的敏感性。",
+          "llm_tldr_en": "Introduces WhatIfVis, a benchmark to measure visual context sensitivity in MLLMs across five dimensions, and shows models often fail when visual evidence conflicts with pretrained knowledge.",
+          "llm_tldr_cn": "多模态大语言模型（MLLMs）常常在视觉证据与语言先验冲突时失败。该文提出两种诊断范式：通过图像重建探查视觉信息可用性，以及通过新基准WhatIfVis测量多模态上下文敏感性。WhatIfVis覆盖时空、颜色、计数、大小和重量五个维度，问题可从图像或语言先验回答。实验揭示模型对视觉上下文的依赖不足，为提升MLLM的视觉中心推理提供了评估工具。",
+          "llm_tldr": "多模态大语言模型（MLLMs）常常在视觉证据与语言先验冲突时失败。该文提出两种诊断范式：通过图像重建探查视觉信息可用性，以及通过新基准WhatIfVis测量多模态上下文敏感性。WhatIfVis覆盖时空、颜色、计数、大小和重量五个维度，问题可从图像或语言先验回答。实验揭示模型对视觉上下文的依赖不足，为提升MLLM的视觉中心推理提供了评估工具。",
+          "llm_tags": [
+            "query:vvvpg"
+          ],
+          "matched_query_tag": "query:vvvpg",
+          "matched_query_text": "multimodal model integrating image and text understanding",
+          "matched_requirement_id": "req-1",
+          "selection_source": "carryover_cache",
+          "paper_id": "2607.26326v1",
+          "carry_days": 1
+        },
+        {
+          "id": "2607.24904v1",
+          "source": "arxiv",
+          "title": "Mage-VL: An Efficient Codec-Native Streaming Multimodal Foundation Model",
+          "abstract": "Standard vision-language models (VLMs) suffer from Moravec's paradox: they excel at complex offline visual reasoning but struggle with simple streaming perception tasks and process them inefficiently. We present Mage-VL, an efficient codec-native streaming foundation model for real-time multimodal understanding and interaction. At its core, our custom tokenizer, Mage-ViT, replaces uniform frame sampling by selectively encoding dynamic, entropy-rich regions using motion vectors and residual energy across sparse anchor (I) and predicted (P) frames. Operating at a 16 x 16 patch level, this reduces visual token consumption by over 75% while preserving spatiotemporal context. Trained from scratch on approximately 560M unlabeled images and 100M unlabeled video frames, Mage-ViT matches or outperforms flagship encoders trained on billions of image-text pairs. We establish AI4AI data pipelines encompassing prompt-code joint optimization for multimodal captioning and AI-driven performance diagnosis to guide training recipes. Furthermore, through a bio-inspired dual-system architecture - a lightweight System 1 event gate and a causal System 2 decoder - Mage-VL enables proactive streaming perception. Extensive evaluations show that Mage-VL-4B matches Qwen3-VL-4B on static tasks while achieving strong gains in video understanding and 2D/3D spatial reasoning, with up to a 3.5x wall-clock inference speedup, and comprehensively surpasses the 15B Phi-4-reasoning-vision baseline. Beyond model artifacts, we deliver seven key empirical findings covering pre-training data efficiency, variable-resolution scaling, codec system acceleration, VideoQA SFT redundancy, motion-spatial synergy, AI4AI data pipelines, and Zero-Vision SFT for multimodal RL.",
+          "authors": [
+            "Senqiao Yang",
+            "Kaichen Zhang",
+            "Zhaoyang Jia",
+            "Jinghao Guo",
+            "Yifei Shen",
+            "Xinjie Zhang",
+            "Xiaoyi Zhang",
+            "Haoqing Wang",
+            "Xiao Li",
+            "Peng Zhang",
+            "Xiang An",
+            "Yin Xie",
+            "Zhening Liu",
+            "Xun Guo",
+            "Jiahao Li",
+            "Shicheng Zheng",
+            "Jinglu Wang",
+            "Zongyu Guo",
+            "Wenxuan Xie",
+            "Zihan Zheng",
+            "Yuxuan Luo",
+            "Bin Li",
+            "Yan Lu"
+          ],
+          "primary_category": "cs.CV",
+          "categories": [
+            "cs.CV",
+            "cs.CL"
+          ],
+          "published": "2026-07-27T17:59:53+00:00",
+          "link": "https://arxiv.org/pdf/2607.24904v1",
+          "tags": [
+            "keyword:vvvpg",
+            "query:vvvpg"
+          ],
+          "llm_score": 8.0,
+          "llm_evidence_en": "Multimodal foundation model for real-time image and video understanding with text",
+          "llm_evidence_cn": "面向实时图像与视频理解的多模态基础模型，结合文本输入",
+          "llm_evidence": "面向实时图像与视频理解的多模态基础模型，结合文本输入",
+          "canonical_evidence": "面向实时图像与视频理解的多模态基础模型，结合文本输入",
+          "llm_tldr_en": "Mage-VL is an efficient streaming VLM using a custom tokenizer that encodes dynamic regions, cutting visual token consumption by over 75% for real-time interaction.",
+          "llm_tldr_cn": "标准视觉语言模型在离线推理上强但处理流式感知任务慢且低效。Mage-VL提出基于编码器的流式多模态基础模型，其定制分词器Mage-ViT利用运动向量和残差能量选择动态区域，将视觉token减少75%以上并保持时空上下文。模型从5.6亿图像和1亿视频训练，能高效支持实时交互理解。",
+          "llm_tldr": "标准视觉语言模型在离线推理上强但处理流式感知任务慢且低效。Mage-VL提出基于编码器的流式多模态基础模型，其定制分词器Mage-ViT利用运动向量和残差能量选择动态区域，将视觉token减少75%以上并保持时空上下文。模型从5.6亿图像和1亿视频训练，能高效支持实时交互理解。",
+          "llm_tags": [
+            "query:vvvpg"
+          ],
+          "matched_query_tag": "query:vvvpg",
+          "matched_query_text": "multimodal model integrating image and text understanding",
+          "matched_requirement_id": "req-1",
+          "selection_source": "carryover_cache",
+          "paper_id": "2607.24904v1",
+          "carry_days": 1
+        },
+        {
+          "id": "2607.23784v1",
+          "source": "arxiv",
+          "title": "A Few Words Go a Long Way: Language Guided Robot Policy Synthesis",
+          "abstract": "While vision-language-action models have demonstrated impressive zero-shot manipulation capabilities, they remain fundamentally black box policies that are difficult to interpret, adapt, or correct when they inevitably fail. In this work, we propose ARCHITECT, a framework that treats robot policy acquisition as an interactive program synthesis task. ARCHITECT leverages the reasoning capabilities of LLM coding agents to synthesize modular robot programs that utilize a suite of perception and control tools. Unlike end-to-end models where distribution shift leads to unpredictable, cascading failures, our modular architecture allows users to isolate failures and localize feedback at the level of abstraction required. We introduce an iterative process where a human supervisor provides natural language corrections to steer the policy. These corrections are grounded in the policy code by program execution traces and distilled into a persistent skill library, a form of long-term in-context learning which enables the agent to accumulate a repertoire of reusable, interpretable behaviors. In a benchmark evaluation on a Franka Panda robot, ARCHITECT outperforms state-of-the-art VLA models and program synthesis baselines on complex, long-horizon tasks, including articulated object manipulation and cloth folding. Our results demonstrate that the synthesized skill library enables the system to transfer to novel tasks with decreasing human intervention, providing a steerable and data-efficient alternative to black-box robot learning. Website: https://robo-architect.github.io/",
+          "authors": [
+            "Daphne Chen",
+            "Archit Ritesh Jain",
+            "Eric Goossen",
+            "Emma Romig",
+            "Michael Murray",
+            "Nick Walker",
+            "Maya Cakmak"
+          ],
+          "primary_category": "cs.RO",
+          "categories": [
+            "cs.RO",
+            "cs.AI"
+          ],
+          "published": "2026-07-26T18:00:02+00:00",
+          "link": "https://arxiv.org/pdf/2607.23784v1",
+          "tags": [
+            "keyword:vvvpg",
+            "query:vvvpg"
+          ],
+          "llm_score": 8.0,
+          "llm_evidence_en": "Uses language instructions to synthesize modular robot programs for manipulation",
+          "llm_evidence_cn": "利用语言指令合成模块化机器人操作程序",
+          "llm_evidence": "利用语言指令合成模块化机器人操作程序",
+          "canonical_evidence": "利用语言指令合成模块化机器人操作程序",
+          "llm_tldr_en": "ARCHITECT treats robot policy acquisition as program synthesis, using LLM agents to create modular, interpretable policies from language and perception tools.",
+          "llm_tldr_cn": "端到端视觉语言动作模型难以解释和修正。ARCHITECT将机器人策略获取视为交互式程序合成，利用LLM编码代理生成模块化机器人程序，组合感知与控制工具。相比端到端模型，其模块化设计支持失败定位与局部反馈，用户可以更高效地纠错和调整策略。",
+          "llm_tldr": "端到端视觉语言动作模型难以解释和修正。ARCHITECT将机器人策略获取视为交互式程序合成，利用LLM编码代理生成模块化机器人程序，组合感知与控制工具。相比端到端模型，其模块化设计支持失败定位与局部反馈，用户可以更高效地纠错和调整策略。",
+          "llm_tags": [
+            "query:vvvpg"
+          ],
+          "matched_query_tag": "query:vvvpg",
+          "matched_query_text": "model using visual and language inputs to produce action commands for embodied agents",
+          "matched_requirement_id": "req-2",
+          "selection_source": "carryover_cache",
+          "paper_id": "2607.23784v1",
+          "carry_days": 1
+        },
+        {
+          "id": "2607.25516v1",
+          "source": "arxiv",
+          "title": "A Causality-aware Infer-diagnose-refine Framework for Test-time Modality Adaptation in VLA Models",
+          "abstract": "Vision-language-action (VLA) models predict sequential actions to execute tasks specified by language instructions, conditioned on visual observations and proprioceptive states. However, how to fuse modalities in VLA models remains an open problem, since robot manipulation involves dynamic phases, such as long-distance movements and close-range interactions, in which the importance of visual observations may vary over time. In this paper, we propose an infer-diagnose-refine (IDR) framework, a model-agnostic framework that can be integrated with diverse VLA architectures for refining action predictions at test time. IDR first infers actions under factual and counterfactual scenarios of visual observations, and then diagnoses the causal effects of visual observations as the estimated dynamic importance, which is finally used to refine the action predictions in a training-free manner. We further design a causality-aware action refiner to realize the IDR framework, including zero-padding interventions for inferring counterfactual actions, norm-based quantification for diagnosing causal effects, and gated residual fusion for refining actions. Extensive experiments on both simulation benchmarks and real-world tasks show improvements in overall performance across multiple VLA backbones, demonstrating the efficacy of dynamically adjusting visual importance at test time.",
+          "authors": [
+            "Haoyu Zhang",
+            "Yuwei Wu",
+            "Jin Chen",
+            "Gao Zhi",
+            "Zhenxin Diao",
+            "Mingyang Gao",
+            "Kun Wu",
+            "Yongchun Liu",
+            "Fan Li"
+          ],
+          "primary_category": "cs.RO",
+          "categories": [
+            "cs.RO"
+          ],
+          "published": "2026-07-28T09:56:42+00:00",
+          "link": "https://arxiv.org/pdf/2607.25516v1",
+          "tags": [
+            "keyword:vvvpg",
+            "query:vvvpg"
+          ],
+          "llm_score": 8.0,
+          "llm_evidence_en": "Test-time adaptation framework for vision-language-action models using causal inference and modality fusion",
+          "llm_evidence_cn": "面向视觉-语言-动作模型的因果感知测试时模态适配框架",
+          "llm_evidence": "面向视觉-语言-动作模型的因果感知测试时模态适配框架",
+          "canonical_evidence": "面向视觉-语言-动作模型的因果感知测试时模态适配框架",
+          "llm_tldr_en": "IDR is a model-agnostic test-time framework that infers actions under factual and counterfactual visual scenarios, diagnoses modality importance, and refines predictions for VLA models.",
+          "llm_tldr_cn": "VLA模型在机器人操作中常面临视觉信息重要性随时间变化的难题。IDR提出测试时推理-诊断-修正框架，通过事实与反事实视觉场景推断动作，诊断模态融合状态，然后在测试时调整行动预测。该框架与多种VLA架构兼容，显著提升不同动态阶段的动作准确率。",
+          "llm_tldr": "VLA模型在机器人操作中常面临视觉信息重要性随时间变化的难题。IDR提出测试时推理-诊断-修正框架，通过事实与反事实视觉场景推断动作，诊断模态融合状态，然后在测试时调整行动预测。该框架与多种VLA架构兼容，显著提升不同动态阶段的动作准确率。",
+          "llm_tags": [
+            "query:vvvpg"
+          ],
+          "matched_query_tag": "query:vvvpg",
+          "matched_query_text": "model using visual and language inputs to produce action commands for embodied agents",
+          "matched_requirement_id": "req-2",
+          "selection_source": "carryover_cache",
+          "paper_id": "2607.25516v1",
+          "carry_days": 1
+        },
+        {
+          "id": "2607.27881v1",
+          "source": "arxiv",
+          "title": "RoboBRIDGE: A Modular Framework for Bridging Policies to Robust Real-World Robotic Agents",
+          "abstract": "Vision-Language-Action (VLA) models have attracted growing interest as a scalable approach to robotic manipulation. While these models are effective action predictors, deploying them as robotic agents exposes critical gaps: no mechanism for failure recovery, inconsistent execution over long horizons, and limited robustness to shifts in observations, tasks, or embodiments. Existing solutions address these limitations individually through model retraining or environment-specific modules, yet what is needed is a general framework that systematically transforms a pretrained VLA into a robotic agent. We present RoboBRIDGE, a modular framework that provides an orchestration layer over five coordinated modules, namely Monitor, Perceptor, Planner, Controller, and Robot Interface, to compose robust robotic agents from off-the-shelf components, including pretrained VLAs. The Monitor pairs rapid failure detection with hierarchical recovery to correct errors before they cascade. When the environment diverges from the current plan, the Planner triggers replanning while the Perceptor updates scene understanding asynchronously, avoiding execution stalls. Within the Controller, primitive skill fine-tuning factors manipulation into domain-invariant primitives with dedicated LoRA adapters, reducing sensitivity to domain shifts when a VLA is used. Across LIBERO, RoboCasa, and real-world case studies spanning multiple robot platforms and VLA backbones, RoboBRIDGE consistently outperforms both standalone policies and prior augmented VLA deployments. These results suggest that reliable robotic agency does not arise from scaling action predictors alone, but from structured orchestration around them.",
+          "authors": [
+            "Sihyung Yoon",
+            "Minjong Yoo",
+            "Sanghyun Ahn",
+            "Seojeong Choi",
+            "Honguk Woo"
+          ],
+          "primary_category": "cs.RO",
+          "categories": [
+            "cs.RO",
+            "cs.AI"
+          ],
+          "published": "2026-07-30T08:55:45+00:00",
+          "link": "https://arxiv.org/pdf/2607.27881v1",
+          "tags": [
+            "keyword:vvvpg",
+            "query:vvvpg"
+          ],
+          "llm_score": 8.0,
+          "llm_evidence_en": "VLA model deployment framework for robust real-world robotic agents",
+          "llm_evidence_cn": "面向真实世界机器人智能体的VLA模型部署框架",
+          "llm_evidence": "面向真实世界机器人智能体的VLA模型部署框架",
+          "canonical_evidence": "面向真实世界机器人智能体的VLA模型部署框架",
+          "llm_tldr_en": "RoboBRIDGE is a modular framework with five coordinated modules that systematically transforms a pretrained Vision-Language-Action model into a robust real-world robotic agent, addressing failure recovery, long-horizon execution, and robustness.",
+          "llm_tldr_cn": "视觉-语言-动作（VLA）模型虽是有效的动作预测器，但直接部署为机器人智能体时缺少失败恢复、长程执行一致性及观测/任务迁移鲁棒性。RoboBRIDGE 提出模块化编排框架，通过监控、感知、规划等五个协调模块将预训练 VLA 系统性地改造成可靠的真实世界机器人智能体。该框架针对部署缺口提供通用解决方案，弥补了模型重训练或环境特化模块的不足。",
+          "llm_tldr": "视觉-语言-动作（VLA）模型虽是有效的动作预测器，但直接部署为机器人智能体时缺少失败恢复、长程执行一致性及观测/任务迁移鲁棒性。RoboBRIDGE 提出模块化编排框架，通过监控、感知、规划等五个协调模块将预训练 VLA 系统性地改造成可靠的真实世界机器人智能体。该框架针对部署缺口提供通用解决方案，弥补了模型重训练或环境特化模块的不足。",
+          "llm_tags": [
+            "query:vvvpg"
+          ],
+          "matched_query_tag": "query:vvvpg",
+          "matched_query_text": "model using visual and language inputs to produce action commands for embodied agents",
+          "matched_requirement_id": "req-2",
+          "selection_source": "carryover_cache",
+          "paper_id": "2607.27881v1",
+          "carry_days": 1
+        },
+        {
+          "id": "2607.22997v1",
+          "source": "arxiv",
+          "title": "Real2Sim2Real for Vision-Language-Action Manipulation: An AMD ROCm-Based Pipeline",
+          "abstract": "Physical AI -- the integration of large vision-language-action (VLA) models with embodied agents that act in the real world -- has emerged as the next major frontier for AI, echoed by industry leaders such as Jensen Huang (``the next big thing is Physical AI, AI with a body,'' GTC Paris, June 2025) and Dr. Lisa Su (`we're entering the world of Physical AI ... this is where AI enters the real world,' CES 2026). This paper presents an end-to-end, fully AMD-accelerated technology stack for embodied manipulation, spanning data-center training silicon, Radeon PRO simulation/rendering GPUs, and Ryzen AI edge compute, unified by the open ROCm software stack. We demonstrate that training and deploying VLA-based manipulation policies does not require a CUDA-locked ecosystem. Four progressive demonstrations are presented: (1) a Sim-to-Real manipulation pipeline trained with SmolVLA and deployed on a physical Franka arm; (2) a semantic, language-grounded object-selection task (`one-of-three'); (3) a Real2Sim synthetic-data generation pipeline that fuses 3D Gaussian Splatting (3DGS) reconstructions of real scenes with the Genesis physics engine; and (4) large-scale reinforcement learning for quadruped and humanoid locomotion benchmarked across multiple hardware platforms. All pipelines run natively on ROCm + PyTorch on RDNA4 (Radeon AI PRO R9700) and RDNA3.5 (Radeon PRO W7900) hardware and are reproducible on the free Radeon Cloud Platform.",
+          "authors": [
+            "Qing Yang",
+            "Xun Wang",
+            "Ziguan Wang",
+            "Zhenjiang Li",
+            "Hongqiang Wang",
+            "Dongdong Weng"
+          ],
+          "primary_category": "cs.RO",
+          "categories": [
+            "cs.RO",
+            "cs.AI",
+            "cs.GR",
+            "cs.LG"
+          ],
+          "published": "2026-07-25T02:23:34+00:00",
+          "link": "https://arxiv.org/pdf/2607.22997v1",
+          "tags": [
+            "keyword:vvvpg",
+            "query:vvvpg"
+          ],
+          "llm_score": 8.0,
+          "llm_evidence_en": "Vision-Language-Action manipulation pipeline with Real2Sim2Real",
+          "llm_evidence_cn": "采用Real2Sim2Real的视觉-语言-动作操作流水线",
+          "llm_evidence": "采用Real2Sim2Real的视觉-语言-动作操作流水线",
+          "canonical_evidence": "采用Real2Sim2Real的视觉-语言-动作操作流水线",
+          "llm_tldr_en": "This paper presents an end-to-end AMD ROCm-accelerated pipeline for embodied manipulation, using Real2Sim2Real to train and deploy Vision-Language-Action policies on data-center, simulation, and edge GPUs without proprietary hardware.",
+          "llm_tldr_cn": "物理AI将大规模视觉-语言-动作（VLA）模型与具身智能体结合，成为下一代AI前沿。本文提出一套端到端且完全由AMD加速的技术栈，涵盖数据中心训练芯片、Radeon PRO仿真/渲染GPU和Ryzen AI边缘计算，并统一于开源ROCm软件栈。通过Real2Sim2Real流程，作者展示了在该AMD生态中无需专有硬件即可完成VLA操作策略的训练与部署。",
+          "llm_tldr": "物理AI将大规模视觉-语言-动作（VLA）模型与具身智能体结合，成为下一代AI前沿。本文提出一套端到端且完全由AMD加速的技术栈，涵盖数据中心训练芯片、Radeon PRO仿真/渲染GPU和Ryzen AI边缘计算，并统一于开源ROCm软件栈。通过Real2Sim2Real流程，作者展示了在该AMD生态中无需专有硬件即可完成VLA操作策略的训练与部署。",
+          "llm_tags": [
+            "query:vvvpg"
+          ],
+          "matched_query_tag": "query:vvvpg",
+          "matched_query_text": "model using visual and language inputs to produce action commands for embodied agents",
+          "matched_requirement_id": "req-2",
+          "selection_source": "carryover_cache",
+          "paper_id": "2607.22997v1",
+          "carry_days": 1
+        },
+        {
+          "id": "2607.23673v1",
+          "source": "arxiv",
+          "title": "Contrastive Parameter Disentanglement for Multi-modal Remote Sensing Image Generation",
+          "abstract": "Existing remote sensing image generation methods are largely confined to single-modality synthesis and therefore fail to exploit the complementary information inherent in multimodal imagery. To address this limitation, we propose a contrastive parameter disentanglement framework for multimodal remote sensing image generation, which generates semantically consistent and structurally aligned images across multiple modalities, including optical, infrared, and synthetic aperture radar (SAR), from a single text prompt. Specifically, we introduce a contrastive parameter disentanglement module that disentangles shared semantics from modality-specific attributes at the parameter level within an orthogonal core subspace. Based on this module, we develop a disentangled optimization strategy that first constrains the parameter matrix A of the LoRA adapter to capture modality-invariant semantics through a multimodal contrastive objective and then guides multiple parameter matrices B to learn modality-specific attributes under text conditioning. This strategy enables the simultaneous generation of multimodal images with consistent semantic content and distinct modality characteristics. Furthermore, to ensure structural alignment across the generated images, we devise a query-key structure transfer mechanism that jointly models multimodal sampling trajectories during inference by transferring structural correlation priors from an anchor modality to the remaining modalities. Extensive experiments demonstrate that our method outperforms state-of-the-art remote sensing image generation approaches in terms of generation quality, semantic consistency, and structural alignment, while also achieving superior performance in the downstream object classification task.",
+          "authors": [
+            "Yu Zhang",
+            "Wenda Zhao",
+            "Haojun Tang",
+            "Haipeng Wang"
+          ],
+          "primary_category": "cs.CV",
+          "categories": [
+            "cs.CV"
+          ],
+          "published": "2026-07-26T14:21:06+00:00",
+          "link": "https://arxiv.org/pdf/2607.23673v1",
+          "tags": [
+            "keyword:vvvpg",
+            "query:vvvpg"
+          ],
+          "llm_score": 8.0,
+          "llm_evidence_en": "text-prompted multi-modal remote sensing image generation",
+          "llm_evidence_cn": "文本提示的多模态遥感图像生成",
+          "llm_evidence": "文本提示的多模态遥感图像生成",
+          "canonical_evidence": "文本提示的多模态遥感图像生成",
+          "llm_tldr_en": "A contrastive parameter disentanglement framework for multi-modal remote sensing image generation synthesizes semantically consistent and structurally aligned optical, infrared, and SAR images from a single text prompt, exploiting complementary multi-modal information.",
+          "llm_tldr_cn": "现有遥感图像生成方法多局限于单模态合成，无法利用多模态影像的互补信息。本文提出对比参数解耦框架，通过正交核心子空间从单条文本提示生成语义一致、结构对齐的光学、红外与SAR多模态图像。该方法在参数层面解耦共享语义与模态特有属性，从而提升多模态生成的语义一致性与结构对齐性。这项工作推动了遥感多模态生成与文本引导的跨模态合成研究。",
+          "llm_tldr": "现有遥感图像生成方法多局限于单模态合成，无法利用多模态影像的互补信息。本文提出对比参数解耦框架，通过正交核心子空间从单条文本提示生成语义一致、结构对齐的光学、红外与SAR多模态图像。该方法在参数层面解耦共享语义与模态特有属性，从而提升多模态生成的语义一致性与结构对齐性。这项工作推动了遥感多模态生成与文本引导的跨模态合成研究。",
+          "llm_tags": [
+            "query:vvvpg"
+          ],
+          "matched_query_tag": "query:vvvpg",
+          "matched_query_text": "find recent research on multimodal vision language models for remote sensing imagery",
+          "matched_requirement_id": "req-7",
+          "selection_source": "carryover_cache",
+          "paper_id": "2607.23673v1",
+          "carry_days": 1
+        },
+        {
+          "id": "2607.22999v1",
+          "source": "arxiv",
+          "title": "WCM: World-Cognition Model for Generalizable Human-Robot Interaction",
+          "abstract": "Language agents can now interact fluently with users in software, but robots still struggle to bring comparable interaction to physical tasks. Current robot-control paradigms, including vision-language-action policies and world-model-based planners, are mainly optimized for instruction execution, leaving users with little visibility into why an action is chosen and few mechanisms to redirect, correct, or teach the robot through interaction. To solve this problem, we present the World-Cognition Model (WCM), a human-centered embodied agent built on the SLAK architecture (Sensing, Logic, Action, and Knowledge) and an asynchronous runtime. SLAK separates perception, reasoning, control, and memory, while the runtime allows reasoning, dialogue, and execution to proceed concurrently. WCM further introduces a human-in-the-loop teaching mode that enables users to interactively teach the robot difficult or long-horizon tasks. Teaching episodes and autonomous task rollouts are refined into chain-of-thought supervision to continually improve the model. WCM achieves a 73.8% average success rate across nine real-world human-robot interaction tasks, including tasks held out from CoT fine-tuning and a long-horizon task learned through teaching.",
+          "authors": [
+            "Yuzhen Chen",
+            "KC Zhou"
+          ],
+          "primary_category": "cs.RO",
+          "categories": [
+            "cs.RO",
+            "cs.AI",
+            "cs.HC",
+            "cs.LG"
+          ],
+          "published": "2026-07-25T02:27:16+00:00",
+          "link": "https://arxiv.org/pdf/2607.22999v1",
+          "tags": [
+            "keyword:vvvpg",
+            "query:vvvpg"
+          ],
+          "llm_score": 8.0,
+          "llm_evidence_en": "human-centered embodied agent with SLAK architecture and VLA policies",
+          "llm_evidence_cn": "采用SLAK架构与VLA策略的人本具身智能体",
+          "llm_evidence": "采用SLAK架构与VLA策略的人本具身智能体",
+          "canonical_evidence": "采用SLAK架构与VLA策略的人本具身智能体",
+          "llm_tldr_en": "WCM is a human-centered embodied agent built on the SLAK architecture and asynchronous runtime, separating perception, reasoning, control, and memory to provide users visibility into action choices and mechanisms for interactively redirecting, correcting, or teaching the robot.",
+          "llm_tldr_cn": "当前机器人控制范式如视觉-语言-动作策略和世界模型规划主要优化指令执行，用户难以理解动作原因且无法在交互中重定向或纠错。本文提出世界认知模型（WCM），基于SLAK架构（感知、逻辑、动作、知识）与异步运行时构建人本具身智能体。SLAK分离感知、推理、控制与记忆，异步运行时允许推理、对话与执行协同，从而提升人机交互的可视性与可教导性。",
+          "llm_tldr": "当前机器人控制范式如视觉-语言-动作策略和世界模型规划主要优化指令执行，用户难以理解动作原因且无法在交互中重定向或纠错。本文提出世界认知模型（WCM），基于SLAK架构（感知、逻辑、动作、知识）与异步运行时构建人本具身智能体。SLAK分离感知、推理、控制与记忆，异步运行时允许推理、对话与执行协同，从而提升人机交互的可视性与可教导性。",
+          "llm_tags": [
+            "query:vvvpg"
+          ],
+          "matched_query_tag": "query:vvvpg",
+          "matched_query_text": "model using visual and language inputs to produce action commands for embodied agents",
+          "matched_requirement_id": "req-2",
+          "selection_source": "carryover_cache",
+          "paper_id": "2607.22999v1",
+          "carry_days": 1
+        },
+        {
+          "id": "2607.25448v1",
+          "source": "arxiv",
+          "title": "Room-Mediated Co-occurrence for Zero-Shot Object-Centric Semantic Navigation via Frontier Scoring",
+          "abstract": "Zero-shot ObjectNav methods increasingly use vision-language priors, but direct object-object similarity in the latent space is often a weak proxy for spatial co-occurrence. We present an analytical, training-free semantic navigation pipeline that mediates object relationships through a compact room lexicon. Each object label is mapped to a CLIP-derived Room Probability Vector (RPV), and object-target co-occurrence is computed from RPV distribution overlap. These scores are projected onto a value map using geodesic flood-fill propagation (Fast Marching Method), with adaptive signal decay, and are used to rank frontiers by semantic score for navigation. Together, these components form an integrated, training-free, object-centric pipeline for open-vocabulary zero-shot navigation. Results show that our object-centric approach improves Success Rate (SR) and Success by weighted inverse Path Length (SPL) by a relative 3% and 1.3%, respectively, compared to image-holistic baselines on the HM3D dataset validation split, while preserving interpretability and open-vocabulary flexibility. Code is available at: uts-ri.github.io/RPV-SemNav.",
+          "authors": [
+            "Adam Scicluna",
+            "Gavin Paul",
+            "Alen Alempijevic"
+          ],
+          "primary_category": "cs.RO",
+          "categories": [
+            "cs.RO"
+          ],
+          "published": "2026-07-28T08:36:26+00:00",
+          "link": "https://arxiv.org/pdf/2607.25448v1",
+          "tags": [
+            "keyword:vvvpg",
+            "query:vvvpg"
+          ],
+          "llm_score": 8.0,
+          "llm_evidence_en": "uses vision-language priors (CLIP) for zero-shot object-centric semantic navigation",
+          "llm_evidence_cn": "利用视觉-语言先验（CLIP）进行零样本目标中心语义导航",
+          "llm_evidence": "利用视觉-语言先验（CLIP）进行零样本目标中心语义导航",
+          "canonical_evidence": "利用视觉-语言先验（CLIP）进行零样本目标中心语义导航",
+          "llm_tldr_en": "Zero-shot object navigation using CLIP room probability vectors to score frontiers, achieving training-free semantic navigation by mediating object co-occurrence through a compact room lexicon.",
+          "llm_tldr_cn": "论文针对零样本目标导航中物体间语义相似度不足以反映空间共现的问题，提出将物体标签映射到CLIP房间概率向量，通过房间词汇表计算目标共现分数，并结合快速行进法进行边界评分。该方法无需训练即可在语义上引导导航，实验表明其具备整合空间先验和语言语义的有效性。",
+          "llm_tldr": "论文针对零样本目标导航中物体间语义相似度不足以反映空间共现的问题，提出将物体标签映射到CLIP房间概率向量，通过房间词汇表计算目标共现分数，并结合快速行进法进行边界评分。该方法无需训练即可在语义上引导导航，实验表明其具备整合空间先验和语言语义的有效性。",
+          "llm_tags": [
+            "query:vvvpg"
+          ],
+          "matched_query_tag": "query:vvvpg",
+          "matched_query_text": "grounded navigation of agents guided by visual observations and language instructions",
+          "matched_requirement_id": "req-6",
+          "selection_source": "carryover_cache",
+          "paper_id": "2607.25448v1",
+          "carry_days": 1
+        },
+        {
+          "id": "2607.22013v1",
+          "source": "arxiv",
+          "title": "Visual Saliency Steering Distillation for Multimodal Chain-of-Thought Reasoning",
+          "abstract": "Multimodal chain-of-thought (CoT) reasoning integrates visual and textual cues through step-by-step inference. In small models with limited token budgets, modality-interaction fusion often suppresses tiny cross-modal differences. In particular, multimodal CoT often struggles when different images pair with identical text or different texts pair with an identical image, making such inputs nearly indistinguishable after fusion. This study proposes Visual Saliency Steering Distillation (VSSD). VSSD leverages the attention maps of multimodal large language models to generate perturbed images that capture task-sensitive feature directions, and then applies singular value decomposition to extract dominant steering vectors to guide inter-layer distillation. Experiments on ScienceQA and M$^3$CoT demonstrate that VSSD improves rationale generation and answer inference. The code is available at https://github.com/BGWH123/VSSD.",
+          "authors": [
+            "Hao Yang",
+            "Jin Wang",
+            "Xuejie Zhang"
+          ],
+          "primary_category": "cs.CV",
+          "categories": [
+            "cs.CV",
+            "cs.AI"
+          ],
+          "published": "2026-07-24T06:22:40+00:00",
+          "link": "https://arxiv.org/pdf/2607.22013v1",
+          "tags": [
+            "keyword:vvvpg",
+            "query:vvvpg"
+          ],
+          "llm_score": 8.0,
+          "llm_evidence_en": "improves multimodal chain-of-thought reasoning by steering cross-modal features",
+          "llm_evidence_cn": "通过引导跨模态特征来改进多模态链式推理",
+          "llm_evidence": "通过引导跨模态特征来改进多模态链式推理",
+          "canonical_evidence": "通过引导跨模态特征来改进多模态链式推理",
+          "llm_tldr_en": "Introduces Visual Saliency Steering Distillation, which uses attention maps of multimodal LLMs to create perturbed images and SVD-based steering vectors, improving small models' multimodal chain-of-thought reasoning.",
+          "llm_tldr_cn": "论文针对小规模多模态模型在有限token预算下跨模态差异易被抑制的问题，提出视觉显著性引导蒸馏（VSSD），利用多模态大模型的注意力图生成扰动图像，并通过奇异值分解提取主导向量指导层间蒸馏。实验表明该方法显著提升小模型在多模态链式推理上的区分能力。",
+          "llm_tldr": "论文针对小规模多模态模型在有限token预算下跨模态差异易被抑制的问题，提出视觉显著性引导蒸馏（VSSD），利用多模态大模型的注意力图生成扰动图像，并通过奇异值分解提取主导向量指导层间蒸馏。实验表明该方法显著提升小模型在多模态链式推理上的区分能力。",
+          "llm_tags": [
+            "query:vvvpg"
+          ],
+          "matched_query_tag": "query:vvvpg",
+          "matched_query_text": "multimodal model integrating image and text understanding",
+          "matched_requirement_id": "req-1",
+          "selection_source": "carryover_cache",
+          "paper_id": "2607.22013v1",
+          "carry_days": 1
+        },
+        {
+          "id": "2607.25527v1",
+          "source": "arxiv",
+          "title": "Argus-Unified: Towards A Compact and Economical Unified Model for Image Understanding and Generation",
+          "abstract": "Unifying visual understanding and generation in one model holds immense promise, but remains challenging and expensive due to heavy compute and data demands and conflicts between the visual features needed for these two capabilities. To address these challenges, we present Argus-Unified, a compact, effective and unified multimodal model built with low demand on computation and data. Instead of aligning modalities from scratch, Argus-Unified effectively leverages pretrained vision-language models (VLMs) that provide strong multimodal priors. Specifically, we introduce hybrid visual tokens that preserve continuous tokens for understanding while learning discrete tokens for generation from a frozen unified vision encoder. Our training pipeline includes two stages: the first stage learns a quantizer and image decoder on top of the frozen vision encoder, the second stage trains the LLM initialized from a pretrained VLM for the unified multimodal modeling. Using by far the least amount of data (15.6M) and the lowest cost (~$2,000), we demonstrate that unified multimodal models can be trained economically while achieving strong performance in both understanding and generation. Notably, our model attains state-of-the-art multimodal understanding on GQA, POPE, and VQAv2, and competitive generation quality compared to models with dedicated vision encoders (e.g., Janus, Janus-Pro), all at ~10x lower cost and with ~5x less data. We envision Argus-Unified as a useful baseline that lowers the development barrier for unified models.",
+          "authors": [
+            "Weiming Zhuang",
+            "Jiabo Huang",
+            "Jingtao Li",
+            "Zhizhong Li",
+            "Chen Chen",
+            "Sina Sajadmanesh",
+            "Lingjuan Lyu"
+          ],
+          "primary_category": "cs.CV",
+          "categories": [
+            "cs.CV",
+            "cs.AI"
+          ],
+          "published": "2026-07-28T10:12:06+00:00",
+          "link": "https://arxiv.org/pdf/2607.25527v1",
+          "tags": [
+            "keyword:vvvpg",
+            "query:vvvpg"
+          ],
+          "llm_score": 8.0,
+          "llm_evidence_en": "unified multimodal model combining image understanding and generation via pretrained VLMs",
+          "llm_evidence_cn": "结合预训练VLM实现图像理解与生成统一的紧凑多模态模型",
+          "llm_evidence": "结合预训练VLM实现图像理解与生成统一的紧凑多模态模型",
+          "canonical_evidence": "结合预训练VLM实现图像理解与生成统一的紧凑多模态模型",
+          "llm_tldr_en": "Argus-Unified is a compact multimodal model unifying image understanding and generation with hybrid visual tokens, leveraging pretrained VLMs to reduce compute and data demands.",
+          "llm_tldr_cn": "论文针对统一图像理解与生成模型计算和数据成本高的问题，提出Argus-Unified，利用预训练视觉-语言模型提供多模态先验，引入混合视觉token：连续token用于理解、离散token用于生成。该模型在低资源条件下实现理解与生成的统一，验证了紧凑高效设计的可行性。",
+          "llm_tldr": "论文针对统一图像理解与生成模型计算和数据成本高的问题，提出Argus-Unified，利用预训练视觉-语言模型提供多模态先验，引入混合视觉token：连续token用于理解、离散token用于生成。该模型在低资源条件下实现理解与生成的统一，验证了紧凑高效设计的可行性。",
+          "llm_tags": [
+            "query:vvvpg"
+          ],
+          "matched_query_tag": "query:vvvpg",
+          "matched_query_text": "multimodal model integrating image and text understanding",
+          "matched_requirement_id": "req-1",
+          "selection_source": "carryover_cache",
+          "paper_id": "2607.25527v1",
+          "carry_days": 1
+        },
+        {
+          "id": "2607.21973v1",
+          "source": "arxiv",
+          "title": "Rethinking Layer-Wise Information Allocation for Vision Foundation Model Adaptation",
+          "abstract": "Vision foundation models are increasingly reused as frozen backbones for downstream visual recognition, making parameter-efficient adaptation a central problem. Prompt-based adaptation, including Visual Prompt Tuning (VPT), provides a lightweight way to specialize these models, but its layer-wise behavior remains poorly understood: performance is sensitive to prompt depth, placement, and task distribution, and gains on standard in-domain benchmarks do not always translate into robust generalization. We argue that this limitation is not solely an optimization issue, but a layer-wise information allocation issue: existing prompt-based methods lack principled control over what prompt-conditioned representations should preserve, suppress, and propagate across depth. Inspired by the Information Bottleneck principle, we introduce Prompted Information Bottlenecks (PIB), a framework that regularizes layer-wise compression-sufficiency trade-offs and promotes a more coherent cross-layer information path. The key idea is that effective adaptation should be minimal yet sufficient, retaining task-relevant local evidence in earlier layers while progressively discarding nuisance factors and redundant details in deeper layers. Extensive experiments show that PIB achieves strong performance across 34 datasets, reaching 92.1% on FGVC, 93.01% on HTA, and 77.33% on VTAB-1k, while tuning only 0.35% parameters on average across the main settings. Beyond benchmark accuracy, PIB helps explain the non-monotonic behavior of prompt capacity scaling, reduces shortcut reliance, and improves robustness under distribution shift and fine-grained recognition settings. These results position PIB as both a practical method and an information-allocation perspective for adapting frozen vision foundation models. Our code is available at https://github.com/itsnotacie/MM-26-PIB",
+          "authors": [
+            "Yuqi Li",
+            "Xi Xiao",
+            "Yunbei Zhang",
+            "Lin Zhao",
+            "Yu Li",
+            "Aiden Zhao",
+            "Tianyang Wang",
+            "Hao Xu",
+            "Yingli Tian"
+          ],
+          "primary_category": "cs.CV",
+          "categories": [
+            "cs.CV"
+          ],
+          "published": "2026-07-24T04:39:55+00:00",
+          "link": "https://arxiv.org/pdf/2607.21973v1",
+          "tags": [
+            "keyword:vvvpg",
+            "query:vvvpg"
+          ],
+          "llm_score": 8.0,
+          "llm_evidence_en": "adaptation of large-scale pretrained vision foundation models for transferable representation learning",
+          "llm_evidence_cn": "面向可迁移表征学习的大规模预训练视觉基础模型适配",
+          "llm_evidence": "面向可迁移表征学习的大规模预训练视觉基础模型适配",
+          "canonical_evidence": "面向可迁移表征学习的大规模预训练视觉基础模型适配",
+          "llm_tldr_en": "Analyzes prompt-based adaptation of vision foundation models as a layer-wise information allocation problem, proposing principles for what representations should preserve, suppress, and enhance.",
+          "llm_tldr_cn": "论文重新审视视觉基础模型提示适配中层间行为不可控的问题，将其归类为层间信息分配问题。通过分析提示深度、位置和任务分布的影响，提出系统化原则来控制提示条件表示应保留、抑制和增强的信息，以提升适配的鲁棒性和泛化能力。",
+          "llm_tldr": "论文重新审视视觉基础模型提示适配中层间行为不可控的问题，将其归类为层间信息分配问题。通过分析提示深度、位置和任务分布的影响，提出系统化原则来控制提示条件表示应保留、抑制和增强的信息，以提升适配的鲁棒性和泛化能力。",
+          "llm_tags": [
+            "query:vvvpg"
+          ],
+          "matched_query_tag": "query:vvvpg",
+          "matched_query_text": "large scale pretrained visual model for transferable representation learning",
+          "matched_requirement_id": "req-3",
+          "selection_source": "carryover_cache",
+          "paper_id": "2607.21973v1",
+          "carry_days": 1
+        },
+        {
+          "id": "2607.27959v1",
+          "source": "arxiv",
+          "title": "FiRE: Enhancing MLLMs with Fine-Grained Context Learning for Complex Image Retrieval",
+          "abstract": "Due to their strong generalizable multimodal processing and reasoning capabilities, Multimodal Large Language Models (MLLMs) have demonstrated significant potential as universal image retrievers, effectively addressing diverse real-world image retrieval tasks. Nevertheless, pioneering studies, while promising, overlook the potential of fine-grained context modeling and disentangled fine-tuning objectives in enhancing MLLMs' retrieval performance, particularly for complex tasks such as long-text-to-image retrieval, visual dialog retrieval, and composed image retrieval (CIR). Therefore, in this work, we propose an automated fine-grained multimodal quintuple dataset construction pipeline and a novel two-stage fine-grained multimodal fine-tuning strategy. The dataset generation pipeline produces a comprehensive CIR dataset with fine-grained image captions and modification text, facilitating fine-grained context modeling. Beyond the previously entangled fine-tuning paradigm, our approach separates the fine-tuning process into two distinct stages: (1) fine-grained context reasoning-oriented fine-tuning and (2) fine-grained retrieval-oriented fine-tuning. These stages aim to sequentially enhance the model's context understanding and query-target alignment capabilities, thereby improving retrieval performance. Extensive experiments across five datasets encompassing diverse and complex image retrieval tasks demonstrate the remarkable superiority of our method over existing approaches in zero-shot retrieval settings, even with a more lightweight MLLM backbone compared to those methods.",
+          "authors": [
+            "Bohan Hou",
+            "Haoqiang Lin",
+            "Xuemeng Song",
+            "Haokun Wen",
+            "Meng Liu",
+            "Yupeng Hu",
+            "Xiangyu Zhao"
+          ],
+          "primary_category": "cs.CV",
+          "categories": [
+            "cs.CV",
+            "cs.IR"
+          ],
+          "published": "2026-07-30T10:06:11+00:00",
+          "link": "https://arxiv.org/pdf/2607.27959v1",
+          "tags": [
+            "keyword:vvvpg",
+            "query:vvvpg"
+          ],
+          "llm_score": 8.0,
+          "llm_evidence_en": "multimodal large language model for joint image-text understanding and image retrieval",
+          "llm_evidence_cn": "多模态大语言模型用于图文联合理解与复杂图像检索",
+          "llm_evidence": "多模态大语言模型用于图文联合理解与复杂图像检索",
+          "canonical_evidence": "多模态大语言模型用于图文联合理解与复杂图像检索",
+          "llm_tldr_en": "FiRE enhances MLLMs as universal image retrievers by fine-grained context modeling and a two-stage fine-tuning pipeline, improving performance on complex tasks such as long-text-to-image and composed image retrieval.",
+          "llm_tldr_cn": "多模态大语言模型具备成为通用图像检索器的潜力，但现有方法对细粒度上下文建模和解耦微调目标关注不足。FiRE提出自动化细粒度多模态五元组数据构建流程和两阶段微调方法，让MLLM更好地学习细粒度上下文。在长文本-图像检索、视觉对话检索与组合图像检索等复杂任务上取得了显著性能提升。这项工作为MLLM在复杂图像检索中的应用提供了新范式。",
+          "llm_tldr": "多模态大语言模型具备成为通用图像检索器的潜力，但现有方法对细粒度上下文建模和解耦微调目标关注不足。FiRE提出自动化细粒度多模态五元组数据构建流程和两阶段微调方法，让MLLM更好地学习细粒度上下文。在长文本-图像检索、视觉对话检索与组合图像检索等复杂任务上取得了显著性能提升。这项工作为MLLM在复杂图像检索中的应用提供了新范式。",
+          "llm_tags": [
+            "query:vvvpg"
+          ],
+          "matched_query_tag": "query:vvvpg",
+          "matched_query_text": "multimodal model integrating image and text understanding",
+          "matched_requirement_id": "req-1",
+          "selection_source": "carryover_cache",
+          "paper_id": "2607.27959v1",
+          "carry_days": 1
+        },
+        {
+          "id": "2607.28442v1",
+          "source": "arxiv",
+          "title": "ViewMind3D: Modular View-Aware Inference for Training-Free 3D-QA",
+          "abstract": "Recent advances in large language models (LLMs) and vision-language models (VLMs) have enabled new possibilities for 3D question answering (3D-QA), a key capability for embodied AI and robotic perception. However, most existing methods rely on 3D-specific training or fine-tuning with costly annotations, limiting their scalability and real-world applicability. We present \\textbf{ViewMind3D}, a fully training-free and modular framework for 3D spatial reasoning over multi-view observations of a scene without requiring complete 3D reconstruction. The framework decomposes the 3D-QA task into four interpretable components: (1) question-driven multi-view selection, (2) guided visual grounding with language-conditioned object cues, (3) spatial context encoding via a bird's-eye-view (BEV) viewpoint indicator, and (4) structured answer generation through role-based reasoning. This design enables structured, robust, and interpretable reasoning without requiring model tuning. Experimental results on ScanQA and SQA3D show that ViewMind3D achieves competitive performance compared to prior training-free and fine-tuned 3D-LLMs. In particular, our method improves performance on spatially grounded question types, such as ``What'' questions in SQA3D, while maintaining strong overall accuracy (50.8\\%) and achieving 73.4 CIDEr on ScanQA. These results demonstrate that effective 3D reasoning can be achieved through modular orchestration of general-purpose LLMs and VLMs for robotic perception in real-world environments.",
+          "authors": [
+            "Ping-Kun Chiang",
+            "Kun-Ru Wu",
+            "Po-han Li",
+            "Sandeep Chinchali",
+            "Ufuk Topcu",
+            "Yu-Chee Tseng"
+          ],
+          "primary_category": "cs.CV",
+          "categories": [
+            "cs.CV"
+          ],
+          "published": "2026-07-30T16:14:30+00:00",
+          "link": "https://arxiv.org/pdf/2607.28442v1",
+          "tags": [
+            "keyword:vvvpg",
+            "query:vvvpg"
+          ],
+          "llm_score": 8.0,
+          "llm_evidence_en": "vision-language model for multi-view 3D spatial reasoning and embodied AI perception",
+          "llm_evidence_cn": "面向具身AI的视觉语言三维空间理解，使用多视图与语言指令",
+          "llm_evidence": "面向具身AI的视觉语言三维空间理解，使用多视图与语言指令",
+          "canonical_evidence": "面向具身AI的视觉语言三维空间理解，使用多视图与语言指令",
+          "llm_tldr_en": "ViewMind3D is a training-free modular framework for 3D question answering that decomposes spatial reasoning into view selection, visual grounding, and spatial encoding, using existing VLMs and LLMs without costly 3D annotations.",
+          "llm_tldr_cn": "三维问答是具身AI与机器人感知的关键能力，但现有方法往往需要三维专用训练或昂贵标注，难以规模化应用。ViewMind3D提出一种完全免训练的模块化推理框架，将任务分解为问题驱动的多视图选择、语言引导的视觉定位和空间上下文编码等组件，无需完整三维重建。借助现成的视觉语言模型与语言模型即可完成空间推理。该方法在保证可解释性的同时降低了三维问答的部署成本，为具身智能提供了轻量级方案。",
+          "llm_tldr": "三维问答是具身AI与机器人感知的关键能力，但现有方法往往需要三维专用训练或昂贵标注，难以规模化应用。ViewMind3D提出一种完全免训练的模块化推理框架，将任务分解为问题驱动的多视图选择、语言引导的视觉定位和空间上下文编码等组件，无需完整三维重建。借助现成的视觉语言模型与语言模型即可完成空间推理。该方法在保证可解释性的同时降低了三维问答的部署成本，为具身智能提供了轻量级方案。",
+          "llm_tags": [
+            "query:vvvpg"
+          ],
+          "matched_query_tag": "query:vvvpg",
+          "matched_query_text": "multimodal model integrating image and text understanding",
+          "matched_requirement_id": "req-1",
+          "selection_source": "carryover_cache",
+          "paper_id": "2607.28442v1",
+          "carry_days": 1
+        },
+        {
+          "id": "2607.27703v1",
+          "source": "arxiv",
+          "title": "SpatialCLI: Learning to Reason With Spatial Tools, Then Without Them",
+          "abstract": "Vision-language models (VLMs) are increasingly used in embodied agents to interpret visual inputs, reason about spatial relationships, and make task-level decisions based on that reasoning. However, a fundamental capability mismatch remains: general VLMs can reason about the overall task but often miss the visual details that determine success, while specialist vision models can capture those details but cannot translate them into task-level decisions. In this work, we propose SpatialCLI, a framework that teaches VLMs to reason with spatial tools and progressively internalize the specialist perceptual capabilities they provide. SpatialCLI proceeds in three stages: (1) Call exposes specialist vision models as spatial tools to augment the VLM's perception; (2) Learn uses Cold-Start SFT and agentic RL to improve tool use; and (3) Internalize verbalizes successful tool-use trajectories to internalize specialist perceptual capabilities. We further introduce SpatialCLI-Bench, a 516-example benchmark for compositional perception across localization, segmentation, depth, and pose. On MindCube, SpatialCLI raises Qwen3-VL-8B-Instruct from 29.3% to 84.6% with tools, surpassing GPT-5.6 Sol with tools (72.1%), while retaining 73.8% without tools after internalization.",
+          "authors": [
+            "Yang Zhou",
+            "Zixuan Huang",
+            "Sunzhu Li",
+            "Zhuo Yang",
+            "Chen Zhang",
+            "Shunian Chen",
+            "Caijun Yan",
+            "Jianyao Xu",
+            "Shunyu Liu",
+            "Weijie Fu",
+            "Peiliang Li",
+            "Xiaozhi Chen",
+            "Yuxiang Cai"
+          ],
+          "primary_category": "cs.AI",
+          "categories": [
+            "cs.AI"
+          ],
+          "published": "2026-07-30T05:39:01+00:00",
+          "link": "https://arxiv.org/pdf/2607.27703v1",
+          "tags": [
+            "keyword:vvvpg",
+            "query:vvvpg"
+          ],
+          "llm_score": 8.0,
+          "llm_evidence_en": "VLM spatial reasoning for embodied agents, integrating specialist vision tools",
+          "llm_evidence_cn": "面向具身智能体的视觉语言模型空间推理，融合专用视觉工具",
+          "llm_evidence": "面向具身智能体的视觉语言模型空间推理，融合专用视觉工具",
+          "canonical_evidence": "面向具身智能体的视觉语言模型空间推理，融合专用视觉工具",
+          "llm_tldr_en": "SpatialCLI teaches VLMs to reason with spatial tools and progressively internalize specialist perceptual capabilities, improving embodied agents' spatial reasoning and task-level decisions.",
+          "llm_tldr_cn": "具身智能体常用视觉语言模型解读视觉输入并做空间推理，但通用VLM容易漏掉关键视觉细节，专用视觉模型又无法直接形成任务决策。SpatialCLI提出两阶段学习思路：首先将专用视觉模型作为“空间工具”暴露给VLM调用，再让VLM逐步内化这些专用感知能力。通过这种渐进式内化，模型在保持任务级推理的同时获得了精细空间感知。实验表明该方法有效提升了具身智能体的空间推理与决策质量，为VLM与专用视觉模型的结合提供了新范式。",
+          "llm_tldr": "具身智能体常用视觉语言模型解读视觉输入并做空间推理，但通用VLM容易漏掉关键视觉细节，专用视觉模型又无法直接形成任务决策。SpatialCLI提出两阶段学习思路：首先将专用视觉模型作为“空间工具”暴露给VLM调用，再让VLM逐步内化这些专用感知能力。通过这种渐进式内化，模型在保持任务级推理的同时获得了精细空间感知。实验表明该方法有效提升了具身智能体的空间推理与决策质量，为VLM与专用视觉模型的结合提供了新范式。",
+          "llm_tags": [
+            "query:vvvpg"
+          ],
+          "matched_query_tag": "query:vvvpg",
+          "matched_query_text": "multimodal model integrating image and text understanding",
+          "matched_requirement_id": "req-1",
+          "selection_source": "carryover_cache",
+          "paper_id": "2607.27703v1",
+          "carry_days": 1
+        },
+        {
+          "id": "2607.23537v1",
+          "source": "arxiv",
+          "title": "ObsDriveBench: Benchmarking Multimodal Understanding under Adverse Weather with Observability Awareness",
+          "abstract": "Autonomous driving under adverse weather remains a critical challenge, yet existing vision-language benchmarks mainly evaluate under standard conditions, synthetic corruptions, or single modality. As a result, it remains unclear how vision-language models behave under real-world adverse weather with multi-modal inputs. We argue that a key difficulty lies in degraded environmental observability: under fog, rain, snow, and low illumination, multi-modal observations become unreliable and cross-modally inconsistent, posing challenges to scene understanding, and subsequent decision-making. To study this, we introduce \\textbf{ObsDriveBench}, a real-world multi-modal benchmark for adverse-weather autonomous driving. Our benchmark is designed with three capability dimensions: \\textbf{observability awareness}, \\textbf{spatial reliability}, and \\textbf{risk-aware decision-making}, enabling fine-grained diagnosis of model behavior under degraded observations. We construct the benchmark through observability meta-annotation, scene description, and capability oriented multiple-choice tasks over synchronized camera, LiDAR, and radar inputs, forming a benchmark with over 14k training and 13k test questions. Experiments reveal consistent performance degradation of existing vision-language models. We further introduce \\textbf{ObsDrive} model with normal-weather supervised fine-tuning and adverse-weather reinforcement learning, improving robustness across all three capabilities. The dataset and evaluation code will be released at \\href{https://github.com/russellyq/ObsDriveBench}{\\texttt{ObsDriveBench}}.",
+          "authors": [
+            "Qiao Yan",
+            "Yihan Wang",
+            "Zhenghao Xing",
+            "Jiaqi Xu",
+            "Pheng-Ann Heng"
+          ],
+          "primary_category": "cs.AI",
+          "categories": [
+            "cs.AI"
+          ],
+          "published": "2026-07-26T08:13:46+00:00",
+          "link": "https://arxiv.org/pdf/2607.23537v1",
+          "tags": [
+            "keyword:vvvpg",
+            "query:vvvpg"
+          ],
+          "llm_score": 8.0,
+          "llm_evidence_en": "benchmark for multimodal vision-language understanding in challenging real-world conditions",
+          "llm_evidence_cn": "面向多模态视觉语言理解的恶劣天气基准，评测图文联合理解能力",
+          "llm_evidence": "面向多模态视觉语言理解的恶劣天气基准，评测图文联合理解能力",
+          "canonical_evidence": "面向多模态视觉语言理解的恶劣天气基准，评测图文联合理解能力",
+          "llm_tldr_en": "ObsDriveBench is a real-world multimodal benchmark for vision-language models under adverse weather, highlighting observability degradation and cross-modal inconsistency in autonomous driving.",
+          "llm_tldr_cn": "恶劣天气下自动驾驶的多模态理解研究仍缺乏真实世界的系统评测基准，现有方法多基于理想条件或单模态。ObsDriveBench构建了包含雾、雨、雪与低照度的真实多模态基准，强调环境可观测性下降导致跨模态信息不一致的问题。通过评测视觉语言模型在复杂天气下的场景理解与决策表现，该基准揭示了性能下降的关键原因。这一工作为自动驾驶领域鲁棒多模态感知研究提供了重要评测平台。",
+          "llm_tldr": "恶劣天气下自动驾驶的多模态理解研究仍缺乏真实世界的系统评测基准，现有方法多基于理想条件或单模态。ObsDriveBench构建了包含雾、雨、雪与低照度的真实多模态基准，强调环境可观测性下降导致跨模态信息不一致的问题。通过评测视觉语言模型在复杂天气下的场景理解与决策表现，该基准揭示了性能下降的关键原因。这一工作为自动驾驶领域鲁棒多模态感知研究提供了重要评测平台。",
+          "llm_tags": [
+            "query:vvvpg"
+          ],
+          "matched_query_tag": "query:vvvpg",
+          "matched_query_text": "multimodal model integrating image and text understanding",
+          "matched_requirement_id": "req-1",
+          "selection_source": "carryover_cache",
+          "paper_id": "2607.23537v1",
+          "carry_days": 1
+        },
+        {
+          "id": "2607.27700v1",
+          "source": "arxiv",
+          "title": "Calibrate Before Reason: Robust Visual Token Reduction against Semantic Drift in VLMs",
+          "abstract": "Large Vision-Language Models (VLMs) suffer from prohibitive inference overhead due to long sequences of visual tokens. However, existing visual token reduction methods mainly improve efficiency by pruning or compressing redundant tokens without examining whether the resulting representation remains semantically consistent with the original representation. Mapping the original N-token visual sequence to K tokens may discard, dilute, or misassign critical visual cues, triggering severe semantic drift that deviates the VLM's understanding. In this paper, we first introduce the principle of 'Calibrate Before Reason' to visual token reduction and propose CaRe, a training-free robust framework that calibrates compact visual representations before reasoning to preserve semantic fidelity in VLMs. CaRe consists of two mutually complementary modules: 1) Perturbation-Robust Calibration Anchoring, which identifies calibration anchors with stable model-side influence under multi-directional perturbations; 2) Confidence-Gated Token Calibration, which extracts reliable calibration signals from unselected tokens and injects them into anchors. Extensive evaluations across diverse VLM architectures and benchmarks verify that CaRe outperforms state-of-the-art token reduction baselines. While pruning 94.4% of visual tokens, our method retains 96.4% of the original full-token performance, delivering up to 2.30 times faster end-to-end inference speed relative to unpruned vanilla models.",
+          "authors": [
+            "Jiasheng Li",
+            "Zhong Ji",
+            "Yan Zhang",
+            "Huihui Li"
+          ],
+          "primary_category": "cs.CV",
+          "categories": [
+            "cs.CV"
+          ],
+          "published": "2026-07-30T05:36:29+00:00",
+          "link": "https://arxiv.org/pdf/2607.27700v1",
+          "tags": [
+            "keyword:vvvpg",
+            "query:vvvpg"
+          ],
+          "llm_score": 8.0,
+          "llm_evidence_en": "Improving VLM efficiency and semantic consistency via calibrated visual token reduction",
+          "llm_evidence_cn": "通过校准式视觉令牌减少提升VLM效率并保持语义一致",
+          "llm_evidence": "通过校准式视觉令牌减少提升VLM效率并保持语义一致",
+          "canonical_evidence": "通过校准式视觉令牌减少提升VLM效率并保持语义一致",
+          "llm_tldr_en": "CaRe introduces a training-free visual token reduction framework that calibrates compact representations before reasoning, preventing semantic drift and preserving VLM understanding under aggressive compression.",
+          "llm_tldr_cn": "大视觉语言模型因视觉令牌序列过长而推理开销巨大，现有压缩方法可能导致语义漂移。本文提出CaRe框架，在保持语义一致性的前提下对压缩表示进行校准，确保压缩后的视觉令牌不丢失关键线索。通过先校准再推理的策略，在不训练的情况下有效缓解语义偏差，同时显著降低计算成本。该方法为VLM高效推理提供了即插即用的安全压缩方案。",
+          "llm_tldr": "大视觉语言模型因视觉令牌序列过长而推理开销巨大，现有压缩方法可能导致语义漂移。本文提出CaRe框架，在保持语义一致性的前提下对压缩表示进行校准，确保压缩后的视觉令牌不丢失关键线索。通过先校准再推理的策略，在不训练的情况下有效缓解语义偏差，同时显著降低计算成本。该方法为VLM高效推理提供了即插即用的安全压缩方案。",
+          "llm_tags": [
+            "query:vvvpg"
+          ],
+          "matched_query_tag": "query:vvvpg",
+          "matched_query_text": "multimodal model integrating image and text understanding",
+          "matched_requirement_id": "req-1",
+          "selection_source": "carryover_cache",
+          "paper_id": "2607.27700v1",
+          "carry_days": 1
+        },
+        {
+          "id": "2607.23493v1",
+          "source": "arxiv",
+          "title": "Token-Region Guided Cross-Attention Fusion for Multimodal Affect Interpretation",
+          "abstract": "Automated analysis of multimodal content on social networks has become a critical task for understanding public sentiment and information diffusion in the digital age. However, classifying internet memes remains computationally challenging due to the intricate interplay between visual cues and embedded, often stylized, text, particularly in low-resource languages like Bengali Language. This paper addresses the detection of political intent in Bengali memes by introducing Multimodal Cross-Attention Fusion framework. We first leverage a Vision-Language Model to extract high-fidelity OCR text from noisy meme images. Subsequently, we encode visual and textual features and synthesize them through a cross-modal multi-head attention mechanism that aligns semantic tokens with visual regions. We also investigate the integration of a domain-specific political lexicon as a knowledge prior. Experimental evaluation on the PoliMemeDecode1 dataset shows that our attention-based fusion significantly outperforms unimodal baselines and standard concatenation methods, achieving a state-of-the-art Macro-F1 of approximately 0.94. Interpretability analyzes further confirm that the model effectively learns to ground textual semantics in visual evidence.",
+          "authors": [
+            "Musa Tur Farazi",
+            "Nufayer Jahan Reza"
+          ],
+          "primary_category": "cs.CV",
+          "categories": [
+            "cs.CV",
+            "cs.AI"
+          ],
+          "published": "2026-07-26T06:36:44+00:00",
+          "link": "https://arxiv.org/pdf/2607.23493v1",
+          "tags": [
+            "keyword:vvvpg",
+            "query:vvvpg"
+          ],
+          "llm_score": 8.0,
+          "llm_evidence_en": "Vision-language model with cross-modal attention for image-text understanding",
+          "llm_evidence_cn": "结合视觉语言模型与跨模态注意力实现图文理解",
+          "llm_evidence": "结合视觉语言模型与跨模态注意力实现图文理解",
+          "canonical_evidence": "结合视觉语言模型与跨模态注意力实现图文理解",
+          "llm_tldr_en": "This paper presents a multimodal cross-attention fusion framework that uses a VLM to extract OCR text and combines visual and textual features to detect political intent in Bengali memes.",
+          "llm_tldr_cn": "社交媒体模因分类需要同时理解视觉与文本信息，而低资源语言下更具挑战。本文提出令牌区域引导的交叉注意力融合框架，先用视觉语言模型提取噪声图中的高保真OCR文本，再通过跨模态多头注意力融合视觉与文本特征。在孟加拉语政治模因检测上验证了有效性，显著提升分类性能。该方法为低资源多模态理解提供了可借鉴的融合范式。",
+          "llm_tldr": "社交媒体模因分类需要同时理解视觉与文本信息，而低资源语言下更具挑战。本文提出令牌区域引导的交叉注意力融合框架，先用视觉语言模型提取噪声图中的高保真OCR文本，再通过跨模态多头注意力融合视觉与文本特征。在孟加拉语政治模因检测上验证了有效性，显著提升分类性能。该方法为低资源多模态理解提供了可借鉴的融合范式。",
+          "llm_tags": [
+            "query:vvvpg"
+          ],
+          "matched_query_tag": "query:vvvpg",
+          "matched_query_text": "multimodal model integrating image and text understanding",
+          "matched_requirement_id": "req-1",
+          "selection_source": "carryover_cache",
+          "paper_id": "2607.23493v1",
+          "carry_days": 1
+        },
+        {
+          "id": "2607.23797v1",
+          "source": "arxiv",
+          "title": "Memory for Attention: Language-Conditioned Re-Perception with a Vision--Language--Motion Map",
+          "abstract": "A robot carrying a persistent, behavior-annotated map faces two planning questions, and its memory answers only one well. The \\emph{spatial-navigation} question -- how to walk around a room -- we address first and report a negative: building on Vision--Language--Motion Maps (VLMM), a behavior-aware planner cost cuts a planning-time objective by $\\sim$35\\% over 28 AI2-THOR scenes, but under closed-loop execution the real benefit nearly vanishes ($\\sim$4\\%) and an on-demand vision--language model (VLM) does as well. The \\emph{resource-allocation} question differs: under a limited perception budget, what should the robot re-observe now to keep its map fresh? Framing re-perception as this attention decision, we show a persistent map's memory (change-history, or even just recency of last sighting) yields the best schedule (held-out), matching an oracle, while the memoryless VLM prior is poor. Because the schedule reallocates budget toward what matters, memory's benefit concentrates on the important objects ($\\sim$1.6$\\times$ the mean), and a downstream fetch task confirms fewer wasted trips; the gain grows with per-instance heterogeneity exactly as a Cauchy--Schwarz bound predicts -- it equals $\\mathrm{Var}(\\sqrtλ)$, the variance of root-volatility. With a real CLIP prior on rendered objects the advantage is $+21$--$26\\%$. The map's distinctive value appears when the task is \\emph{language-conditioned}: told what to track, VLMM grounds the relevant objects (open-vocabulary) and tracks their change (memory), beating even a strong relevance-weighted recency baseline ($+2.5\\%$) -- so its motion channel adds value beyond a last-seen timestamp -- and an on-demand VLM ($+8.9\\%$); neither language nor dynamics alone suffices. The map earns its keep not by telling the robot how to walk around a room, but by telling it what to pay attention to.",
+          "authors": [
+            "Dibyendu Ghosh"
+          ],
+          "primary_category": "cs.RO",
+          "categories": [
+            "cs.RO"
+          ],
+          "published": "2026-07-26T18:49:54+00:00",
+          "link": "https://arxiv.org/pdf/2607.23797v1",
+          "tags": [
+            "keyword:vvvpg",
+            "query:vvvpg"
+          ],
+          "llm_score": 8.0,
+          "llm_evidence_en": "language-conditioned navigation and re-perception with a vision-language-motion map",
+          "llm_evidence_cn": "基于视觉-语言-运动地图的语言条件导航与重感知",
+          "llm_evidence": "基于视觉-语言-运动地图的语言条件导航与重感知",
+          "canonical_evidence": "基于视觉-语言-运动地图的语言条件导航与重感知",
+          "llm_tldr_en": "A robot with a behavior-annotated map uses a vision-language-motion map for spatial navigation; the paper shows a behavior-aware planner cost helps planning-time but the closed-loop benefit is small, framing re-perception as attention allocation under a limited perception budget.",
+          "llm_tldr_cn": "论文针对携带持续行为标注地图的机器人面临的空间导航与资源分配问题，提出基于视觉-语言-运动地图（VLMM）的规划方法。实验显示该规划代价在28个AI2-THOR场景中平均降低约35%，但闭环执行中收益几乎消失（约4%），甚至按需调用VLM也能达到相近效果。论文进而将重感知建模为有限感知预算下的注意力分配决策，为地图保持新鲜度提供了新视角。",
+          "llm_tldr": "论文针对携带持续行为标注地图的机器人面临的空间导航与资源分配问题，提出基于视觉-语言-运动地图（VLMM）的规划方法。实验显示该规划代价在28个AI2-THOR场景中平均降低约35%，但闭环执行中收益几乎消失（约4%），甚至按需调用VLM也能达到相近效果。论文进而将重感知建模为有限感知预算下的注意力分配决策，为地图保持新鲜度提供了新视角。",
+          "llm_tags": [
+            "query:vvvpg"
+          ],
+          "matched_query_tag": "query:vvvpg",
+          "matched_query_text": "grounded navigation of agents guided by visual observations and language instructions",
+          "matched_requirement_id": "req-6",
+          "selection_source": "carryover_cache",
+          "paper_id": "2607.23797v1",
+          "carry_days": 1
+        },
+        {
+          "id": "2607.24424v1",
+          "source": "arxiv",
+          "title": "MAViE: A Multi-scale Adaptive Vision Encoder for Fine-grained Visual Perception and Efficient Multimodal Reasoning",
+          "abstract": "Vision-language models commonly project all tokens produced by a pretrained vision encoder into a large language model. However, final-layer features can discard text, local attributes, and spatial relationships, while high-resolution inputs substantially increase context length and inference latency. We introduce \\method, a Multi-scale Adaptive Vision Encoder. \\method uses position-dependent gates to fuse shallow, intermediate, and deep features from a vision Transformer, preserving global semantics while enhancing edges, text, and local structure. It then performs question-conditioned token routing according to question relevance, local information content, global semantics, and spatial coverage, with a token budget that adapts to image complexity. To mitigate compression loss, we further introduce full-to-compressed representation distillation and a spatial diversity regularizer. In an illustrative simulation under a unified 7B language-model framework, \\method reduces the average number of SigLIP-SO400M visual tokens from 729 to 146 (approximately 80.0\\%) and improves the mean score on VQAv2, GQA, TextVQA, ScienceQA-IMG, and MMBench by 2.2 percentage points, while reducing single-image time to first token from 228\\,ms to 129\\,ms. We provide the full model design and evaluation protocol. All reported numbers currently serve only as placeholders for paper organization and experimental design; formal claims require real training runs, independent replications, and official benchmark evaluation.",
+          "authors": [
+            "Shaofei Lei"
+          ],
+          "primary_category": "cs.CV",
+          "categories": [
+            "cs.CV"
+          ],
+          "published": "2026-07-27T13:36:08+00:00",
+          "link": "https://arxiv.org/pdf/2607.24424v1",
+          "tags": [
+            "keyword:vvvpg",
+            "query:vvvpg"
+          ],
+          "llm_score": 8.0,
+          "llm_evidence_en": "multi-scale adaptive vision encoder for fine-grained visual perception in VLMs",
+          "llm_evidence_cn": "面向VLM的多尺度自适应视觉编码器，提升细粒度感知与多模态推理效率",
+          "llm_evidence": "面向VLM的多尺度自适应视觉编码器，提升细粒度感知与多模态推理效率",
+          "canonical_evidence": "面向VLM的多尺度自适应视觉编码器，提升细粒度感知与多模态推理效率",
+          "llm_tldr_en": "MAViE is a multi-scale adaptive vision encoder that fuses shallow-to-deep ViT features with position-dependent gates and performs question-conditioned token routing, preserving fine-grained details while reducing VLM inference cost.",
+          "llm_tldr_cn": "视觉-语言模型常将所有视觉令牌送入语言模型，但最终层特征会丢失文字、局部属性和空间关系。MAViE提出多尺度自适应视觉编码器，用位置相关门融合Transformer浅层、中间和深层特征，并按问题相关性、局部信息量和空间覆盖进行令牌路由。该方法在保留全局语义的同时增强边缘与局部结构，实现高效多模态推理。",
+          "llm_tldr": "视觉-语言模型常将所有视觉令牌送入语言模型，但最终层特征会丢失文字、局部属性和空间关系。MAViE提出多尺度自适应视觉编码器，用位置相关门融合Transformer浅层、中间和深层特征，并按问题相关性、局部信息量和空间覆盖进行令牌路由。该方法在保留全局语义的同时增强边缘与局部结构，实现高效多模态推理。",
+          "llm_tags": [
+            "query:vvvpg"
+          ],
+          "matched_query_tag": "query:vvvpg",
+          "matched_query_text": "multimodal model integrating image and text understanding",
+          "matched_requirement_id": "req-1",
+          "selection_source": "carryover_cache",
+          "paper_id": "2607.24424v1",
           "carry_days": 1
         }
       ]

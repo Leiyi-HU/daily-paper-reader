@@ -1,0 +1,1222 @@
+{
+  "mode": "standard",
+  "generated_at": "2026-08-01T21:02:31.134693+00:00",
+  "stats": {
+    "mode": "standard",
+    "tag_count": 1,
+    "deep_divecandidates": 54,
+    "deep_cap": 6,
+    "deep_selected": 18,
+    "quick_candidates": 52,
+    "quick_skim_target": 11,
+    "quick_selected": 11
+  },
+  "deep_dive": [
+    {
+      "id": "2607.25487v1",
+      "source": "arxiv",
+      "title": "CoTinyVLA: Chain-of-Thought Distillation for a Sub-Billion-Parameter Vision-Language-Action Model",
+      "abstract": "Vision-Language-Action (VLA) models translate natural-language commands into robot action sequences, but leading systems on the LIBERO-Plus robustness benchmark use three- to seven-billion-parameter backbones whose memory demands can exceed embedded robotic budgets. We present CoTinyVLA, a 0.9B-parameter action model on a Qwen3.5-0.8B backbone that obtains that robustness by structuring supervision instead of enlarging the model. Three components target different axes of the problem: dual-view temporal input of 16 history frames per step with textual camera and time markers; hierarchical chain-of-thought (CoT) distillation from a 35B teacher into an episode-level Plan and a chunk-level Think span over task phase, gripper state and next subaction; and paraphrase augmentation expanding 40 base commands into 800 variants. On LIBERO-Plus, spanning 10,030 perturbed tasks across seven perturbation dimensions, CoTinyVLA reaches 90.8% on Spatial, 87.3% on Object, 86.6% on Goal and 80.7% on Long, leading the strongest 7B baseline on all four suites by 4.7, 2.8, 15.9 and 3.0 points, with every margin interval excluding zero. The gains concentrate on the hardest axes of the benchmark: across the eleven published baselines none exceeds 53.2% on Robot Initial States in any suite, whereas CoTinyVLA reaches 73.6% on Goal against 39.9% for the strongest baseline. Ablations show the three components to be separable by perturbation axis, and at a matched image budget how frames are divided between the two cameras and across time accounts for 8.6 points on its own. Closed-loop inference peaks at 2.25 GiB of allocated GPU memory, and paired interventions show the episode Plan to be load-bearing: replacing it with an empty or contradictory span costs 40 to 45 points of success. Structured supervision thus lets a 0.9B backbone exceed all of them. Code: https://github.com/BrainJellyPie/CoTinyVLA",
+      "authors": [
+        "Minhyeok Lee",
+        "Chiyoung Kim",
+        "Chanhoe Gu",
+        "Seongrok Kim",
+        "Sanghyuk Roy Choi",
+        "Donghwan Hwang",
+        "Donghun Ryu",
+        "Seokhyun Kim"
+      ],
+      "primary_category": "cs.AI",
+      "categories": [
+        "cs.AI",
+        "cs.CV"
+      ],
+      "published": "2026-07-28T09:24:17+00:00",
+      "link": "https://arxiv.org/pdf/2607.25487v1",
+      "tags": [
+        "keyword:vvvpg",
+        "query:vvvpg"
+      ],
+      "llm_score": 10.0,
+      "llm_evidence_en": "sub-billion-parameter vision-language-action model translating language commands into robot actions",
+      "llm_evidence_cn": "亚十亿参数视觉-语言-动作模型，将自然语言指令映射为机器人动作",
+      "llm_evidence": "亚十亿参数视觉-语言-动作模型，将自然语言指令映射为机器人动作",
+      "canonical_evidence": "亚十亿参数视觉-语言-动作模型，将自然语言指令映射为机器人动作",
+      "llm_tldr_en": "CoTinyVLA is a 0.9B-parameter VLA model that achieves robustness on LIBERO-Plus via dual-view temporal inputs and hierarchical chain-of-thought distillation, while fitting embedded robot memory budgets.",
+      "llm_tldr_cn": "现有视觉-语言-动作（VLA）模型动辄使用三十亿到七十亿参数的骨干网络，内存需求难以满足嵌入式机器人预算。该文提出CoTinyVLA，在Qwen3.5-0.8B骨干上仅用0.9B参数实现鲁棒动作生成。通过双视角时序输入以及从35B教师模型中分层蒸馏出情节级计划和片段级思考，在不扩大模型的前提下提升鲁棒性。在LIBERO-Plus基准上的结果表明其以极小体积接近并超越大型VLA模型的性能，为资源受限机器人部署提供了可行路径。",
+      "llm_tldr": "现有视觉-语言-动作（VLA）模型动辄使用三十亿到七十亿参数的骨干网络，内存需求难以满足嵌入式机器人预算。该文提出CoTinyVLA，在Qwen3.5-0.8B骨干上仅用0.9B参数实现鲁棒动作生成。通过双视角时序输入以及从35B教师模型中分层蒸馏出情节级计划和片段级思考，在不扩大模型的前提下提升鲁棒性。在LIBERO-Plus基准上的结果表明其以极小体积接近并超越大型VLA模型的性能，为资源受限机器人部署提供了可行路径。",
+      "llm_tags": [
+        "query:vvvpg"
+      ],
+      "matched_query_tag": "query:vvvpg",
+      "matched_query_text": "model using visual and language inputs to produce action commands for embodied agents",
+      "matched_requirement_id": "req-2",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2607.22014v1",
+      "source": "arxiv",
+      "title": "Zero-Shot Mission-Level Evaluation for Aerial MLLM Agents",
+      "abstract": "Multimodal Large Language Models (MLLMs) are emerging as core reasoning modules for embodied agents, yet it remains unclear how well general-purpose models can solve long-horizon embodied tasks from a single high-level instruction. We introduce MissionBench, a benchmark for mission-level evaluation of MLLMs in aerial 3D environments. It comprises 120 missions across five simulated 3D environments and four task families. Agents must autonomously plan, navigate, and report outcomes using only egocentric observations and its action history, without aerial-specific fine-tuning. Across 22 open- and closed-source MLLMs, the strongest model succeeds on fewer than 35% of missions compared to 84.4% human performance, highlighting the difficulty of multi-step embodied tasks. Despite large variations between model families, we observe gains from scaling, indicating that larger general-purpose models possess stronger zero-shot embodied capabilities. Our analysis shows that mission-level competence requires coordinating multiple capabilities beyond spatial perception, including multi-step planning and adaptive reasoning. This motivates closed-loop evaluation and highlights both the promise and risk of scaling-driven improvements for embodied AI.",
+      "authors": [
+        "Suman Navaratnarajah",
+        "Taehyoung Kim",
+        "Jona Ruthardt",
+        "Ishaan Bhimwal",
+        "Ryousuke Yamada",
+        "Yannik Blei",
+        "Wolfram Burgard",
+        "Yuki M Asano"
+      ],
+      "primary_category": "cs.AI",
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.CV",
+        "cs.RO"
+      ],
+      "published": "2026-07-24T06:22:50+00:00",
+      "link": "https://arxiv.org/pdf/2607.22014v1",
+      "tags": [
+        "keyword:vvvpg",
+        "query:vvvpg"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "MissionBench benchmark for zero-shot evaluation of aerial MLLM agents in 3D environments",
+      "llm_evidence_cn": "面向空中MLLM智能体的零样本任务级评测基准MissionBench",
+      "llm_evidence": "面向空中MLLM智能体的零样本任务级评测基准MissionBench",
+      "canonical_evidence": "面向空中MLLM智能体的零样本任务级评测基准MissionBench",
+      "llm_tldr_en": "Introduces MissionBench, a benchmark with 120 missions across five simulated 3D environments for zero-shot mission-level evaluation of MLLMs as aerial embodied agents, showing strong models succeed on fewer than 35% of missions.",
+      "llm_tldr_cn": "多模态大语言模型正在成为具身智能体的核心推理模块，但在长时程空中任务中的能力尚不明确。本文提出MissionBench基准，包含5个模拟3D环境和4类任务族共120个任务，要求智能体仅依靠第一视角观测和动作历史自主规划、导航并报告结果。对22个开源和闭源MLLM的评测显示，最强模型成功率不足35%，远低于人类84.4%，揭示多步具身任务的难度。",
+      "llm_tldr": "多模态大语言模型正在成为具身智能体的核心推理模块，但在长时程空中任务中的能力尚不明确。本文提出MissionBench基准，包含5个模拟3D环境和4类任务族共120个任务，要求智能体仅依靠第一视角观测和动作历史自主规划、导航并报告结果。对22个开源和闭源MLLM的评测显示，最强模型成功率不足35%，远低于人类84.4%，揭示多步具身任务的难度。",
+      "llm_tags": [
+        "query:vvvpg"
+      ],
+      "matched_query_tag": "query:vvvpg",
+      "matched_query_text": "search for foundation models applied to UAV perception and autonomous navigation",
+      "matched_requirement_id": "req-9",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2607.22043v1",
+      "source": "arxiv",
+      "title": "Scaling Native Multimodal Pre-Training From Scratch",
+      "abstract": "Although large language models (LLMs) exhibit remarkable reasoning capabilities, their reliance on text-only pre-training restricts the perception of the multimodal physical world. Native multimodal pre-training avoids this limitation by training models from scratch on multimodal inputs, thereby achieving deep cross-modal integration and mitigating optimization asymmetries inherent to traditional late-fusion architectures. Despite these advantages, the scaling properties of this paradigm remain systematically uncharacterized. To address this gap, we investigate the optimal model size and token count for training a transformer-based vision-language model under a fixed computational budget. We demonstrate that minimal objective loss adheres to a predictable compute law, whereas compute-optimal model sizes and token counts scale as power laws. Notably, language and multimodal objectives manifest distinct scaling behaviors. The language allocation law is largely invariant to the composition of the data, indicating stable language learning regardless of the multimodal data ratio. Conversely, the multimodal allocation law is highly sensitive to this composition. Specifically, text-heavy mixtures become compute-efficient only at larger model scales, shifting the optimal resource allocation toward greater model capacity. Additionally, by modeling the influence of data composition on compute laws and allocation exponents, we derive an efficiency frontier specifying precise configurations of model size, token count, and data mixture. Downstream evaluations further reveal that native multimodal pre-training induces positive cross-modal transfer, thereby enhancing pure-text spatial reasoning and enabling robust multimodal in-context learning. In summary, this empirical research establishes the essential groundwork for predictably scaling multimodal foundation models.",
+      "authors": [
+        "Haoyuan Wu",
+        "Aoqi Wu",
+        "Hai Wang",
+        "Jiajia Wu",
+        "Jinxiang Ou",
+        "Bei Yu"
+      ],
+      "primary_category": "cs.CL",
+      "categories": [
+        "cs.CL",
+        "cs.CV"
+      ],
+      "published": "2026-07-24T07:13:52+00:00",
+      "link": "https://arxiv.org/pdf/2607.22043v1",
+      "tags": [
+        "keyword:vvvpg",
+        "query:vvvpg"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "native multimodal pre-training of vision-language models from scratch",
+      "llm_evidence_cn": "从零开始的原生多模态视觉-语言预训练",
+      "llm_evidence": "从零开始的原生多模态视觉-语言预训练",
+      "canonical_evidence": "从零开始的原生多模态视觉-语言预训练",
+      "llm_tldr_en": "Studies scaling laws for native multimodal pre-training of vision-language transformers from scratch, showing minimal loss follows a predictable compute law under fixed budgets, guiding optimal model size and token count.",
+      "llm_tldr_cn": "论文研究从零开始原生多模态预训练的扩展性质，在固定计算预算下考察最优模型规模与token数量。结果表明最小损失服从可预测的计算定律，为原生多模态训练提供扩展准则，并验证了深层跨模态集成相对于晚期融合的优势。",
+      "llm_tldr": "论文研究从零开始原生多模态预训练的扩展性质，在固定计算预算下考察最优模型规模与token数量。结果表明最小损失服从可预测的计算定律，为原生多模态训练提供扩展准则，并验证了深层跨模态集成相对于晚期融合的优势。",
+      "llm_tags": [
+        "query:vvvpg"
+      ],
+      "matched_query_tag": "query:vvvpg",
+      "matched_query_text": "multimodal model integrating image and text understanding",
+      "matched_requirement_id": "req-1",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2607.22068v1",
+      "source": "arxiv",
+      "title": "Rethinking Multi-Branch and Cross-Backbone Fusion for Vehicle Re-Identification in the Foundation-Model Era",
+      "abstract": "Multi-branch architectures and CNN-Transformer fusion have long been regarded as effective ways to improve vehicle re-identification (Re-ID) by combining complementary representations. In this work, we revisit this assumption in the foundation-model era through a comprehensive empirical study. A single DINOv3-pretrained ConvNeXt trained with a tuned recipe achieves 88.19 mAP on VeRi-Wild Small and 77.47 mAP on VeRi-Wild Large using visual cues alone, matching the strongest protocol-verified metadata-dependent multi-branch baseline. Applying training-free re-ranking further improves performance to 92.38 and 83.68 mAP, respectively. Using this strong baseline together with retrieval-level branch diagnostics, we evaluate whether increasing representational diversity still provides measurable gains. Across both benchmarks, concatenating multiple branches built on a shared backbone changes the best single-branch performance by less than one mAP point while increasing the embedding dimension by 4x, and the resulting representation has an effective rank close to the original feature dimension. We further study cross-backbone fusion using an asymmetric frozen-anchor strategy to combine ConvNeXt and Vision Transformer representations. Despite these favorable conditions, Transformer branches consistently remain 13-15 mAP below the ConvNeXt backbone, and paired per-query bootstrap analysis estimates the largest observed fusion gain to be only +0.11 mAP (95% confidence interval). Our results suggest that, under the evaluated setting, improving a single strong foundation-model backbone together with retrieval-stage re-ranking is more effective than increasing architectural complexity through additional branches or heterogeneous backbones. We restrict our conclusions to single-seed training and one family of foundation models and discuss conditions under which these observations may not hold.",
+      "authors": [
+        "Yu Wang",
+        "Hongyu Yang"
+      ],
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV",
+        "cs.LG"
+      ],
+      "published": "2026-07-24T08:10:53+00:00",
+      "link": "https://arxiv.org/pdf/2607.22068v1",
+      "tags": [
+        "keyword:vvvpg",
+        "query:vvvpg"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "DINOv3-pretrained ConvNeXt for transferable vehicle representation learning",
+      "llm_evidence_cn": "利用DINOv3预训练ConvNeXt学习可迁移车辆表示",
+      "llm_evidence": "利用DINOv3预训练ConvNeXt学习可迁移车辆表示",
+      "canonical_evidence": "利用DINOv3预训练ConvNeXt学习可迁移车辆表示",
+      "llm_tldr_en": "This empirical study shows a single DINOv3-pretrained ConvNeXt with a tuned recipe can match multi-branch fusion baselines in vehicle re-identification, and re-ranking further boosts performance.",
+      "llm_tldr_cn": "本文在基础模型时代重新审视车辆再识别中多分支与跨骨干融合的必要性。通过大规模实验发现，基于DINOv3预训练的单一ConvNeXt模型搭配调优策略，仅用视觉特征即可匹配依赖附加信息的多分支基线，达到88.19和77.47的mAP。再引入无训练重排序后性能进一步提升至92.38和83.68。该研究表明强预训练基础模型可以简化现有复杂融合架构，为视觉表示学习提供了新启示。",
+      "llm_tldr": "本文在基础模型时代重新审视车辆再识别中多分支与跨骨干融合的必要性。通过大规模实验发现，基于DINOv3预训练的单一ConvNeXt模型搭配调优策略，仅用视觉特征即可匹配依赖附加信息的多分支基线，达到88.19和77.47的mAP。再引入无训练重排序后性能进一步提升至92.38和83.68。该研究表明强预训练基础模型可以简化现有复杂融合架构，为视觉表示学习提供了新启示。",
+      "llm_tags": [
+        "query:vvvpg"
+      ],
+      "matched_query_tag": "query:vvvpg",
+      "matched_query_text": "large scale pretrained visual model for transferable representation learning",
+      "matched_requirement_id": "req-3",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2607.23504v1",
+      "source": "arxiv",
+      "title": "MemVLN: Episodic and Procedural Memory for Vision-and-Language Navigation",
+      "abstract": "Vision-and-Language Navigation in Continuous Environments (VLN-CE) requires agents to maintain long-horizon visual history for trajectory consistency while executing actions with low latency. Existing video-based VLN approaches typically struggle to satisfy both demands simultaneously. To address these challenges, we propose MemVLN, a novel VLN framework that achieves state-of-the-art performance with real-time inference efficiency (14 FPS). MemVLN utilizes a visual encoder to process continuous observations and a Large Language Model (LLM) to interpret instructions and generate actions. Central to our approach is an Episodic Memory management that applies pyramidal resolutions. This mechanism concentrates computation on immediate percepts while retaining compressed long-term history. Complementing to this design, we introduce Procedural Memory for fast action with a compact vocabulary of atomic mid-level actions to bypass auto-regressive decoding latency. Experiments on VLN-CE show that MemVLN-4B surpasses the baseline Qwen3-VL-4B architecture by 5.8\\% SR in R2R and 9.7\\% SR in RxR, while achieving a 7$\\times$ speedup in inference latency.",
+      "authors": [
+        "Yuqi Liu",
+        "Shengju Qian",
+        "Tianyuan Qu",
+        "Mingxian Lin",
+        "Zixuan Wang",
+        "Xin Wang",
+        "Bei Yu",
+        "Jiaya Jia"
+      ],
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "published": "2026-07-26T07:08:30+00:00",
+      "link": "https://arxiv.org/pdf/2607.23504v1",
+      "tags": [
+        "keyword:vvvpg",
+        "query:vvvpg"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "vision-and-language navigation in continuous environments with real-time inference",
+      "llm_evidence_cn": "连续环境视觉-语言导航并具备实时推理能力",
+      "llm_evidence": "连续环境视觉-语言导航并具备实时推理能力",
+      "canonical_evidence": "连续环境视觉-语言导航并具备实时推理能力",
+      "llm_tldr_en": "MemVLN achieves state-of-the-art VLN-CE performance at real-time 14 FPS using an LLM for instruction interpretation and action generation, with pyramidal-resolution episodic memory and procedural memory.",
+      "llm_tldr_cn": "论文针对连续环境下视觉-语言导航需兼顾长期视觉历史与低延迟执行的问题，提出MemVLN框架，利用视觉编码器处理观测、LLM生成动作，并通过金字塔分辨率的情境记忆与程序化记忆降低计算开销。实验达到SOTA性能并保持14 FPS实时推理，验证了高效记忆管理对长程导航的有效性。",
+      "llm_tldr": "论文针对连续环境下视觉-语言导航需兼顾长期视觉历史与低延迟执行的问题，提出MemVLN框架，利用视觉编码器处理观测、LLM生成动作，并通过金字塔分辨率的情境记忆与程序化记忆降低计算开销。实验达到SOTA性能并保持14 FPS实时推理，验证了高效记忆管理对长程导航的有效性。",
+      "llm_tags": [
+        "query:vvvpg"
+      ],
+      "matched_query_tag": "query:vvvpg",
+      "matched_query_text": "grounded navigation of agents guided by visual observations and language instructions",
+      "matched_requirement_id": "req-6",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2607.23782v1",
+      "source": "arxiv",
+      "title": "$N_0$-VTLA: Scaling Vision-Tactile-Language-Action Model with Latent Tactile Tokens",
+      "abstract": "We present $N_0$-VTLA, a vision-tactile-language-action (VTLA) foundation model capable of (1) fine-grained contact-rich manipulation with tactile perception and tactile-feedback control, and (2) offline policy improvement from stored deployment data. Building on current vision-based backbones, we propose a training recipe for tactile integration consisting of visuo-tactile pre-training, staged tactile-pathway integration, and advantage-conditioned offline policy improvement. During pre-training, the policy learns broad contact priors from NeoData, our large-scale visuo-tactile robot dataset; to our knowledge, $N_0$-VTLA is the first VTLA model pretrained on tactile data at scale. During post-training, we augment the policy with a predictive tactile pathway that distills the contact patterns learned at scale into the fine motion adjustments required by downstream tactile-centric manipulation. For offline policy improvement, we introduce ALTER, an advantage-conditioned offline reinforcement learning method that converts relative progress and trajectory-event comparisons into binary advantage labels for policy training on a fixed deployment corpus, further improving task-specific learning on contact-rich skills such as deformable object manipulation. Across contact-rich benchmarks, $N_0$-VTLA outperforms strong baselines by wide margins: it wins all nine real-robot NeoReal tasks and reaches 63.8% mean success on a twenty-task simulation suite, against 44.0% for the strongest baseline. $N_0$-VTLA policies trained with ALTER reach 75-95% success on three long-horizon real-robot tasks. These results lay a foundation for versatile tactile-driven manipulation policies.",
+      "authors": [
+        "NeoteAI Team",
+        "Fudan TEAI Team"
+      ],
+      "primary_category": "cs.RO",
+      "categories": [
+        "cs.RO"
+      ],
+      "published": "2026-07-26T17:58:47+00:00",
+      "link": "https://arxiv.org/pdf/2607.23782v1",
+      "tags": [
+        "keyword:vvvpg",
+        "query:vvvpg"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "Vision-Tactile-Language-Action foundation model for contact-rich manipulation",
+      "llm_evidence_cn": "用于精细接触操作的视觉-触觉-语言-动作基础模型",
+      "llm_evidence": "用于精细接触操作的视觉-触觉-语言-动作基础模型",
+      "canonical_evidence": "用于精细接触操作的视觉-触觉-语言-动作基础模型",
+      "llm_tldr_en": "N0-VTLA is a vision-tactile-language-action foundation model pretrained on large-scale visuo-tactile data and post-trained with staged tactile integration and advantage-conditioned offline improvement, enabling fine-grained contact-rich manipulation and offline policy enhancement.",
+      "llm_tldr_cn": "接触丰富的精细操作需要触觉感知与反馈，现有视觉基座策略缺乏触觉集成。本文提出N0-VTLA，这是一种视觉-触觉-语言-动作（VTLA）基础模型，在NeoData大规模视觉-触觉机器人数据集上预训练获得接触先验，再通过分阶段触觉通路集成和优势条件离线策略改进进行后训练。该模型能进行细粒度接触操作与离线策略提升，是首个大规模触觉数据预训练的VTLA模型。",
+      "llm_tldr": "接触丰富的精细操作需要触觉感知与反馈，现有视觉基座策略缺乏触觉集成。本文提出N0-VTLA，这是一种视觉-触觉-语言-动作（VTLA）基础模型，在NeoData大规模视觉-触觉机器人数据集上预训练获得接触先验，再通过分阶段触觉通路集成和优势条件离线策略改进进行后训练。该模型能进行细粒度接触操作与离线策略提升，是首个大规模触觉数据预训练的VTLA模型。",
+      "llm_tags": [
+        "query:vvvpg"
+      ],
+      "matched_query_tag": "query:vvvpg",
+      "matched_query_text": "model using visual and language inputs to produce action commands for embodied agents",
+      "matched_requirement_id": "req-2",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2607.23909v1",
+      "source": "arxiv",
+      "title": "WorldDiT: A Unified Diffusion Architecture for World and Action Modeling",
+      "abstract": "Many recent robot policies pursue stronger control by using large pretrained vision-language models (VLMs) as the action backbone. We introduce WorldDiT, a unified diffusion transformer architecture that couples action generation with visual world modeling and achieves strong performance without a large pretrained VLM action backbone. During training, a single diffusion transformer generates continuous action chunks and predicts normalized RGB patch targets from future camera frames. Across four LIBERO simulation suites, WorldDiT lies on the reported Pareto frontier for total model parameters and mean success among methods reporting all four suites. These results provide a strong sub-billion-parameter baseline for future scaling studies.",
+      "authors": [
+        "Sen Wang",
+        "R. Gnana Praveen",
+        "Bidhan Roy",
+        "Marcos Villagra"
+      ],
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG",
+        "cs.RO"
+      ],
+      "published": "2026-07-27T00:55:10+00:00",
+      "link": "https://arxiv.org/pdf/2607.23909v1",
+      "tags": [
+        "keyword:vvvpg",
+        "query:vvvpg"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "robot policy producing actions from visual observations and language instructions; unified diffusion transformer for action and world modeling",
+      "llm_evidence_cn": "面向具身智能体的视觉-语言-动作模型，用视觉世界建模生成动作；在LIBERO仿真中表现优异",
+      "llm_evidence": "面向具身智能体的视觉-语言-动作模型，用视觉世界建模生成动作；在LIBERO仿真中表现优异",
+      "canonical_evidence": "面向具身智能体的视觉-语言-动作模型，用视觉世界建模生成动作；在LIBERO仿真中表现优异",
+      "llm_tldr_en": "WorldDiT is a unified diffusion transformer that couples robot action generation with visual world modeling, achieving strong performance on LIBERO without a large pretrained VLM action backbone.",
+      "llm_tldr_cn": "现有机器人策略常以大型预训练视觉语言模型作为动作主干，虽控制力强但开销大。为此WorldDiT提出一种统一扩散Transformer架构，将动作生成与视觉世界建模耦合，在训练时同时输出连续动作和未来RGB帧预测。在四个LIBERO仿真套件中，WorldDiT在总参数与平均成功率上处于帕累托前沿，证明了不用大型VLM主干也能达到优性能。该工作为后续动作世界模型的规模化研究提供了亚十亿参数的强基线。",
+      "llm_tldr": "现有机器人策略常以大型预训练视觉语言模型作为动作主干，虽控制力强但开销大。为此WorldDiT提出一种统一扩散Transformer架构，将动作生成与视觉世界建模耦合，在训练时同时输出连续动作和未来RGB帧预测。在四个LIBERO仿真套件中，WorldDiT在总参数与平均成功率上处于帕累托前沿，证明了不用大型VLM主干也能达到优性能。该工作为后续动作世界模型的规模化研究提供了亚十亿参数的强基线。",
+      "llm_tags": [
+        "query:vvvpg"
+      ],
+      "matched_query_tag": "query:vvvpg",
+      "matched_query_text": "model using visual and language inputs to produce action commands for embodied agents",
+      "matched_requirement_id": "req-2",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2607.23969v2",
+      "source": "arxiv",
+      "title": "LeapBot-WA: World-Anchor Action Models via Predictive Latent Alignments",
+      "abstract": "World Action Models (WAMs) have emerged as a powerful paradigm for embodied intelligence, yet the prevailing reliance on pixel-level video generation creates a fundamental bottleneck. Forcing models to reconstruct task-irrelevant visual details dissipates representational capacity and renders policies vulnerable to visual distractors. In this paper, we propose LeapBot-WA, which establishes a novel Predictive-Latent paradigm for WAMs by operationalizing the Joint-Embedding Predictive Architecture (JEPA) as a World-Anchor. Departing from the traditional reliance on visual synthesis, LeapBot-WA shifts the core of world modeling to Predictive Semantic Alignment, extracting abstract physical dynamics directly within a latent foundation space. To bridge the modality gap between non-Gaussian predictive features and diffusion priors, we introduce the Isotropic Semantic Autoencoder (ISAE), which reshapes the anchor's latent space into a diffusion-friendly manifold to prevent off-manifold drift. Furthermore, we design an Asymmetric Mixture-of-Transformers (MoT) architecture. During training, an Anchor Diffusion Transformer acts as a privileged dynamics expert to guide the Action Diffusion Transformer; at inference, this heavy dynamics branch is pruned, enabling zero-overhead execution. LeapBot-WA achieves state-of-the-art performance among predictive models on LIBERO and matches top-tier generative WAMs on RoboTwin 2.0 without requiring large-scale trajectory pre-training. It further demonstrates superior zero-shot robustness to unseen environments and successful real-world transfer, establishing a highly efficient and robust latent-centric paradigm for scalable robotic control. Code: https://github.com/LeapWM/leapbot-wa.",
+      "authors": [
+        "Pei Liu",
+        "Nan Zheng",
+        "Lang Zhang",
+        "Daojie Peng",
+        "Yanan Zhang",
+        "Feilong Kong",
+        "Mingyue Feng",
+        "Jiachao Liu",
+        "Yaonong Wang",
+        "Qifeng Chen",
+        "Jun Ma"
+      ],
+      "primary_category": "cs.RO",
+      "categories": [
+        "cs.RO"
+      ],
+      "published": "2026-07-27T03:36:45+00:00",
+      "link": "https://arxiv.org/pdf/2607.23969v2",
+      "tags": [
+        "keyword:vvvpg",
+        "query:vvvpg"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "A world action model that predicts actions in latent space instead of pixel video generation.",
+      "llm_evidence_cn": "一种在潜在空间进行预测的世界动作模型，避免像素级视频生成。",
+      "llm_evidence": "一种在潜在空间进行预测的世界动作模型，避免像素级视频生成。",
+      "canonical_evidence": "一种在潜在空间进行预测的世界动作模型，避免像素级视频生成。",
+      "llm_tldr_en": "LeapBot-WA implements World Action Models using Joint-Embedding Predictive Architecture as a World-Anchor, performing predictive semantic alignment in latent space to generate actions while avoiding pixel video reconstruction bottlenecks.",
+      "llm_tldr_cn": "世界动作模型依赖像素级视频生成会浪费容量且易受视觉干扰。该文提出LeapBot-WA，将联合嵌入预测架构（JEPA）作为世界锚点，在潜在基础空间内进行预测性语义对齐，抽取抽象物理动态，而非合成视觉细节。该方法提高了策略对视觉干扰的鲁棒性，为具身智能的动作预测提供了更高效的范式。",
+      "llm_tldr": "世界动作模型依赖像素级视频生成会浪费容量且易受视觉干扰。该文提出LeapBot-WA，将联合嵌入预测架构（JEPA）作为世界锚点，在潜在基础空间内进行预测性语义对齐，抽取抽象物理动态，而非合成视觉细节。该方法提高了策略对视觉干扰的鲁棒性，为具身智能的动作预测提供了更高效的范式。",
+      "llm_tags": [
+        "query:vvvpg"
+      ],
+      "matched_query_tag": "query:vvvpg",
+      "matched_query_text": "model using visual and language inputs to produce action commands for embodied agents",
+      "matched_requirement_id": "req-2",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2607.24407v1",
+      "source": "arxiv",
+      "title": "Mixture-of-Thought-Tokens: Unifying Perception and Reasoning for Free-form Multimodal Grounding",
+      "abstract": "Multimodal Large Language Models have made great progress in grounding tasks, yet existing methods still struggle to unify precise localization and complex reasoning. For one thing, text-based methods rely on coordinates or index prediction, severely limiting the perceptual capabilities of the model for dense visual objects. Meanwhile, latent token-based methods employ special tokens without inherent spatial references and use a decoding mechanism that lacks thinking steps, weakening high-level reasoning capabilities. Consequently, developing a unified framework that excels in both perception and reasoning remains challenging. To address this, we propose Mixture-of-Thought-Tokens (Motto), a new free-form multimodal grounding method that bridges the perception-reasoning gap, enabling MLLMs to empower diverse, arbitrary grounding queries. Specifically, we introduce Spatially-Grounded Thought Tokenization to explicitly align special tokens with spatial locations for clear spatial correspondence and visual interpretability. We further design a Context-Adaptive Chain-of-Tokens that dynamically switch grounding modes within an interleaved reasoning chain, achieving robust grounding across tasks of varying complexity. In addition, we construct PR-Bench, a new referring expression comprehension benchmark to evaluate the perception-reasoning gap. Extensive experiments demonstrate that Motto achieves state-of-the-art performance across diverse free-form grounding tasks.",
+      "authors": [
+        "Tianyi Gao",
+        "Han Fang",
+        "Tianyi Ding",
+        "Hao Li",
+        "Xin Wei",
+        "Hongbo Sun",
+        "Xiaodong Dong",
+        "Ye Yuan",
+        "Jinglin Xu",
+        "Kongming Liang",
+        "Hao Sun",
+        "Jingmin Xin"
+      ],
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "published": "2026-07-27T13:24:35+00:00",
+      "link": "https://arxiv.org/pdf/2607.24407v1",
+      "tags": [
+        "keyword:vvvpg",
+        "query:vvvpg"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "Unified multimodal grounding with perception and reasoning via thought tokens",
+      "llm_evidence_cn": "通过思维令牌统一多模态定位的感知与推理",
+      "llm_evidence": "通过思维令牌统一多模态定位的感知与推理",
+      "canonical_evidence": "通过思维令牌统一多模态定位的感知与推理",
+      "llm_tldr_en": "Motto introduces mixture-of-thought-tokens to unify precise localization and complex reasoning in free-form multimodal grounding, overcoming coordinate-based and latent-token limitations.",
+      "llm_tldr_cn": "多模态大模型在指代定位任务中难以同时实现精确感知与复杂推理，文本法受限于坐标或索引，潜在令牌法缺少思考步骤。为此提出Motto，采用思维令牌混合机制将感知与推理统一在自由形式多模态定位中。模型既能输出灵活的空间引用，又能进行分步推理，从而提升密集目标定位与复杂场景理解能力。该框架为多模态定位与推理的协同提供了新的统一方案。",
+      "llm_tldr": "多模态大模型在指代定位任务中难以同时实现精确感知与复杂推理，文本法受限于坐标或索引，潜在令牌法缺少思考步骤。为此提出Motto，采用思维令牌混合机制将感知与推理统一在自由形式多模态定位中。模型既能输出灵活的空间引用，又能进行分步推理，从而提升密集目标定位与复杂场景理解能力。该框架为多模态定位与推理的协同提供了新的统一方案。",
+      "llm_tags": [
+        "query:vvvpg"
+      ],
+      "matched_query_tag": "query:vvvpg",
+      "matched_query_text": "multimodal model integrating image and text understanding",
+      "matched_requirement_id": "req-1",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2607.25106v1",
+      "source": "arxiv",
+      "title": "IMPRINT: Image-Conditioned Query Enrichment for Long-Tail Object Goal Navigation",
+      "abstract": "Embodied AI increasingly relies on queryable semantic maps built from pre-trained vision-language models to enable zero-shot Object Goal Navigation (ObjectNav). However, existing approaches typically depend on text-only queries, which become less reliable as semantic specificity increases toward fine-grained object categories. We introduce IMPRINT, a zero-shot plug-and-play framework that enriches textual object queries with web-sourced images to improve grounding in queryable maps. Retrieved images are encoded using a vision-language model, matched against the semantic map to produce similarity maps, and aggregated to yield context-aware localization. Notably, this requires no training or modification of the underlying navigation policy. To explicitly evaluate long-tail behavior, we present HSSD-rare, a new ObjectNav benchmark built on Habitat Synthetic Scenes and featuring semantically specific subcategories. Across both OVON and HSSD-rare, image-conditioned queries consistently improve object grounding and yield end-to-end navigation gains. Further analysis reveals that translating localization gains to navigation performance depends critically on downstream detection quality, highlighting a key systems bottleneck in long-tail embodied navigation.",
+      "authors": [
+        "Jelin Raphael Akkara",
+        "Filippo Ziliotto",
+        "Luciano Serafini",
+        "Lamberto Ballan",
+        "Tommaso Campari"
+      ],
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "published": "2026-07-27T22:09:32+00:00",
+      "link": "https://arxiv.org/pdf/2607.25106v1",
+      "tags": [
+        "keyword:vvvpg",
+        "query:vvvpg"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "zero-shot object goal navigation enriching text queries with web images via vision-language grounding",
+      "llm_evidence_cn": "用网络图片增强文本查询，实现零样本物体目标导航的视觉语言接地",
+      "llm_evidence": "用网络图片增强文本查询，实现零样本物体目标导航的视觉语言接地",
+      "canonical_evidence": "用网络图片增强文本查询，实现零样本物体目标导航的视觉语言接地",
+      "llm_tldr_en": "IMPRINT enriches text-only object queries with web images, encodes them with a VLM, matches against semantic maps for zero-shot ObjectNav without retraining the navigation policy, improving long-tail grounding.",
+      "llm_tldr_cn": "零样本物体目标导航常依赖文本查询，在细粒度类别上不可靠。该文提出IMPRINT，作为即插即用框架从网络检索图片来丰富文本查询，用视觉语言模型编码图片，与语义地图匹配得到相似度图并聚合出上下文感知的定位结果。它无需训练或修改底层导航策略，即可提升长尾物体的接地成功率。在目标导航评测中，该方法显著改善了细粒度类别的零样本表现，展示了外部图像知识对具身导航的有效增强。",
+      "llm_tldr": "零样本物体目标导航常依赖文本查询，在细粒度类别上不可靠。该文提出IMPRINT，作为即插即用框架从网络检索图片来丰富文本查询，用视觉语言模型编码图片，与语义地图匹配得到相似度图并聚合出上下文感知的定位结果。它无需训练或修改底层导航策略，即可提升长尾物体的接地成功率。在目标导航评测中，该方法显著改善了细粒度类别的零样本表现，展示了外部图像知识对具身导航的有效增强。",
+      "llm_tags": [
+        "query:vvvpg"
+      ],
+      "matched_query_tag": "query:vvvpg",
+      "matched_query_text": "grounded navigation of agents guided by visual observations and language instructions",
+      "matched_requirement_id": "req-6",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2607.25912v1",
+      "source": "arxiv",
+      "title": "SAM3D-Guided Object-Centric Representation Alignment for Vision-Language-Action Models",
+      "abstract": "Vision-Language-Action (VLA) models have shown strong potential for general robot manipulation, but most existing models rely on 2D visual-language backbones and lack fine-grained 3D understanding of target objects, especially under occlusion, pose variation, scale changes, and precise spatial interaction. We propose an object-centric 3D representation alignment framework built upon $π_0$, using SAM3D as a frozen 3D teacher to provide target-object 3D priors during training. Specifically, we localize task-relevant objects with object recognition models, generate corresponding object masks, and use SAM3D to extract dense object-level 3D representations, which are aligned with intermediate visual features of $π_0$. This enables the policy to internalize target-object 3D information while preserving the original RGB-language-to-action inference pipeline without requiring depth, point clouds, masks, SAM3D, or additional 3D modules at test time. Simulation experiments show consistent improvements, achieving 99.1\\% on LIBERO and an average length of 4.11 on CALVIN. Real-world experiments further demonstrate that our method is particularly effective in long-horizon manipulation scenarios where the robot must focus on different target objects across multiple subtasks.",
+      "authors": [
+        "Zonghe Liu",
+        "Shanyuan Jie",
+        "Xiaoquan Sun",
+        "Chen Cao",
+        "Zetian Xu",
+        "Zongsheng Liu",
+        "Jiayu Chen"
+      ],
+      "primary_category": "cs.RO",
+      "categories": [
+        "cs.RO",
+        "cs.AI"
+      ],
+      "published": "2026-07-28T16:05:32+00:00",
+      "link": "https://arxiv.org/pdf/2607.25912v1",
+      "tags": [
+        "keyword:vvvpg",
+        "query:vvvpg"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "Directly improves VLA models by aligning object-centric 3D representations from SAM3D for robot manipulation.",
+      "llm_evidence_cn": "通过SAM3D提供的物体级3D表示对齐，直接提升VLA模型在机器人操作中的表现。",
+      "llm_evidence": "通过SAM3D提供的物体级3D表示对齐，直接提升VLA模型在机器人操作中的表现。",
+      "canonical_evidence": "通过SAM3D提供的物体级3D表示对齐，直接提升VLA模型在机器人操作中的表现。",
+      "llm_tldr_en": "Proposes an object-centric 3D representation alignment framework for VLA models, using SAM3D as a frozen teacher to align 3D object priors with visual features of the policy, improving manipulation under occlusion and pose variation.",
+      "llm_tldr_cn": "现有视觉-语言-动作（VLA）模型多依赖2D视觉语言主干，缺乏对目标物体的精细3D理解。该文提出基于SAM3D的物体中心表示对齐框架，在训练时通过目标识别与掩码生成，利用冻结的SAM3D提取稠密物体级3D表示，并与策略的中间视觉特征对齐。这一方法增强了模型在遮挡、姿态变化和尺度变化下的操作能力，为通用机器人操作提供了新的技术路径。",
+      "llm_tldr": "现有视觉-语言-动作（VLA）模型多依赖2D视觉语言主干，缺乏对目标物体的精细3D理解。该文提出基于SAM3D的物体中心表示对齐框架，在训练时通过目标识别与掩码生成，利用冻结的SAM3D提取稠密物体级3D表示，并与策略的中间视觉特征对齐。这一方法增强了模型在遮挡、姿态变化和尺度变化下的操作能力，为通用机器人操作提供了新的技术路径。",
+      "llm_tags": [
+        "query:vvvpg"
+      ],
+      "matched_query_tag": "query:vvvpg",
+      "matched_query_text": "model using visual and language inputs to produce action commands for embodied agents",
+      "matched_requirement_id": "req-2",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2607.26596v1",
+      "source": "arxiv",
+      "title": "Decoupled Visual Processing: Efficient Multimodal Adaptation via Modality-Specific Transformer Substitution",
+      "abstract": "Multimodal large language models (MLLMs) have demonstrated remarkable capabilities by integrating visual and textual understanding within a unified transformer architecture. However, fine-tuning all parameters of these models for visual instruction tuning is computationally expensive and often unnecessary, as the representation requirements for visual and textual tokens diverge significantly in the deeper layers of the network. In this paper, we propose Decoupled Visual Processing (DVP), an efficient training framework that replaces the upper decoder layers of a pretrained LLM with a lightweight, independently trainable single transformer block dedicated exclusively to visual token processing. Specifically, after shared processing through the first half of the decoder layers, visual and textual tokens are split: visual tokens are routed through a newly initialized single transformer block while textual tokens continue through the original frozen decoder layers. The two streams are then concatenated before the language modeling head. During training, only the single transformer block is updated, dramatically reducing the number of trainable parameters. Experiments on the LLaVA-1.5 framework demonstrate that DVP achieves competitive performance on MME, POPE, and ChartQA benchmarks while training only a fraction of the total parameters, suggesting that visual representations in MLLMs can be effectively learned through a decoupled, parameter-efficient pathway.",
+      "authors": [
+        "Mingkuan Feng",
+        "Zhengqi Wen",
+        "Jianhua Tao"
+      ],
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "published": "2026-07-29T08:16:28+00:00",
+      "link": "https://arxiv.org/pdf/2607.26596v1",
+      "tags": [
+        "keyword:vvvpg",
+        "query:vvvpg"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "efficient multimodal adaptation for MLLMs by decoupled visual token processing",
+      "llm_evidence_cn": "面向多模态大语言模型的高效视觉解耦适配方法",
+      "llm_evidence": "面向多模态大语言模型的高效视觉解耦适配方法",
+      "canonical_evidence": "面向多模态大语言模型的高效视觉解耦适配方法",
+      "llm_tldr_en": "Proposes Decoupled Visual Processing (DVP), replacing upper LLM decoder layers with a single lightweight transformer block dedicated to visual tokens, cutting cost of visual instruction tuning while retaining multimodal understanding.",
+      "llm_tldr_cn": "多模态大语言模型统一处理视觉与文本，但深层网络中两类token的表征需求差异明显，全参数微调昂贵且不必要。该文提出解耦视觉处理（DVP），将预训练LLM的上层解码层替换为仅处理视觉token的轻量单层Transformer模块。这样只需训练少量视觉专用参数即可完成视觉指令微调，显著降低训练成本，同时保持视觉语言理解能力。实验表明该方法在效率和效果上优于全量微调与现有高效适配方案。该工作为多模态模型的高效适配提供了新的架构方向。",
+      "llm_tldr": "多模态大语言模型统一处理视觉与文本，但深层网络中两类token的表征需求差异明显，全参数微调昂贵且不必要。该文提出解耦视觉处理（DVP），将预训练LLM的上层解码层替换为仅处理视觉token的轻量单层Transformer模块。这样只需训练少量视觉专用参数即可完成视觉指令微调，显著降低训练成本，同时保持视觉语言理解能力。实验表明该方法在效率和效果上优于全量微调与现有高效适配方案。该工作为多模态模型的高效适配提供了新的架构方向。",
+      "llm_tags": [
+        "query:vvvpg"
+      ],
+      "matched_query_tag": "query:vvvpg",
+      "matched_query_text": "multimodal model integrating image and text understanding",
+      "matched_requirement_id": "req-1",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2607.26769v1",
+      "source": "arxiv",
+      "title": "See2Think: Do Multimodal Models Really Use Intermediate Visual States?",
+      "abstract": "Multimodal large language models increasingly use sketches, annotations, tools, and intermediate images during reasoning, but it remains unclear whether they truly rely on these visual states. Existing benchmarks are limited both by task collections with narrow coverage or partially text-solvable samples and by evaluations that emphasize final answers without diagnosing how intermediate visual states are generated, rendered, and used. We introduce See2Think, a unified evaluation framework comprising See2ThinkBench and Visual Action-of-Thought (VAoT). See2ThinkBench contains 1,200 open-ended, visually dependent problems across 12 task categories spanning 2D structured, 3D scene, and real-world reasoning. VAoT records textual thoughts, visual actions, rendered states, and subsequent reasoning under four controlled inference settings. Evaluating representative proprietary and open-source multimodal models, we find that visual reasoning is strongly model- and environment-dependent, with no single setting consistently dominating across tasks. Process analysis further shows that models usually select relevant visual operations, while faithful rendering remains the clearest bottleneck and high feedback uptake does not necessarily translate into accuracy gains. Under task-relevant corrupted feedback, models exhibit behavioral dependence on visual states, with accuracy dropping by over 10 percentage points in controlled interventions.",
+      "authors": [
+        "Siyu Yan",
+        "Zhuoran Yan",
+        "Haiying Xu",
+        "Panhao Zhou",
+        "Jingyu Chen",
+        "Chenhao Ji",
+        "Shuo Cao",
+        "Yongheng Zhang",
+        "Haoze Liu",
+        "Siyu Zhang",
+        "Xiwen Gu",
+        "Yihao Liu",
+        "Alex Jinpeng Wang"
+      ],
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "published": "2026-07-29T11:10:34+00:00",
+      "link": "https://arxiv.org/pdf/2607.26769v1",
+      "tags": [
+        "keyword:vvvpg",
+        "query:vvvpg"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "benchmark and evaluation framework for multimodal large language models on visual reasoning",
+      "llm_evidence_cn": "面向多模态大语言模型视觉推理的基准与评测框架",
+      "llm_evidence": "面向多模态大语言模型视觉推理的基准与评测框架",
+      "canonical_evidence": "面向多模态大语言模型视觉推理的基准与评测框架",
+      "llm_tldr_en": "See2Think introduces a unified evaluation framework and benchmark to test whether multimodal LLMs genuinely use intermediate visual states; it includes 1,200 visually dependent problems across 12 task categories and records visual actions of thought, yielding more reliable diagnosis than final-answer-only benchmarks.",
+      "llm_tldr_cn": "现有评测难以判断多模态大模型推理时是否真正利用中间视觉状态，且任务覆盖窄、可部分用文本解决。See2Think提出统一评测框架，包含1200道强视觉依赖问题的See2ThinkBench，并设计视觉思维链动作记录生成与使用过程。该框架可诊断模型对中间视觉状态的利用不足，为多模态理解研究提供了更细粒度评测工具。",
+      "llm_tldr": "现有评测难以判断多模态大模型推理时是否真正利用中间视觉状态，且任务覆盖窄、可部分用文本解决。See2Think提出统一评测框架，包含1200道强视觉依赖问题的See2ThinkBench，并设计视觉思维链动作记录生成与使用过程。该框架可诊断模型对中间视觉状态的利用不足，为多模态理解研究提供了更细粒度评测工具。",
+      "llm_tags": [
+        "query:vvvpg"
+      ],
+      "matched_query_tag": "query:vvvpg",
+      "matched_query_text": "multimodal model integrating image and text understanding",
+      "matched_requirement_id": "req-1",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2607.26770v1",
+      "source": "arxiv",
+      "title": "Vision-TL-Action: Neuro-Symbolic Trajectory Generation from Visual Observations and Temporal Logic",
+      "abstract": "Temporal logic (TL) provides a compositional language for the formulation of long horizon robotic tasks, but existing TL-conditioned trajectory generators can sidestep perception-to-symbol binding by encoding exact object geometry in the task graph. We introduce \\emph{Vision-TL-Action}, which generates action trajectories from multi-view images, a coordinate-free TL syntax graph, and the robot initial state. TL-node tokens and spatial visual tokens are fused through bidirectional cross-attention, and the resulting representation conditions a flow-matching trajectory generator. Visual tokens are augmented only with normalized image-plane locations and camera-view identifiers, while a training-only predicate-to-region objective encourages grounding to referenced objects. Consistent with prior work in this domain, we evaluate the model using Success@$K$, the fraction of tasks for which at least one of K sampled trajectories satisfies the TL specification. On Panda task, our model achieves 67.45% Success@1024, compared with 59.11% for the oracle-state baseline. On AntMaze task, it achieves 96.35% Success@256, comparable to the oracle result of 96.88%. Resolution and intervention studies show that spatial detail depends on semantic grounding and predicate identity affects both attention and performance. These results demonstrate a direct mapping from visual observations and structured TL goals to action trajectories without requiring object geometry at inference. Code is available at https://github.com/AricLau07/vision-tl-action.",
+      "authors": [
+        "Zezhi Liu",
+        "Zhiwei Zheng",
+        "Hanqian Luo",
+        "Deyun Qin",
+        "Shizhen Wu",
+        "Yongchun Fang"
+      ],
+      "primary_category": "cs.RO",
+      "categories": [
+        "cs.RO"
+      ],
+      "published": "2026-07-29T11:12:31+00:00",
+      "link": "https://arxiv.org/pdf/2607.26770v1",
+      "tags": [
+        "keyword:vvvpg",
+        "query:vvvpg"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "Generates action trajectories from multi-view images and temporal logic language, a VLA-style method.",
+      "llm_evidence_cn": "从多视图图像与时序逻辑语言生成动作轨迹，属于视觉-语言-动作方法。",
+      "llm_evidence": "从多视图图像与时序逻辑语言生成动作轨迹，属于视觉-语言-动作方法。",
+      "canonical_evidence": "从多视图图像与时序逻辑语言生成动作轨迹，属于视觉-语言-动作方法。",
+      "llm_tldr_en": "Vision-TL-Action generates robotic action trajectories from multi-view images, a coordinate-free temporal logic syntax graph, and initial robot state by fusing TL tokens and visual tokens with cross-attention and a flow-matching generator.",
+      "llm_tldr_cn": "现有基于时序逻辑（TL）的轨迹生成通常依赖精确目标几何，缺乏感知到符号的绑定。该文提出Vision-TL-Action，将多视图图像、无坐标TL语法图与机器人初始状态结合，通过双向交叉注意力融合TL节点词元和空间视觉词元，并用流匹配生成动作轨迹。训练时利用谓词到区域目标增强绑定，从而实现从视觉和语言到动作的生成。",
+      "llm_tldr": "现有基于时序逻辑（TL）的轨迹生成通常依赖精确目标几何，缺乏感知到符号的绑定。该文提出Vision-TL-Action，将多视图图像、无坐标TL语法图与机器人初始状态结合，通过双向交叉注意力融合TL节点词元和空间视觉词元，并用流匹配生成动作轨迹。训练时利用谓词到区域目标增强绑定，从而实现从视觉和语言到动作的生成。",
+      "llm_tags": [
+        "query:vvvpg"
+      ],
+      "matched_query_tag": "query:vvvpg",
+      "matched_query_text": "model using visual and language inputs to produce action commands for embodied agents",
+      "matched_requirement_id": "req-2",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2607.27138v1",
+      "source": "arxiv",
+      "title": "DLAM: Distributional Latent Actions with Temporal Constraints",
+      "abstract": "Vision-language-action (VLA) models remain constrained by scarce action-labeled robot data, whereas action-free videos offer abundant observations of physical change. Latent action models can extract such priors, but reconstruction-trained codes may predict future observations without the structure required for joint generation with robot actions. Existing structured methods add temporal constraints but retain deterministic transition points, so residual errors in locally inferred transitions may propagate and compound under recursive composition. We introduce DLAM, a distributional latent-action model that represents each transition as a diagonal Gaussian. Reconstruction conditioned on the reference frame grounds the mean in observed visual change, while normalized composition and reversal over equal-gap triplets constrain both the mean and dimension-wise variance. Variance composition uses a lightweight shared-correlation coefficient to account for dependence between adjacent transitions that share an intermediate frame, whereas reversal negates the mean and preserves the variance. For downstream policy learning, we freeze the encoder and train a flow-matching policy to jointly generate mean transition sequences and robot actions. On held-out transitions, DLAM learns more temporally consistent latent dynamics than existing latent-action baselines and achieves stronger direct and cumulative reconstruction on held-out videos. Under the same controlled $π_0$ transfer protocol, it also improves policy performance on MetaWorld MT50, LIBERO, and real-world manipulation tasks. Controlled ablations show that normalized mean constraints account for most of the reconstruction gain, while learned variance and correlation-aware composition provide complementary improvements in downstream control.",
+      "authors": [
+        "Zuojin Tang",
+        "Feifan Luo",
+        "Haoyun Liu",
+        "Botai Yuan",
+        "Dekang Qi",
+        "Ronghan Chen",
+        "Yandan Yang",
+        "Tong Lin",
+        "Xinyuan Chang",
+        "Mu Xu",
+        "Bin Liu",
+        "De Ma",
+        "Zhiheng Ma"
+      ],
+      "primary_category": "cs.RO",
+      "categories": [
+        "cs.RO",
+        "cs.AI",
+        "cs.CV"
+      ],
+      "published": "2026-07-29T17:09:48+00:00",
+      "link": "https://arxiv.org/pdf/2607.27138v1",
+      "tags": [
+        "keyword:vvvpg",
+        "query:vvvpg"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "VLA model learning latent actions from action-free videos with distributional transitions",
+      "llm_evidence_cn": "VLA模型从无动作视频中学习潜在动作，并采用分布转移建模",
+      "llm_evidence": "VLA模型从无动作视频中学习潜在动作，并采用分布转移建模",
+      "canonical_evidence": "VLA模型从无动作视频中学习潜在动作，并采用分布转移建模",
+      "llm_tldr_en": "DLAM introduces a distributional latent-action model that represents transitions as diagonal Gaussians, grounding them in observed visual change to enable joint generation with robot actions from action-free video.",
+      "llm_tldr_cn": "视觉-语言-动作模型常受限于带动作标签的机器人数据不足，而无动作视频蕴含着丰富物理变化。现有潜在动作模型存在结构不足或误差累积问题。本文提出DLAM，将每个转移建模为对角高斯分布，并以参考帧条件重建来为均值提供视觉变化依据。该分布性建模减少了时序外推误差，使模型能更好地从无动作视频中学习行动先验。该工作为VLA扩展数据来源提供了新思路。",
+      "llm_tldr": "视觉-语言-动作模型常受限于带动作标签的机器人数据不足，而无动作视频蕴含着丰富物理变化。现有潜在动作模型存在结构不足或误差累积问题。本文提出DLAM，将每个转移建模为对角高斯分布，并以参考帧条件重建来为均值提供视觉变化依据。该分布性建模减少了时序外推误差，使模型能更好地从无动作视频中学习行动先验。该工作为VLA扩展数据来源提供了新思路。",
+      "llm_tags": [
+        "query:vvvpg"
+      ],
+      "matched_query_tag": "query:vvvpg",
+      "matched_query_text": "model using visual and language inputs to produce action commands for embodied agents",
+      "matched_requirement_id": "req-2",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2607.27205v1",
+      "source": "arxiv",
+      "title": "TurboVLA: Real-Time Vision-Language-Action Model at 32 Hz on an RTX 4090 with <1 GB VRAM",
+      "abstract": "Vision-language-action (VLA) models commonly adopt an LLM-centric $V \\to L \\to A$ pathway, where visual observations are projected into the representation space of a large language model before being decoded into robot actions. Although effective, this design incurs substantial computation and memory overhead at every policy invocation. In this work, we introduce TurboVLA, a new VLA paradigm that reformulates the conventional $V \\to L \\to A$ pathway as a direct $V + L \\to A$ mapping. Instead of using a large language model as the central interface between perception and action, TurboVLA independently encodes visual observations and language instructions, directly exchanges information between them through lightweight bidirectional vision-language interaction, and predicts continuous action chunks with a compact decoder. This simple design constructs task-conditioned representations directly from visual and linguistic features, significantly reducing the computational and memory costs of VLA inference. On LIBERO, TurboVLA achieves 97.7% average success with only 0.2B parameters, 31.2 ms inference latency, and 0.9 GB inference VRAM on a consumer-grade RTX 4090, matching or outperforming substantially larger VLA policies. These results establish TurboVLA as a simple and effective alternative to the prevailing LLM-centric VLA paradigm, offering a new perspective on how vision, language, and action can be connected for efficient robotic manipulation. Code is available at https://github.com/H-EmbodVis/TurboVLA.",
+      "authors": [
+        "Hengyi Xie",
+        "Chenfei Yao",
+        "Xianjin Wu",
+        "Xuanyang Xi",
+        "Yiping Tang",
+        "Di Xu",
+        "Yingying Zhu",
+        "Dingkang Liang",
+        "Xiang Bai",
+        "Han Ding"
+      ],
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV",
+        "cs.RO"
+      ],
+      "published": "2026-07-29T17:59:58+00:00",
+      "link": "https://arxiv.org/pdf/2607.27205v1",
+      "tags": [
+        "keyword:vvvpg",
+        "query:vvvpg"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "Vision-language-action model converting visual and language inputs directly into robot actions",
+      "llm_evidence_cn": "直接将视觉和语言输入映射为机器人动作的视觉-语言-动作模型",
+      "llm_evidence": "直接将视觉和语言输入映射为机器人动作的视觉-语言-动作模型",
+      "canonical_evidence": "直接将视觉和语言输入映射为机器人动作的视觉-语言-动作模型",
+      "llm_tldr_en": "TurboVLA reformulates VLA as a direct V+L to A mapping, avoiding LLM-centric bottlenecks, achieving real-time 32 Hz inference on RTX 4090 with <1 GB VRAM.",
+      "llm_tldr_cn": "视觉-语言-动作模型通常以LLM为中心，造成高计算和内存开销。TurboVLA提出直接从视觉与语言输入映射到动作的范式，通过轻量双向视觉信息交换替代LLM中枢，大幅降低推理成本。在RTX 4090上实现32Hz实时运行且显存低于1GB，表明该方法可部署于资源受限的机器人系统，为实时交互提供基础。",
+      "llm_tldr": "视觉-语言-动作模型通常以LLM为中心，造成高计算和内存开销。TurboVLA提出直接从视觉与语言输入映射到动作的范式，通过轻量双向视觉信息交换替代LLM中枢，大幅降低推理成本。在RTX 4090上实现32Hz实时运行且显存低于1GB，表明该方法可部署于资源受限的机器人系统，为实时交互提供基础。",
+      "llm_tags": [
+        "query:vvvpg"
+      ],
+      "matched_query_tag": "query:vvvpg",
+      "matched_query_text": "model using visual and language inputs to produce action commands for embodied agents",
+      "matched_requirement_id": "req-2",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2607.27599v1",
+      "source": "arxiv",
+      "title": "World Action Planner: Generalizable Decision-Making with Action-Conditioned World Models",
+      "abstract": "Building generalizable agents for diverse applications remains a fundamental challenge. While imitation learning-based policies succeed in specific training environments, they often fail to generalize to novel scenes and tasks. In this work, we propose World Action Planner, a robot planning system that leverages the reasoning capabilities of Vision-Language Models (VLMs) and the physical grounding of a multi-task pose-image conditioned world model. Our system enables an agent to propose initial action plans and iteratively refine them via optimization and search, reasoning over imagined world model rollouts. We demonstrate that our approach achieves superior performance across compositional tasks, new layouts, and zero-shot generalization scenarios, significantly outperforming state-of-the-art end-to-end policy models such as VLAs and WAMs. Project website at worldactionplanner.github.io",
+      "authors": [
+        "Xiangcheng Zhang",
+        "Yilun Du"
+      ],
+      "primary_category": "cs.AI",
+      "categories": [
+        "cs.AI",
+        "cs.RO"
+      ],
+      "published": "2026-07-30T02:41:52+00:00",
+      "link": "https://arxiv.org/pdf/2607.27599v1",
+      "tags": [
+        "keyword:vvvpg",
+        "query:vvvpg"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "VLM-based robot planning with action-conditioned world models",
+      "llm_evidence_cn": "基于视觉语言模型与动作条件世界模型的机器人规划",
+      "llm_evidence": "基于视觉语言模型与动作条件世界模型的机器人规划",
+      "canonical_evidence": "基于视觉语言模型与动作条件世界模型的机器人规划",
+      "llm_tldr_en": "Proposes a robot planning system that combines Vision-Language Models with a multi-task pose-image conditioned world model, enabling agents to refine action plans through imagined rollouts and achieve superior generalization to compositional tasks and new layouts.",
+      "llm_tldr_cn": "模仿学习策略难以泛化到新场景和新任务，通用具身决策仍需突破。World Action Planner将视觉语言模型的推理能力与多任务姿态图像条件世界模型结合，让智能体提出初始动作计划并通过想象回滚进行迭代优化。在组合任务、新布局和零样本泛化上取得优异表现，为通用机器人决策提供有效范式。",
+      "llm_tldr": "模仿学习策略难以泛化到新场景和新任务，通用具身决策仍需突破。World Action Planner将视觉语言模型的推理能力与多任务姿态图像条件世界模型结合，让智能体提出初始动作计划并通过想象回滚进行迭代优化。在组合任务、新布局和零样本泛化上取得优异表现，为通用机器人决策提供有效范式。",
+      "llm_tags": [
+        "query:vvvpg"
+      ],
+      "matched_query_tag": "query:vvvpg",
+      "matched_query_text": "model using visual and language inputs to produce action commands for embodied agents",
+      "matched_requirement_id": "req-2",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2607.28595v1",
+      "source": "arxiv",
+      "title": "Beacon: Knowing When and How to Perform Agentic Visual Reasoning",
+      "abstract": "The fundamental goal of agentic visual reasoning is to improve the success rate of multimodal large language models (MLLMs) on complex tasks, rather than merely equipping them with a sophisticated yet inefficient reasoning paradigm. In this work, we rethink agentic visual reasoning through two key dimensions of tool use: Mode Adaptiveness (MA) and Tool Effect (TE). Mode Adaptiveness characterizes whether an MLLM can recognize when tools are truly necessary and invoke them accordingly, thereby avoiding unnecessary computational overhead while improving performance on challenging problems that require tool assistance. Tool Effect characterizes the actual impact of tool use: tools should extend the model's capabilities on problems unsolvable through text-only reasoning, while avoiding additional errors on problems that the model can already solve without tools. We conduct a comprehensive analysis to quantify these two properties and empirically reveal that existing agentic visual reasoning models exhibit limited Mode Adaptiveness, while the gains produced by tool use on hard examples are largely offset by the harm introduced on easy examples that the models can already solve. Motivated by these observations, we propose Beacon, a novel agentic visual reasoning model that achieves stronger overall performance, improved Mode Adaptiveness, and genuine tool-induced performance gains. At the core of Beacon are the Necessity-Aware Adaptive Reward and the Hint-Guided Capability Expansion mechanism in the reinforcement learning stage, which respectively encourage adaptive tool invocation based on task necessity and strengthen the model's tool-use capability on the most challenging problems. Extensive experiments across diverse benchmarks demonstrate the strong overall performance of Beacon and its substantial improvements in both Mode Adaptiveness and Tool Effect.",
+      "authors": [
+        "Qixun Wang",
+        "Yang Shi",
+        "Letian Cheng",
+        "Zhuoran Zhang",
+        "Yan He",
+        "Yuqi Tang",
+        "Qi Zhang",
+        "Xinlei Yu",
+        "Ruizhe Chen",
+        "Tianrun Xu",
+        "Yuanxing Zhang",
+        "Pengfei Wan",
+        "Haotian Wang",
+        "Xianghua Ying"
+      ],
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "published": "2026-07-30T17:46:55+00:00",
+      "link": "https://arxiv.org/pdf/2607.28595v1",
+      "tags": [
+        "keyword:vvvpg",
+        "query:vvvpg"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "Multimodal LLM for visual reasoning with adaptive tool use",
+      "llm_evidence_cn": "面向视觉推理的多模态大模型，自适应使用工具",
+      "llm_evidence": "面向视觉推理的多模态大模型，自适应使用工具",
+      "canonical_evidence": "面向视觉推理的多模态大模型，自适应使用工具",
+      "llm_tldr_en": "Beacon introduces Mode Adaptiveness and Tool Effect to train multimodal LLMs to invoke tools only when necessary, improving complex visual reasoning accuracy and avoiding unnecessary computational overhead.",
+      "llm_tldr_cn": "本文针对多模态大语言模型在复杂视觉推理中不加区分地使用工具导致效率低下的问题，提出Beacon框架。该框架通过模式自适应性判断是否需要工具，并利用工具效果衡量工具的实际贡献。实验表明Beacon在保持高性能的同时显著减少不必要的工具调用，从而提升推理成功率与计算效率。该工作为代理式视觉推理提供了新思路，有助于构建更高效的视觉问答系统。",
+      "llm_tldr": "本文针对多模态大语言模型在复杂视觉推理中不加区分地使用工具导致效率低下的问题，提出Beacon框架。该框架通过模式自适应性判断是否需要工具，并利用工具效果衡量工具的实际贡献。实验表明Beacon在保持高性能的同时显著减少不必要的工具调用，从而提升推理成功率与计算效率。该工作为代理式视觉推理提供了新思路，有助于构建更高效的视觉问答系统。",
+      "llm_tags": [
+        "query:vvvpg"
+      ],
+      "matched_query_tag": "query:vvvpg",
+      "matched_query_text": "multimodal model integrating image and text understanding",
+      "matched_requirement_id": "req-1",
+      "selection_source": "fresh_fetch"
+    }
+  ],
+  "quick_skim": [
+    {
+      "id": "2607.06560v1",
+      "source": "arxiv",
+      "title": "Vision as Unified Multimodal Generation",
+      "abstract": "We formulate computer vision as unified multimodal generation, where heterogeneous visual tasks are expressed in the native text and image generation spaces of a unified multimodal model, without task-specific architectures. Under this formulation, SenseNova-Vision uses natural-language instructions and optional visual prompts to specify tasks, target regions or views, and decoding conventions, and generates responses as text for symbolic outputs, images for dense spatial predictions, or mixed text-and-image outputs for compositional tasks. To support large-scale training, we convert diverse computer vision annotations into instruction-response examples compatible with these generation spaces, resulting in the SenseNova-Vision Corpus, a computer-vision instruction-response corpus spanning text, image, and mixed targets. Starting from an off-the-shelf pretrained unified multimodal model, SenseNova-Vision is trained primarily on this corpus, with auxiliary multimodal data used as a capability-preserving mixture, and requires no task-specific prediction heads or architectural modifications. The resulting model covers a broad range of vision tasks, including detection, OCR, keypoint estimation, segmentation, depth estimation, surface normal prediction, point maps, and camera pose estimation, while supporting language-defined variants that combine category, color, region, and other visual cues. Experiments show that a single unified model can match leading task-specialized systems across structured visual understanding, dense geometric prediction, segmentation, and multi-view visual geometry. These results suggest unified multimodal generation as a scalable route for integrating computer vision capabilities into general-purpose foundation models. The model and corpus are publicly available.",
+      "authors": [
+        "Xiaoyang Han",
+        "Jianhua Li",
+        "Kewang Deng",
+        "Zukai Chen",
+        "Xuanke Shi",
+        "Sihan Wang",
+        "Boxuan Li",
+        "Linyan Wang",
+        "Siyi Xie",
+        "Xin You",
+        "Jinsheng Quan",
+        "Zhongang Cai",
+        "Haiwen Diao",
+        "Ziwei Liu",
+        "Lei Yang",
+        "Dahua Lin",
+        "Quan Wang"
+      ],
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "published": "2026-07-07T17:58:33+00:00",
+      "link": "https://arxiv.org/pdf/2607.06560v1",
+      "tags": [
+        "keyword:vvvpg",
+        "query:vvvpg"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "Unified multimodal generation for diverse visual tasks with language and image outputs",
+      "llm_evidence_cn": "用统一多模态生成表达异构视觉任务并输出文本与图像",
+      "llm_evidence": "用统一多模态生成表达异构视觉任务并输出文本与图像",
+      "canonical_evidence": "用统一多模态生成表达异构视觉任务并输出文本与图像",
+      "llm_tldr_en": "SenseNova-Vision reframes computer vision as unified multimodal generation, using natural-language instructions and optional visual prompts to produce text, images, or mixed outputs, and introduces a large instruction-response corpus for training.",
+      "llm_tldr_cn": "本文将计算机视觉任务统一为多模态生成问题，在无需特定任务架构的情况下，使用SenseNova-Vision根据自然语言指令和可选视觉提示生成文本、图像或混合输出。为支持大规模训练，将多种计算机视觉标注转换成指令-回复样例，构建SenseNova-Vision语料库。该方法统一了符号输出、密集空间预测及组合式任务的表达，展示了以文本和图像生成作为通用视觉任务接口的可行性，为多模态基础模型的训练和统一评测提供新思路。",
+      "llm_tldr": "本文将计算机视觉任务统一为多模态生成问题，在无需特定任务架构的情况下，使用SenseNova-Vision根据自然语言指令和可选视觉提示生成文本、图像或混合输出。为支持大规模训练，将多种计算机视觉标注转换成指令-回复样例，构建SenseNova-Vision语料库。该方法统一了符号输出、密集空间预测及组合式任务的表达，展示了以文本和图像生成作为通用视觉任务接口的可行性，为多模态基础模型的训练和统一评测提供新思路。",
+      "llm_tags": [
+        "query:vvvpg"
+      ],
+      "matched_query_tag": "query:vvvpg",
+      "matched_query_text": "multimodal model integrating image and text understanding",
+      "matched_requirement_id": "req-1",
+      "selection_source": "carryover_cache",
+      "paper_id": "2607.06560v1",
+      "quick_tier": "8plus"
+    },
+    {
+      "id": "2607.22393v1",
+      "source": "arxiv",
+      "title": "SceneActBench: Can Agents Act on the 3D Scenes They See?",
+      "abstract": "Vision-language model (VLM) agents increasingly use tools to act on 3D scenes rather than only describe them. Existing 3D benchmarks score textual responses or single-object operations, leaving agent action on complete multi-object 3D scenes under evaluated. We present SceneActBench, a benchmark for visually conditioned action across five 3D tasks under a unified agent-environment loop. Given PNG images or sampled video frames and, where applicable, supplied 3D assets, an agent acts on a 3D environment. We evaluate each final output against hidden ground truth with task-specific geometric metrics. SceneActBench comprises five tasks built from 210 source instances, yielding 520 task cases including paired input conditions. Every task runs through one fixed agent loop to keep the comparison fair. Across eleven proprietary VLM configurations, Overall scores span 38.6-50.2, and none performs consistently well across tasks. We further analyse where and how failures manifest.",
+      "authors": [
+        "Yifei Zhao",
+        "Xiangxin Zhou",
+        "Wenhao Yang",
+        "Jiaqi Tang",
+        "Pu Jian",
+        "Huanjin Yao",
+        "Jiarui Yao",
+        "Haowei Lin",
+        "Chunchao Guo",
+        "Zhuo Chen",
+        "Wenkai Lyu",
+        "Jianzhu Ma",
+        "Xueqian Wang",
+        "Wenxi Zhu"
+      ],
+      "primary_category": "cs.AI",
+      "categories": [
+        "cs.AI",
+        "cs.CV"
+      ],
+      "published": "2026-07-24T15:16:47+00:00",
+      "link": "https://arxiv.org/pdf/2607.22393v1",
+      "tags": [
+        "keyword:vvvpg",
+        "query:vvvpg"
+      ],
+      "llm_score": 7.0,
+      "llm_evidence_en": "benchmark for evaluating VLM agents acting on 3D scenes",
+      "llm_evidence_cn": "评估VLM智能体在3D场景中操作能力的基准",
+      "llm_evidence": "评估VLM智能体在3D场景中操作能力的基准",
+      "canonical_evidence": "评估VLM智能体在3D场景中操作能力的基准",
+      "llm_tldr_en": "SceneActBench is a benchmark for visually conditioned action on 3D scenes, evaluating VLM agents in a unified agent-environment loop across five tasks with geometric metrics.",
+      "llm_tldr_cn": "论文指出现有3D基准仅评价文本描述或单物体操作，缺乏对多物体3D场景中智能体动作的整体评估，提出SceneActBench基准，在统一智能体-环境循环中测试VLM智能体完成五项3D动作任务。该基准包含520个任务样本，并采用任务特定的几何指标作为隐式真值，促进3D具身行动研究。",
+      "llm_tldr": "论文指出现有3D基准仅评价文本描述或单物体操作，缺乏对多物体3D场景中智能体动作的整体评估，提出SceneActBench基准，在统一智能体-环境循环中测试VLM智能体完成五项3D动作任务。该基准包含520个任务样本，并采用任务特定的几何指标作为隐式真值，促进3D具身行动研究。",
+      "llm_tags": [
+        "query:vvvpg"
+      ],
+      "matched_query_tag": "query:vvvpg",
+      "matched_query_text": "model using visual and language inputs to produce action commands for embodied agents",
+      "matched_requirement_id": "req-2",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "7"
+    },
+    {
+      "id": "2607.25754v1",
+      "source": "arxiv",
+      "title": "Cooperative Multi-UAV Navigation in Complex Environments via Systematic Multi-Agent Deep Reinforcement Learning",
+      "abstract": "Cooperative navigation of multi-agent UAVs in complex environments faces key challenges including local optima traps, sparse rewards, learning imbalance among agents, and insufficient cross-scenario generalisation. This paper proposes a multi-agent deep reinforcement learning framework that addresses these issues through coordinated exploration, demonstration exploitation, safe curriculum scheduling, and structure-aware generalisation. First, a perception mechanism combining memory of visited states, directional novelty estimates, and penalty backpropagation enables agents to proactively detect and escape local optima. Second, a hierarchical collaborative demonstration buffer with tiered behaviour cloning manages trajectories by degree of team collaboration and applies differential supervision to the actor network, improving demonstration utilisation under sparse collaborative signals. Third, a safety-aware dual-condition curriculum scheduling mechanism reviews mastered scenarios through back-testing and experience pre-filling during training, suppressing catastrophic forgetting while ensuring both task performance and flight safety. For generalisation, local geometric features computed from sensor readings are abstracted into a domain parameter, through which a structure-aware gating network and mixture-of-experts mechanism condition the policy on local structural patterns rather than scenario-specific coordinates, enabling cross-scenario transfer without exposure to the target environment. The framework is further validated under mixed static-dynamic obstacle settings, showing robust adaptability to dynamic disturbances. Simulation results confirm strong performance in collaboration success rate, navigation robustness, zero-shot cross-scenario generalisation, and dynamic environment adaptability.",
+      "authors": [
+        "Yu Su",
+        "Nabil Aouf"
+      ],
+      "primary_category": "cs.RO",
+      "categories": [
+        "cs.RO"
+      ],
+      "published": "2026-07-28T14:16:11+00:00",
+      "link": "https://arxiv.org/pdf/2607.25754v1",
+      "tags": [
+        "keyword:vvvpg",
+        "query:vvvpg"
+      ],
+      "llm_score": 6.0,
+      "llm_evidence_en": "Addresses cooperative UAV navigation with multi-agent RL, including perception, exploration and generalization.",
+      "llm_evidence_cn": "用多智能体深度强化学习解决多无人机协同导航中的局部最优、稀疏奖励等问题。",
+      "llm_evidence": "用多智能体深度强化学习解决多无人机协同导航中的局部最优、稀疏奖励等问题。",
+      "canonical_evidence": "用多智能体深度强化学习解决多无人机协同导航中的局部最优、稀疏奖励等问题。",
+      "llm_tldr_en": "Proposes a multi-agent deep RL framework for cooperative multi-UAV navigation with coordinated exploration, demonstration exploitation, safe curriculum scheduling, and structure-aware generalization, overcoming local optima and sparse rewards.",
+      "llm_tldr_cn": "多无人机在复杂环境中的协同导航面临局部最优陷阱、稀疏奖励和泛化不足等挑战。该文提出一种多智能体深度强化学习框架，结合记忆与方向新颖性估计的感知机制、分层协作演示缓冲与安全课程调度，并采用结构感知泛化。该框架有效解决了探索与利用的平衡，显著提升复杂环境下的协同导航性能。",
+      "llm_tldr": "多无人机在复杂环境中的协同导航面临局部最优陷阱、稀疏奖励和泛化不足等挑战。该文提出一种多智能体深度强化学习框架，结合记忆与方向新颖性估计的感知机制、分层协作演示缓冲与安全课程调度，并采用结构感知泛化。该框架有效解决了探索与利用的平衡，显著提升复杂环境下的协同导航性能。",
+      "llm_tags": [
+        "query:vvvpg"
+      ],
+      "matched_query_tag": "query:vvvpg",
+      "matched_query_text": "search for foundation models applied to UAV perception and autonomous navigation",
+      "matched_requirement_id": "req-9",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "6"
+    },
+    {
+      "id": "2607.07403v1",
+      "source": "arxiv",
+      "title": "Multi-Agent Robotic Control with Onboard Vision-Language Models",
+      "abstract": "Vision Language Models (VLMs) and Vision Language Action (VLA) models have shown promise in robotic control. Yet, they face significant challenges regarding explainability, generalization, and compute requirements. This paper presents a Multi-Agent System (MAS) architecture that addresses these limitations by deploying specialized agents on onboard hardware - eliminating dependence on external compute. The system controls a multi-purpose autonomous mobile manipulator in a simulated industrial warehouse, fulfilling five task categories: safety inspection, warehouse maintenance, warehouse search, package quality verification, and responding to human requests. Compact VLMs (3-20B parameters) are used throughout, with fine-tuning applied to improve package inspection accuracy. A novel \"Megamind\" orchestration agent mitigates context retention issues inherent to long-horizon planning with smaller models. The system was validated in a hardware-in-the-loop simulation using an AMD Ryzen(TM) AI mini PC. Results demonstrate that a fully onboard MAS architecture is a viable, cost-efficient alternative to cloud-dependent deployments, with strong potential for real-world transfer. The simulation environment has been released as open source under the Apache 2.0 licence.",
+      "authors": [
+        "Kajetan Rachwał",
+        "Maciej Majek",
+        "Bartłomiej Boczek",
+        "Jakub Matejczyk",
+        "Dominik Matejkowski",
+        "Adam Dąbrowski",
+        "Tim Seyde",
+        "Alexander Amini",
+        "Maria Ganzha"
+      ],
+      "primary_category": "cs.MA",
+      "categories": [
+        "cs.MA",
+        "cs.RO"
+      ],
+      "published": "2026-07-08T13:37:31+00:00",
+      "link": "https://arxiv.org/pdf/2607.07403v1",
+      "tags": [
+        "keyword:vvvpg",
+        "query:vvvpg"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "VLM/VLA-driven multi-agent robot control for action commands",
+      "llm_evidence_cn": "视觉语言模型/视觉语言行动模型驱动的多智能体机器人动作命令控制",
+      "llm_evidence": "视觉语言模型/视觉语言行动模型驱动的多智能体机器人动作命令控制",
+      "canonical_evidence": "视觉语言模型/视觉语言行动模型驱动的多智能体机器人动作命令控制",
+      "llm_tldr_en": "A multi-agent system deploys compact onboard VLMs/VLAs to control a mobile manipulator in warehouse safety inspection, maintenance, search, quality checks, and human-request tasks, reducing external compute dependence.",
+      "llm_tldr_cn": "针对视觉语言模型在机器人控制中可解释性、泛化与算力开销的问题，本文提出多智能体系统架构，将专用智能体部署于车载硬件，消除对外部算力的依赖。系统在模拟工业仓库中控制自主移动机械手完成安全巡检、仓库维护、搜索、包裹质检和响应人类请求等五类任务。使用3-20B参数的小型视觉语言模型，通过微调提升包裹质检等任务效果。该工作展示了车载视觉语言模型在具身控制场景中的可行性。",
+      "llm_tldr": "针对视觉语言模型在机器人控制中可解释性、泛化与算力开销的问题，本文提出多智能体系统架构，将专用智能体部署于车载硬件，消除对外部算力的依赖。系统在模拟工业仓库中控制自主移动机械手完成安全巡检、仓库维护、搜索、包裹质检和响应人类请求等五类任务。使用3-20B参数的小型视觉语言模型，通过微调提升包裹质检等任务效果。该工作展示了车载视觉语言模型在具身控制场景中的可行性。",
+      "llm_tags": [
+        "query:vvvpg"
+      ],
+      "matched_query_tag": "query:vvvpg",
+      "matched_query_text": "model using visual and language inputs to produce action commands for embodied agents",
+      "matched_requirement_id": "req-2",
+      "selection_source": "carryover_cache",
+      "paper_id": "2607.07403v1",
+      "quick_tier": "8plus"
+    },
+    {
+      "id": "2607.23052v1",
+      "source": "arxiv",
+      "title": "Similarity Is Not Logic: Factored Inference for Dual-Encoder Vision-Language Models",
+      "abstract": "Dual-encoder vision-language models (VLMs) expose a similarity interface that enables zero-shot retrieval but fails compositional constraints: queries like \"umbrella and no person\" retrieve images containing both, even when concept detection is reliable. We trace this to an interface-level Bag-of-Concepts effect, where similarity scores approximate mean pooling of concept evidence regardless of operators. Although operator-dependent signals exist in text embeddings, they are too weak or misaligned to affect rankings. Fine-tuning does not reliably resolve this failure because the dominant bottleneck is how similarity aggregates evidence rather than what encoders represent. We propose factored inference, which separates evidence extraction from constraint execution, and introduce LCSE (Logic-Constrained Score Editing), a training-free method that executes constraints externally using concept scores from frozen encoders. We also introduce FACTOR-Bench, where LCSE achieves 85.5% accuracy versus 73.2% for the best fine-tuned baseline, 90.7% when applied to SigLIP 2, and improves NegBench COCO MCQ accuracy from 27.2% to 65.2% while preserving retrieval performance.",
+      "authors": [
+        "Sultan Alshehri",
+        "Zhantao Yang",
+        "Han Zhang",
+        "Marios Savvides"
+      ],
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV",
+        "cs.CL",
+        "cs.LG"
+      ],
+      "published": "2026-07-25T05:39:51+00:00",
+      "link": "https://arxiv.org/pdf/2607.23052v1",
+      "tags": [
+        "keyword:vvvpg",
+        "query:vvvpg"
+      ],
+      "llm_score": 7.0,
+      "llm_evidence_en": "improving dual-encoder vision-language model reasoning via factored inference",
+      "llm_evidence_cn": "通过因子化推理改进双编码器视觉语言模型的组合逻辑能力",
+      "llm_evidence": "通过因子化推理改进双编码器视觉语言模型的组合逻辑能力",
+      "canonical_evidence": "通过因子化推理改进双编码器视觉语言模型的组合逻辑能力",
+      "llm_tldr_en": "Identifies bag-of-concepts effect in dual-encoder VLMs causing compositional failures, and proposes factored inference that separates evidence extraction from aggregation to satisfy compositional constraints.",
+      "llm_tldr_cn": "双编码器视觉语言模型通过相似度接口检索时难以满足组合约束，如'伞且没有人'会错误返回同时含两者的图片。该文将问题定位为接口层面的词袋效应，即相似度近似于概念证据的均值池化，忽略了运算符逻辑。微调无法根治这一缺陷，于是提出因子化推理，将证据提取与证据聚合分离，显式遵循组合规则。实验表明该方法能有效改善组合零样本检索，为VLM推理提供了结构化的改进方向。",
+      "llm_tldr": "双编码器视觉语言模型通过相似度接口检索时难以满足组合约束，如'伞且没有人'会错误返回同时含两者的图片。该文将问题定位为接口层面的词袋效应，即相似度近似于概念证据的均值池化，忽略了运算符逻辑。微调无法根治这一缺陷，于是提出因子化推理，将证据提取与证据聚合分离，显式遵循组合规则。实验表明该方法能有效改善组合零样本检索，为VLM推理提供了结构化的改进方向。",
+      "llm_tags": [
+        "query:vvvpg"
+      ],
+      "matched_query_tag": "query:vvvpg",
+      "matched_query_text": "multimodal model integrating image and text understanding",
+      "matched_requirement_id": "req-1",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "7"
+    },
+    {
+      "id": "2607.27865v1",
+      "source": "arxiv",
+      "title": "Learning to Understand Body Language from Flight through Robust 3D Avatar Placing",
+      "abstract": "Perceiving human motion and intent at long range is a prerequisite for socially intelligent aerial robots, yet the data to learn it barely exists. We introduce Drones2BodyLanguage, a dataset grounding human motion in real UAV footage: avatars manifesting ten communicative intents are placed into unmodified 4K drone scenes with metrically correct position, scale and orientation, maintained over hundreds of frames of camera motion. Enabling it is a lightweight geometric world model of the local scene - semantically selected anchors lifted to 3D through streaming monocular depth - in which a placement point is predicted as an affine anchor combination with provably rigid-invariant weights, and re-rendered under an SVD-fitted ground rotation. Across twelve architectures on scene- and motion-disjoint splits, training on placed data lifts mean intent accuracy by a wide margin for real, retargeted and generated motion alike, with gains confirmed on two in-the-wild scenes.",
+      "authors": [
+        "Dragos Costea",
+        "Alina Marcu",
+        "Cristina Lazar",
+        "Marius Leordeanu"
+      ],
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "published": "2026-07-30T08:40:32+00:00",
+      "link": "https://arxiv.org/pdf/2607.27865v1",
+      "tags": [
+        "keyword:vvvpg",
+        "query:vvvpg"
+      ],
+      "llm_score": 6.0,
+      "llm_evidence_en": "A dataset grounding human motion in real UAV footage for long-range social perception by aerial robots.",
+      "llm_evidence_cn": "一个在真实无人机视频中放置3D化身以理解人体动作意图的数据集。",
+      "llm_evidence": "一个在真实无人机视频中放置3D化身以理解人体动作意图的数据集。",
+      "canonical_evidence": "一个在真实无人机视频中放置3D化身以理解人体动作意图的数据集。",
+      "llm_tldr_en": "Introduces Drones2BodyLanguage, a dataset that places metrically accurate 3D avatars with communicative intents into real UAV 4K scenes, using a lightweight geometric world model for robust placement, enabling learning of long-range body language.",
+      "llm_tldr_cn": "长距离感知人体运动与意图对社交智能空中机器人至关重要，但现有数据匮乏。该文提出Drones2BodyLanguage数据集，将表达十种交流意图的3D化身以度量准确的位置、尺度和朝向放置到未修改的4K无人机场景中，并构建轻量级几何世界模型实现稳健放置。数据集支持从飞行视角学习人体肢体语言，为无人机社交感知提供稀缺训练资源。",
+      "llm_tldr": "长距离感知人体运动与意图对社交智能空中机器人至关重要，但现有数据匮乏。该文提出Drones2BodyLanguage数据集，将表达十种交流意图的3D化身以度量准确的位置、尺度和朝向放置到未修改的4K无人机场景中，并构建轻量级几何世界模型实现稳健放置。数据集支持从飞行视角学习人体肢体语言，为无人机社交感知提供稀缺训练资源。",
+      "llm_tags": [
+        "query:vvvpg"
+      ],
+      "matched_query_tag": "query:vvvpg",
+      "matched_query_text": "search for foundation models applied to UAV perception and autonomous navigation",
+      "matched_requirement_id": "req-9",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "6"
+    },
+    {
+      "id": "2607.12818v2",
+      "source": "arxiv",
+      "title": "Breaking Déjà Vu: Independent Auditing of Visual Place Recognition through Vision-Language Reasoning",
+      "abstract": "Visual place recognition (VPR) is a key enabler of accurate localization and long-term autonomous navigation in robotics applications, such as loop closure detection for simultaneous localisation and mapping (SLAM). However, real-world VPR deployment relies on selecting an image matching threshold that balances precision and recall. These thresholds are typically tuned using labeled validation data and fixed during deployment, making them unreliable under environmental changes where ground truth is unavailable. This is particularly problematic in safety-critical robotics, where accepting a false loop closure can corrupt the estimated trajectory and map. In this work, we introduce Visual Place Recognition Auditing, an independent post-retrieval verification framework that leverages Vision-Language Models (VLMs) to assess retrieved matches by reasoning jointly over query and candidate images. Unlike conventional verification methods, our approach performs instance-level verification without requiring architecture-specific confidence measures, dataset-dependent thresholds, or prior knowledge of the deployment environment. We evaluate our method on six benchmark datasets using five state-of-the-art VPR methods and four VLMs. Results show that VLM-based auditing improves recall@1 by 13.6% on average as compared to state-of-the-art methods while reducing false acceptance rates to 12%, maintaining precision above 95% and coverage above 75%.",
+      "authors": [
+        "Sania Waheed",
+        "Michael Milford",
+        "Sarvapali D. Ramchurn",
+        "Shoaib Ehsan"
+      ],
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "published": "2026-07-14T14:30:24+00:00",
+      "link": "https://arxiv.org/pdf/2607.12818v2",
+      "tags": [
+        "keyword:vvvpg",
+        "query:vvvpg"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "Vision-language reasoning for independent auditing in visual place recognition and autonomous navigation",
+      "llm_evidence_cn": "利用视觉-语言推理对视觉地点识别进行独立审计，关联自主导航中的定位可靠性",
+      "llm_evidence": "利用视觉-语言推理对视觉地点识别进行独立审计，关联自主导航中的定位可靠性",
+      "canonical_evidence": "利用视觉-语言推理对视觉地点识别进行独立审计，关联自主导航中的定位可靠性",
+      "llm_tldr_en": "Introduces VPR Auditing, an independent vision-language reasoning approach to detect unreliable thresholds in visual place recognition, enhancing localization robustness for autonomous navigation.",
+      "llm_tldr_cn": "视觉地点识别（VPR）在安全关键机器人中至关重要，但固定匹配阈值在环境变化时可能失效导致误匹配。本文提出基于视觉-语言推理的独立审计方法，在不依赖人工标注真值的情况下评估阈值可靠性，从而增强SLAM和平稳定位的鲁棒性，为自主导航提供新的安全保障思路。",
+      "llm_tldr": "视觉地点识别（VPR）在安全关键机器人中至关重要，但固定匹配阈值在环境变化时可能失效导致误匹配。本文提出基于视觉-语言推理的独立审计方法，在不依赖人工标注真值的情况下评估阈值可靠性，从而增强SLAM和平稳定位的鲁棒性，为自主导航提供新的安全保障思路。",
+      "llm_tags": [
+        "query:vvvpg"
+      ],
+      "matched_query_tag": "query:vvvpg",
+      "matched_query_text": "grounded navigation of agents guided by visual observations and language instructions",
+      "matched_requirement_id": "req-6",
+      "selection_source": "carryover_cache",
+      "paper_id": "2607.12818v2",
+      "quick_tier": "8plus"
+    },
+    {
+      "id": "2607.23373v1",
+      "source": "arxiv",
+      "title": "UltraViT: Latency-Optimized On-device Vision Encoder for Large Vision-Language Models",
+      "abstract": "Large Vision-Language Models (LVLMs) remain bottlenecked by massive computational footprints, precluding their deployment on resource-constrained edge devices. While efforts to compress LVLMs focus heavily on vision token reduction or smaller language models, the vision encoder is largely overlooked, typically deployed as a monolithic, computationally heavy feature extractor. Moreover, there is no previous effort that designs a vision encoder for LVLMs directly optimized for on-device latency. In this paper, we present UltraViT, a vision encoder for LVLMs, explicitly designed and optimized for on-device performance. Specifically, by taking into account real on-device latencies, we systematically design a pyramidal architecture that strategically integrates and adapts heterogeneous spatial mixers at the macro-block level. Furthermore, to pre-train UltraViT, we propose a novel two-stage generative pre-training strategy: cultivating rich spatial features via dense distillation, followed by direct generative supervision from a capacity-mixed frozen LLM. Compared to standard contrastive and SSL, we show that our pre-training is much more effective for achieving high-level semantic grounding for UltraViT needed for the subsequent generative multimodal alignment of LVLM training. Extensive experiments demonstrate that our on-device latency-informed design combined with our tailored training strategy establishes a new state-of-the-art for efficient LVLM encoding, significantly outperforming existing encoder-centric baselines while operating on-device at nearly 1.7xthe speed.",
+      "authors": [
+        "Ioannis Maniadis Metaxas",
+        "Adrian Bulat",
+        "Alberto Baldrati",
+        "Anestis Zaganidis",
+        "Yassine Ouali",
+        "Hyeonuk Kim",
+        "Georgios Tzimiropoulos"
+      ],
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "published": "2026-07-25T21:31:40+00:00",
+      "link": "https://arxiv.org/pdf/2607.23373v1",
+      "tags": [
+        "keyword:vvvpg",
+        "query:vvvpg"
+      ],
+      "llm_score": 7.0,
+      "llm_evidence_en": "vision encoder for large vision-language models, improving multimodal understanding efficiency",
+      "llm_evidence_cn": "为大型视觉语言模型设计高效的视觉编码器，提升图文理解性能",
+      "llm_evidence": "为大型视觉语言模型设计高效的视觉编码器，提升图文理解性能",
+      "canonical_evidence": "为大型视觉语言模型设计高效的视觉编码器，提升图文理解性能",
+      "llm_tldr_en": "UltraViT designs a latency-optimized pyramidal vision encoder for LVLMs, directly targeting on-device deployment, improving efficiency while preserving multimodal understanding.",
+      "llm_tldr_cn": "大型视觉语言模型计算开销巨大，阻碍了其在边缘设备上的部署，而现有研究多聚焦于令牌压缩或小型语言模型，低估了视觉编码器的延迟瓶颈。UltraViT专门设计了面向端侧延迟优化的金字塔视觉编码器，依据真实设备延迟进行系统架构设计。该方法在资源受限设备上显著降低了视觉编码时延，同时保持了多模态理解性能。这项工作为LVLM在实时场景中的落地提供了更高效的视觉前端。",
+      "llm_tldr": "大型视觉语言模型计算开销巨大，阻碍了其在边缘设备上的部署，而现有研究多聚焦于令牌压缩或小型语言模型，低估了视觉编码器的延迟瓶颈。UltraViT专门设计了面向端侧延迟优化的金字塔视觉编码器，依据真实设备延迟进行系统架构设计。该方法在资源受限设备上显著降低了视觉编码时延，同时保持了多模态理解性能。这项工作为LVLM在实时场景中的落地提供了更高效的视觉前端。",
+      "llm_tags": [
+        "query:vvvpg"
+      ],
+      "matched_query_tag": "query:vvvpg",
+      "matched_query_text": "multimodal model integrating image and text understanding",
+      "matched_requirement_id": "req-1",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "7"
+    },
+    {
+      "id": "2607.28269v1",
+      "source": "arxiv",
+      "title": "Theia: Large-Scale Multimodal Captioning and Automated Validation of the Incidents1M Dataset for Data-Free Distillation",
+      "abstract": "The deployment of Vision-Language Models (VLMs) in critical domains like disaster management requires high-quality multimodal datasets, especially for transferring knowledge via Data-Free Knowledge Distillation (DFKD). However, existing datasets in this domain either entirely lack descriptive text, such as Incidents1M, or suffer from severe text-image semantic misalignment, such as CrisisMMD. In this work, we present a novel methodology to construct and automatically validate a large-scale multimodal dataset for disaster response. Starting from the vision-only Incidents1M, we successfully recovered 100,000 images and generated high-fidelity textual descriptions using two distinct Qwen3.5 architectures: a 4B dense model and a 35B Mixture-of-Experts (MoE) model. To ensure the generated captions provide reliable semantic anchoring for DFKD, we introduce an image-blind LLM-as-a-Judge validation pipeline leveraging Qwen3.5-9B. By intentionally obscuring the original image from the judge, this evaluator accurately simulates the modality gap of the student model during data-free distillation. Our evaluation across 173,179 label pairs demonstrates a high semantic agreement (78.65/100) between the two architectures. Furthermore, the automated evaluation reveals a conservative captioning behaviour, characterized by a high Precision (77.6%) and low Recall (46.0%). This minimizes the false positive noise, while simultaneously exposing underlying human annotation inconsistencies in the original ground truth. This work provides a scalable, LLM-validated multimodal dataset and a reproducible framework to advance cross-modal knowledge distillation.",
+      "authors": [
+        "Simone Giano",
+        "Lorenzo Severini",
+        "Alessandro Galdelli",
+        "Adriano Mancini"
+      ],
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV",
+        "cs.AI",
+        "cs.MM"
+      ],
+      "published": "2026-07-30T14:23:01+00:00",
+      "link": "https://arxiv.org/pdf/2607.28269v1",
+      "tags": [
+        "keyword:vvvpg",
+        "query:vvvpg"
+      ],
+      "llm_score": 6.0,
+      "llm_evidence_en": "Large-scale image captioning to build multimodal dataset for VLM training",
+      "llm_evidence_cn": "大规模图像标注构建多模态数据集以支持VLM训练",
+      "llm_evidence": "大规模图像标注构建多模态数据集以支持VLM训练",
+      "canonical_evidence": "大规模图像标注构建多模态数据集以支持VLM训练",
+      "llm_tldr_en": "Theia constructs and validates a large-scale multimodal dataset from Incidents1M by generating high-fidelity captions with Qwen3.5 architectures, enabling data-free distillation for VLMs in disaster management.",
+      "llm_tldr_cn": "本文针对灾难管理场景中视觉语言模型训练缺乏高质量图文数据的问题，提出Theia方法，从仅有图像的Incidents1M数据集中自动生成并验证大规模多模态描述。利用两种不同的Qwen3.5架构生成高保真文本，并设计自动验证机制确保图文语义对齐。实验证明该方法构建的数据集可用于无数据知识蒸馏，提升VLM在灾难响应中的表现。相关工作为多模态数据集自动构建提供了有效范式。",
+      "llm_tldr": "本文针对灾难管理场景中视觉语言模型训练缺乏高质量图文数据的问题，提出Theia方法，从仅有图像的Incidents1M数据集中自动生成并验证大规模多模态描述。利用两种不同的Qwen3.5架构生成高保真文本，并设计自动验证机制确保图文语义对齐。实验证明该方法构建的数据集可用于无数据知识蒸馏，提升VLM在灾难响应中的表现。相关工作为多模态数据集自动构建提供了有效范式。",
+      "llm_tags": [
+        "query:vvvpg"
+      ],
+      "matched_query_tag": "query:vvvpg",
+      "matched_query_text": "multimodal model integrating image and text understanding",
+      "matched_requirement_id": "req-1",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "6"
+    },
+    {
+      "id": "2607.14635v1",
+      "source": "arxiv",
+      "title": "Action QFormer: Structured Representation Shaping under Action Supervision in Vision-Language-Action Models",
+      "abstract": "Action supervision in vision-language-action (VLA) models is often treated as a downstream objective for learning action prediction. In this paper, we study it instead as a force that shapes inherited multimodal representations. We show that this shaping has a dual effect: it is necessary for forming action-compatible representations, but when action supervision is applied too directly to the inherited multimodal pathway, it can also destabilize representations that support language-side processing and object grounding. To address this tension, we introduce Action QFormer, a query-based action-facing interface that uses instruction-conditioned queries to reorganize inherited multimodal information into action-facing representations before downstream action generation. In zero-shot sim-to-real navigation, Action QFormer improves average closed-loop task success from 18.8% to 56.3%, raises fixed-instruction action-generation correctness from 22.5% to 75.5%, and nearly eliminates out-of-distribution instruction generations. Further analyses show that Action QFormer changes how action supervision shapes inherited multimodal representations, reducing broad upstream rewriting while preserving targeted and sometimes constructive action-supervised adaptation. These results suggest that improving VLA performance requires not only stronger pretrained backbones, but also better ways of selecting and organizing inherited multimodal information while controlling how it is shaped under action supervision.",
+      "authors": [
+        "Yufeng Ji",
+        "Wenhao Tang",
+        "Haoyi Niu",
+        "Koushil Sreenath",
+        "Yi Wu",
+        "Zhongyu Li"
+      ],
+      "primary_category": "cs.AI",
+      "categories": [
+        "cs.AI",
+        "cs.CV",
+        "cs.RO"
+      ],
+      "published": "2026-07-16T06:59:39+00:00",
+      "link": "https://arxiv.org/pdf/2607.14635v1",
+      "tags": [
+        "keyword:vvvpg",
+        "query:vvvpg"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "Query-based interface to shape representations in VLA models",
+      "llm_evidence_cn": "用于视觉语言行动模型中的查询式表示塑造接口",
+      "llm_evidence": "用于视觉语言行动模型中的查询式表示塑造接口",
+      "canonical_evidence": "用于视觉语言行动模型中的查询式表示塑造接口",
+      "llm_tldr_en": "The paper studies how action supervision shapes multimodal representations in VLA models, showing that too-direct supervision can destabilize language grounding, and introduces Action QFormer, a query-based interface that reorganizes inherited multimodal information for action compatibility.",
+      "llm_tldr_cn": "针对视觉语言行动模型中动作监督对多模态表示的影响，本文发现动作监督既是形成动作兼容表示的必需条件，但过强的直接监督会破坏语言处理与目标接地。为此提出Action QFormer，一种查询式动作接口，利用指令条件查询重组继承的多模态信息，使其兼顾动作预测和语言侧能力。该机制为VLA模型的表示学习提供了一种结构性解决方案，平衡了动作监督带来的双重效应。",
+      "llm_tldr": "针对视觉语言行动模型中动作监督对多模态表示的影响，本文发现动作监督既是形成动作兼容表示的必需条件，但过强的直接监督会破坏语言处理与目标接地。为此提出Action QFormer，一种查询式动作接口，利用指令条件查询重组继承的多模态信息，使其兼顾动作预测和语言侧能力。该机制为VLA模型的表示学习提供了一种结构性解决方案，平衡了动作监督带来的双重效应。",
+      "llm_tags": [
+        "query:vvvpg"
+      ],
+      "matched_query_tag": "query:vvvpg",
+      "matched_query_text": "model using visual and language inputs to produce action commands for embodied agents",
+      "matched_requirement_id": "req-2",
+      "selection_source": "carryover_cache",
+      "paper_id": "2607.14635v1",
+      "quick_tier": "8plus"
+    },
+    {
+      "id": "2607.23913v1",
+      "source": "arxiv",
+      "title": "GOTS: Greedy Orthogonal Token Selection for High-Resolution Vision-Language Models",
+      "abstract": "Modern vision-language models (VLMs) increasingly rely on dynamic or high-resolution visual encoding, producing thousands of visual tokens that substantially increase downstream language-model inference cost. Existing token-reduction methods assess token utility through token-wise importance, query relevance, coverage, pairwise diversity, or subset-level objectives. Our key insight is to view visual token reduction through selected-span complementarity: instead of scoring a token in isolation or through pairwise relations, we assess how much of its feature is orthogonal to the span of the already retained subset. Based on this perspective, we propose Greedy Orthogonal Token Selection (GOTS), a training-free and query-agnostic method. At each step, GOTS selects the token with the largest residual energy orthogonal to the current retained span. This rule exactly maximizes the one-step augmented Gram determinant among candidate additions, giving each greedy step a precise local geometric guarantee for subset expansion. Across five high-resolution VLM backbones from the Qwen-VL and InternVL families and eleven diverse benchmarks, GOTS achieves higher average performance retention than the strongest evaluated baselines, and a controlled OCRBench study shows that it reduces model-side time-to-first-token after accounting for selection overhead. Code is available at https://github.com/newLLing/GOTS.",
+      "authors": [
+        "Jun Ling",
+        "Tao Huang",
+        "Junzhuo Liu",
+        "Bowen Tang",
+        "Peng Wang"
+      ],
+      "primary_category": "cs.AI",
+      "categories": [
+        "cs.AI"
+      ],
+      "published": "2026-07-27T01:06:20+00:00",
+      "link": "https://arxiv.org/pdf/2607.23913v1",
+      "tags": [
+        "keyword:vvvpg",
+        "query:vvvpg"
+      ],
+      "llm_score": 7.0,
+      "llm_evidence_en": "training-free query-agnostic visual token reduction for high-resolution VLMs",
+      "llm_evidence_cn": "面向高分辨率视觉语言模型的免训练查询无关视觉令牌缩减",
+      "llm_evidence": "面向高分辨率视觉语言模型的免训练查询无关视觉令牌缩减",
+      "canonical_evidence": "面向高分辨率视觉语言模型的免训练查询无关视觉令牌缩减",
+      "llm_tldr_en": "Proposes GOTS, a training-free and query-agnostic visual token selection method that greedily picks tokens whose features are most orthogonal to the already-selected span, cutting inference cost for high-resolution VLMs.",
+      "llm_tldr_cn": "高分辨率视觉语言模型会产生大量视觉令牌，导致推理成本高。本文提出贪心正交令牌选择（GOTS），通过评估候选令牌特征对已选子空间的正交性，实现免训练且查询无关的令牌缩减。该方法不依赖逐对关系或子集目标，可有效降低下游语言模型推理开销，适用于高分辨率VLM的加速。",
+      "llm_tldr": "高分辨率视觉语言模型会产生大量视觉令牌，导致推理成本高。本文提出贪心正交令牌选择（GOTS），通过评估候选令牌特征对已选子空间的正交性，实现免训练且查询无关的令牌缩减。该方法不依赖逐对关系或子集目标，可有效降低下游语言模型推理开销，适用于高分辨率VLM的加速。",
+      "llm_tags": [
+        "query:vvvpg"
+      ],
+      "matched_query_tag": "query:vvvpg",
+      "matched_query_text": "multimodal model integrating image and text understanding",
+      "matched_requirement_id": "req-1",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "7"
+    }
+  ]
+}
