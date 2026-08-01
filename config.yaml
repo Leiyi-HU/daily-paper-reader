@@ -25,3 +25,65 @@ subscriptions:
     stage: A
     diff_threshold_pct: 15
   keyword_recall_mode: or
+  intent_profiles:
+    - tag: vvvpg
+      description: 主要关注视觉-语言模型（VLM）、视觉-语言-动作模型（VLA）及视觉基础模型（如 SAM、DINOv3）在遥感、无人机和电网业务场景中的数据集、测试基准与应用。
+      enabled: true
+      paper_sources:
+        - arxiv
+      keywords:
+        - keyword: vision language model
+          keyword_cn: 视觉语言模型
+          query: multimodal model integrating image and text understanding
+        - keyword: vision language action model
+          keyword_cn: 视觉语言动作模型
+          query: model using visual and language inputs to produce action commands for embodied agents
+        - keyword: visual foundation model
+          keyword_cn: 视觉基础模型
+          query: large scale pretrained visual model for transferable representation learning
+        - keyword: remote sensing
+          keyword_cn: 遥感视觉语言模型
+          query: vision language model applied to satellite or aerial imagery analysis
+        - keyword: power grid inspection benchmark
+          keyword_cn: 电网巡检基准
+          query: standard dataset and evaluation suite for visual inspection of power infrastructure
+        - keyword: vision language navigation
+          keyword_cn: 视觉语言导航
+          query: grounded navigation of agents guided by visual observations and language instructions
+      intent_queries:
+        - query: find recent research on multimodal vision language models for remote sensing imagery
+          query_cn: 查找遥感影像多模态视觉语言模型的最新研究
+          enabled: true
+          source: manual
+          note: ''
+        - query: locate datasets and benchmarks for power grid visual inspection using vision models
+          query_cn: 寻找基于视觉模型的电网外观巡检数据集和基准
+          enabled: true
+          source: manual
+          note: ''
+        - query: search for foundation models applied to UAV perception and autonomous navigation
+          query_cn: 搜索应用于无人机感知与自主导航的基础模型
+          enabled: true
+          source: manual
+          note: ''
+        - query: retrieve papers on vision language action models for robotic manipulation in power grid maintenance
+          query_cn: 检索用于电网维护机器人操作的视觉语言动作模型论文
+          enabled: true
+          source: manual
+          note: ''
+      updated_at: '2026-08-01T01:04:50.688Z'
+source_backends:
+  arxiv:
+    papers_table: arxiv_papers
+    use_vector_rpc: true
+    vector_rpc: match_arxiv_papers
+    vector_rpc_exact: match_arxiv_papers_exact
+    use_bm25_rpc: true
+    bm25_rpc: match_arxiv_papers_bm25
+    sync_table: arxiv_sync_status
+    sync_success_value: success
+    schema: public
+    kind: supabase
+    enabled: true
+    url: https://lyucdwgefyfbmaiopjbk.supabase.co
+    anon_key: sb_publishable_lX-oi64Uxyd7SIVv3_w2Uw_MTOojeKq
