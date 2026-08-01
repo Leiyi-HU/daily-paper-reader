@@ -1,0 +1,1033 @@
+{
+  "date": "20260703-20260801",
+  "date_label": "2026-07-03 ~ 2026-08-01",
+  "generated_at": "2026-08-01 02:00:02 UTC",
+  "recommend_exists": true,
+  "run_count": 1,
+  "papers": [
+    {
+      "paper_id": "2607.03146v1",
+      "route": "20260703-20260801/2607.03146v1-exp2vla-enabling-vision-language-action-for-drone-navigation-from-expert-demonstrations",
+      "title": "Exp2VLA: Enabling Vision-Language-Action for Drone Navigation from Expert Demonstrations",
+      "section": "deep",
+      "tags": [
+        {
+          "kind": "query",
+          "label": "vvvpg"
+        }
+      ],
+      "score": 9.0,
+      "evidence": "通过专家蒸馏实现无人机语言条件导航的VLA模型",
+      "first_seen_at": "2026-08-01 02:00:02 UTC",
+      "updated_at": "2026-08-01 02:00:02 UTC"
+    },
+    {
+      "paper_id": "2607.03320v1",
+      "route": "20260703-20260801/2607.03320v1-lbtcap-a-lightweight-bilateral-transformer-for-real-time-remote-sensing-image-change-captioning",
+      "title": "LBTCap: A Lightweight Bilateral Transformer for Real-Time Remote Sensing Image Change Captioning",
+      "section": "deep",
+      "tags": [
+        {
+          "kind": "query",
+          "label": "vvvpg"
+        }
+      ],
+      "score": 9.0,
+      "evidence": "遥感图像变化描述的轻量级VLM",
+      "first_seen_at": "2026-08-01 02:00:02 UTC",
+      "updated_at": "2026-08-01 02:00:02 UTC"
+    },
+    {
+      "paper_id": "2607.03449v1",
+      "route": "20260703-20260801/2607.03449v1-hime-hierarchical-embodied-memory-for-long-horizon-vision-language-action-control",
+      "title": "HiMe: Hierarchical Embodied Memory for Long-Horizon Vision-Language-Action Control",
+      "section": "deep",
+      "tags": [
+        {
+          "kind": "query",
+          "label": "vvvpg"
+        }
+      ],
+      "score": 9.0,
+      "evidence": "面向长时程VLA控制的层次化具身记忆框架",
+      "first_seen_at": "2026-08-01 02:00:02 UTC",
+      "updated_at": "2026-08-01 02:00:02 UTC"
+    },
+    {
+      "paper_id": "2607.03693v1",
+      "route": "20260703-20260801/2607.03693v1-core-vla-towards-scalable-and-robust-vision-language-action-modeling-via-conditional-routing-of-experts",
+      "title": "CoRE-VLA: Towards Scalable and Robust Vision-Language-Action Modeling via Conditional Routing of Experts",
+      "section": "deep",
+      "tags": [
+        {
+          "kind": "query",
+          "label": "vvvpg"
+        }
+      ],
+      "score": 9.0,
+      "evidence": "条件专家路由实现稳健的VLA",
+      "first_seen_at": "2026-08-01 02:00:02 UTC",
+      "updated_at": "2026-08-01 02:00:02 UTC"
+    },
+    {
+      "paper_id": "2607.03792v1",
+      "route": "20260703-20260801/2607.03792v1-from-region-arrival-to-instance-level-grounding-in-vision-and-language-navigation",
+      "title": "From Region Arrival to Instance-Level Grounding in Vision-and-Language Navigation",
+      "section": "deep",
+      "tags": [
+        {
+          "kind": "query",
+          "label": "vvvpg"
+        }
+      ],
+      "score": 9.0,
+      "evidence": "视觉语言导航中的实例级定位与精确导航",
+      "first_seen_at": "2026-08-01 02:00:02 UTC",
+      "updated_at": "2026-08-01 02:00:02 UTC"
+    },
+    {
+      "paper_id": "2607.03869v1",
+      "route": "20260703-20260801/2607.03869v1-geoselect-spatial-program-execution-for-training-free-referring-remote-sensing-image-segmentation",
+      "title": "GeoSelect: Spatial-Program Execution for Training-Free Referring Remote Sensing Image Segmentation",
+      "section": "deep",
+      "tags": [
+        {
+          "kind": "query",
+          "label": "vvvpg"
+        }
+      ],
+      "score": 9.0,
+      "evidence": "面向航空遥感影像的语言引导指称分割",
+      "first_seen_at": "2026-08-01 02:00:02 UTC",
+      "updated_at": "2026-08-01 02:00:02 UTC"
+    },
+    {
+      "paper_id": "2607.04171v1",
+      "route": "20260703-20260801/2607.04171v1-xs-vla-coupling-coarse-grained-spatial-distillation-with-latent-flow-matching-for-lightweight-robotic-control",
+      "title": "XS-VLA: Coupling Coarse-grained Spatial Distillation with Latent Flow Matching for Lightweight Robotic Control",
+      "section": "deep",
+      "tags": [
+        {
+          "kind": "query",
+          "label": "vvvpg"
+        }
+      ],
+      "score": 9.0,
+      "evidence": "提出轻量化的视觉-语言-动作（VLA）模型，用于机器人操作，直接匹配视觉与语言输入生成动作的需求",
+      "first_seen_at": "2026-08-01 02:00:02 UTC",
+      "updated_at": "2026-08-01 02:00:02 UTC"
+    },
+    {
+      "paper_id": "2607.04816v1",
+      "route": "20260703-20260801/2607.04816v1-cac-vla-context-gated-action-conditioning-for-vision-language-action-models",
+      "title": "CAC-VLA: Context-Gated Action Conditioning for Vision-Language-Action Models",
+      "section": "deep",
+      "tags": [
+        {
+          "kind": "query",
+          "label": "vvvpg"
+        }
+      ],
+      "score": 9.0,
+      "evidence": "针对VLA机器人操作提出上下文门控动作条件化方法",
+      "first_seen_at": "2026-08-01 02:00:02 UTC",
+      "updated_at": "2026-08-01 02:00:02 UTC"
+    },
+    {
+      "paper_id": "2607.04927v1",
+      "route": "20260703-20260801/2607.04927v1-dswam-a-dual-system-world-action-foundation-model-for-fine-grained-robot-manipulation",
+      "title": "DSWAM: A Dual-System World Action Foundation Model for Fine-Grained Robot Manipulation",
+      "section": "deep",
+      "tags": [
+        {
+          "kind": "query",
+          "label": "vvvpg"
+        }
+      ],
+      "score": 9.0,
+      "evidence": "世界动作模型作为视觉-语言-动作策略的替代方案",
+      "first_seen_at": "2026-08-01 02:00:02 UTC",
+      "updated_at": "2026-08-01 02:00:02 UTC"
+    },
+    {
+      "paper_id": "2607.05122v1",
+      "route": "20260703-20260801/2607.05122v1-green-for-go-red-for-no-visual-grounding-via-semantic-segmentation-for-vla-navigation-policies",
+      "title": "Green for Go, Red for No: Visual Grounding via Semantic Segmentation for VLA Navigation Policies",
+      "section": "deep",
+      "tags": [
+        {
+          "kind": "query",
+          "label": "vvvpg"
+        }
+      ],
+      "score": 9.0,
+      "evidence": "基于语义分割的视觉接地提升视觉语言行动导航策略",
+      "first_seen_at": "2026-08-01 02:00:02 UTC",
+      "updated_at": "2026-08-01 02:00:02 UTC"
+    },
+    {
+      "paper_id": "2607.05716v1",
+      "route": "20260703-20260801/2607.05716v1-scene-graph-thinking-reinforcing-structured-visual-reasoning-for-multimodal-large-language-models",
+      "title": "Scene Graph Thinking: Reinforcing Structured Visual Reasoning for Multimodal Large Language Models",
+      "section": "deep",
+      "tags": [
+        {
+          "kind": "query",
+          "label": "vvvpg"
+        }
+      ],
+      "score": 9.0,
+      "evidence": "利用场景图为多模态大语言模型提供结构化视觉推理",
+      "first_seen_at": "2026-08-01 02:00:02 UTC",
+      "updated_at": "2026-08-01 02:00:02 UTC"
+    },
+    {
+      "paper_id": "2607.06370v1",
+      "route": "20260703-20260801/2607.06370v1-training-free-acceleration-for-vision-language-action-models-with-action-caching-and-refinement",
+      "title": "Training-Free Acceleration for Vision-Language-Action Models with Action Caching and Refinement",
+      "section": "deep",
+      "tags": [
+        {
+          "kind": "query",
+          "label": "vvvpg"
+        }
+      ],
+      "score": 9.0,
+      "evidence": "针对VLA模型提出免训练加速技术，改进动作生成效率",
+      "first_seen_at": "2026-08-01 02:00:02 UTC",
+      "updated_at": "2026-08-01 02:00:02 UTC"
+    },
+    {
+      "paper_id": "2607.06552v1",
+      "route": "20260703-20260801/2607.06552v1-monoir-rs-infrared-remote-sensing-vision-language-learning-with-clip-and-vlm-adaptation",
+      "title": "MonoIR-RS: Infrared Remote Sensing Vision-Language Learning with CLIP and VLM Adaptation",
+      "section": "deep",
+      "tags": [
+        {
+          "kind": "query",
+          "label": "vvvpg"
+        }
+      ],
+      "score": 9.0,
+      "evidence": "提供大规模红外遥感视觉语言数据集和基准，结合CLIP与VLM适配",
+      "first_seen_at": "2026-08-01 02:00:02 UTC",
+      "updated_at": "2026-08-01 02:00:02 UTC"
+    },
+    {
+      "paper_id": "2607.06706v1",
+      "route": "20260703-20260801/2607.06706v1-vision-language-action-vla-models-for-unmanned-aerial-robotics-and-bimanual-manipulation-a-review",
+      "title": "Vision Language Action (VLA) Models for Unmanned Aerial Robotics and Bimanual Manipulation: A Review",
+      "section": "deep",
+      "tags": [
+        {
+          "kind": "query",
+          "label": "vvvpg"
+        }
+      ],
+      "score": 9.0,
+      "evidence": "VLA模型在无人机与操作机器人中的综述",
+      "first_seen_at": "2026-08-01 02:00:02 UTC",
+      "updated_at": "2026-08-01 02:00:02 UTC"
+    },
+    {
+      "paper_id": "2607.06882v1",
+      "route": "20260703-20260801/2607.06882v1-gemnav-discrete-token-visual-robot-navigation-using-a-multimodal-large-language-model",
+      "title": "GemNav: Discrete-Token Visual Robot Navigation using a Multimodal Large Language Model",
+      "section": "deep",
+      "tags": [
+        {
+          "kind": "query",
+          "label": "vvvpg"
+        }
+      ],
+      "score": 9.0,
+      "evidence": "使用多模态大语言模型进行离散令牌视觉机器人导航",
+      "first_seen_at": "2026-08-01 02:00:02 UTC",
+      "updated_at": "2026-08-01 02:00:02 UTC"
+    },
+    {
+      "paper_id": "2607.07608v1",
+      "route": "20260703-20260801/2607.07608v1-dual-latent-memory-in-vision-language-action-models-for-robotic-manipulation",
+      "title": "Dual Latent Memory in Vision-Language-Action Models for Robotic Manipulation",
+      "section": "deep",
+      "tags": [
+        {
+          "kind": "query",
+          "label": "vvvpg"
+        }
+      ],
+      "score": 9.0,
+      "evidence": "面向机器人操作的视觉-语言-动作模型，利用视觉和语言输入生成动作",
+      "first_seen_at": "2026-08-01 02:00:02 UTC",
+      "updated_at": "2026-08-01 02:00:02 UTC"
+    },
+    {
+      "paper_id": "2607.08004v1",
+      "route": "20260703-20260801/2607.08004v1-logos-language-guided-oriented-object-detection-in-aerial-scenes",
+      "title": "LOGOS: Language-guided Oriented Object Detection in Aerial Scenes",
+      "section": "deep",
+      "tags": [
+        {
+          "kind": "query",
+          "label": "vvvpg"
+        }
+      ],
+      "score": 9.0,
+      "evidence": "在航空/卫星影像中通过文本提示引导定向目标检测",
+      "first_seen_at": "2026-08-01 02:00:02 UTC",
+      "updated_at": "2026-08-01 02:00:02 UTC"
+    },
+    {
+      "paper_id": "2607.08182v1",
+      "route": "20260703-20260801/2607.08182v1-leevla-seeing-what-matters-in-latent-environment-evolution-for-vision-language-action",
+      "title": "LEEVLA: Seeing What Matters in Latent Environment Evolution for Vision-Language-Action",
+      "section": "deep",
+      "tags": [
+        {
+          "kind": "query",
+          "label": "vvvpg"
+        }
+      ],
+      "score": 9.0,
+      "evidence": "将视觉-语言多模态输入映射为机器人动作的VLA模型",
+      "first_seen_at": "2026-08-01 02:00:02 UTC",
+      "updated_at": "2026-08-01 02:00:02 UTC"
+    },
+    {
+      "paper_id": "2607.08359v1",
+      "route": "20260703-20260801/2607.08359v1-fsd-vln-fast-slow-dual-system-modeling-for-aerial-long-horizon-vision-language-navigation",
+      "title": "FSD-VLN: Fast-Slow Dual-System Modeling for Aerial Long-Horizon Vision-Language Navigation",
+      "section": "deep",
+      "tags": [
+        {
+          "kind": "query",
+          "label": "vvvpg"
+        }
+      ],
+      "score": 9.0,
+      "evidence": "面向无人机自主导航的空中长时程视觉-语言导航",
+      "first_seen_at": "2026-08-01 02:00:02 UTC",
+      "updated_at": "2026-08-01 02:00:02 UTC"
+    },
+    {
+      "paper_id": "2607.08448v3",
+      "route": "20260703-20260801/2607.08448v3-harness-vla-steering-frozen-vlas-into-reliable-manipulation-primitives-via-memory-guided-agents",
+      "title": "Harness VLA: Steering Frozen VLAs into Reliable Manipulation Primitives via Memory-Guided Agents",
+      "section": "deep",
+      "tags": [
+        {
+          "kind": "query",
+          "label": "vvvpg"
+        }
+      ],
+      "score": 9.0,
+      "evidence": "冻结VLA转换为可靠操作原语",
+      "first_seen_at": "2026-08-01 02:00:02 UTC",
+      "updated_at": "2026-08-01 02:00:02 UTC"
+    },
+    {
+      "paper_id": "2607.08575v2",
+      "route": "20260703-20260801/2607.08575v2-fabrivla-a-lightweight-vision-language-action-model-for-precise-multi-task-manipulation",
+      "title": "FabriVLA: A Lightweight Vision-Language-Action Model for Precise Multi-Task Manipulation",
+      "section": "deep",
+      "tags": [
+        {
+          "kind": "query",
+          "label": "vvvpg"
+        }
+      ],
+      "score": 9.0,
+      "evidence": "轻量级视觉语言行动模型将视觉与语言输入转换为精确操作动作",
+      "first_seen_at": "2026-08-01 02:00:02 UTC",
+      "updated_at": "2026-08-01 02:00:02 UTC"
+    },
+    {
+      "paper_id": "2607.09583v1",
+      "route": "20260703-20260801/2607.09583v1-promptable-concept-segmentation-from-above-evaluating-sam-3s-zero-shot-and-one-shot-capabilities-in-remote-sensing",
+      "title": "Promptable Concept Segmentation from Above: Evaluating SAM 3's Zero-Shot and One-Shot Capabilities in Remote Sensing",
+      "section": "deep",
+      "tags": [
+        {
+          "kind": "query",
+          "label": "vvvpg"
+        }
+      ],
+      "score": 9.0,
+      "evidence": "评估SAM 3在遥感影像上的零样本与单样本能力",
+      "first_seen_at": "2026-08-01 02:00:02 UTC",
+      "updated_at": "2026-08-01 02:00:02 UTC"
+    },
+    {
+      "paper_id": "2607.09792v1",
+      "route": "20260703-20260801/2607.09792v1-a-comprehensive-survey-and-systematic-real-world-evaluation-of-embodied-vision-and-language-navigation",
+      "title": "A Comprehensive Survey and Systematic Real-World Evaluation of Embodied Vision-and-Language Navigation",
+      "section": "deep",
+      "tags": [
+        {
+          "kind": "query",
+          "label": "vvvpg"
+        }
+      ],
+      "score": 9.0,
+      "evidence": "具身视觉-语言导航综述与真实世界评估",
+      "first_seen_at": "2026-08-01 02:00:02 UTC",
+      "updated_at": "2026-08-01 02:00:02 UTC"
+    },
+    {
+      "paper_id": "2607.09818v1",
+      "route": "20260703-20260801/2607.09818v1-ts-mask-vla-2d-temporal-spatial-masking-for-vision-language-action-model-with-effective-bridging",
+      "title": "TS-Mask VLA: 2D Temporal-Spatial Masking for Vision-Language-Action Model with Effective Bridging",
+      "section": "deep",
+      "tags": [
+        {
+          "kind": "query",
+          "label": "vvvpg"
+        }
+      ],
+      "score": 9.0,
+      "evidence": "提出时空掩码的VLA框架，直接面向语言指令与视觉观测生成动作",
+      "first_seen_at": "2026-08-01 02:00:02 UTC",
+      "updated_at": "2026-08-01 02:00:02 UTC"
+    },
+    {
+      "paper_id": "2607.10180v1",
+      "route": "20260703-20260801/2607.10180v1-activefly-bench-aligning-embodied-question-answering-with-vision-language-action-for-aerial-embodied-perception",
+      "title": "ActiveFly-Bench: Aligning Embodied Question Answering with Vision-Language-Action for Aerial Embodied Perception",
+      "section": "deep",
+      "tags": [
+        {
+          "kind": "query",
+          "label": "vvvpg"
+        }
+      ],
+      "score": 9.0,
+      "evidence": "面向无人机具身感知的基准，将视觉语言动作与无人机精细控制对齐",
+      "first_seen_at": "2026-08-01 02:00:02 UTC",
+      "updated_at": "2026-08-01 02:00:02 UTC"
+    },
+    {
+      "paper_id": "2607.10383v3",
+      "route": "20260703-20260801/2607.10383v3-abot-n1-toward-a-general-visual-language-navigation-foundation-model",
+      "title": "ABot-N1: Toward a General Visual Language Navigation Foundation Model",
+      "section": "deep",
+      "tags": [
+        {
+          "kind": "query",
+          "label": "vvvpg"
+        }
+      ],
+      "score": 9.0,
+      "evidence": "面向具身导航的通用视觉语言导航基础模型，采用双视觉语言信号",
+      "first_seen_at": "2026-08-01 02:00:02 UTC",
+      "updated_at": "2026-08-01 02:00:02 UTC"
+    },
+    {
+      "paper_id": "2607.10744v2",
+      "route": "20260703-20260801/2607.10744v2-traj-vln-learning-pixel-space-interaction-via-autoregressive-trajectory-generation",
+      "title": "Traj-VLN: Learning Pixel-Space Interaction via Autoregressive Trajectory Generation",
+      "section": "deep",
+      "tags": [
+        {
+          "kind": "query",
+          "label": "vvvpg"
+        }
+      ],
+      "score": 9.0,
+      "evidence": "基于自然语言指令的连续环境具身导航，使用VLM生成轨迹",
+      "first_seen_at": "2026-08-01 02:00:02 UTC",
+      "updated_at": "2026-08-01 02:00:02 UTC"
+    },
+    {
+      "paper_id": "2607.11498v1",
+      "route": "20260703-20260801/2607.11498v1-see-like-a-robot-robot-centric-pointmaps-for-vision-language-action-models",
+      "title": "See like a Robot: Robot-Centric Pointmaps for Vision-Language-Action Models",
+      "section": "deep",
+      "tags": [
+        {
+          "kind": "query",
+          "label": "vvvpg"
+        }
+      ],
+      "score": 9.0,
+      "evidence": "以机器人坐标系点图作为VLA视觉表征，弥合坐标帧失配",
+      "first_seen_at": "2026-08-01 02:00:02 UTC",
+      "updated_at": "2026-08-01 02:00:02 UTC"
+    },
+    {
+      "paper_id": "2607.11638v1",
+      "route": "20260703-20260801/2607.11638v1-da-nav-direction-aware-city-scale-vision-language-navigation",
+      "title": "DA-Nav: Direction-Aware City-Scale Vision-Language Navigation",
+      "section": "deep",
+      "tags": [
+        {
+          "kind": "query",
+          "label": "vvvpg"
+        }
+      ],
+      "score": 9.0,
+      "evidence": "利用方向指令和空间接地实现城市规模视觉语言导航",
+      "first_seen_at": "2026-08-01 02:00:02 UTC",
+      "updated_at": "2026-08-01 02:00:02 UTC"
+    },
+    {
+      "paper_id": "2607.12680v1",
+      "route": "20260703-20260801/2607.12680v1-reflectvln-training-vision-language-navigation-agents-with-reflective-reasoning",
+      "title": "ReflectVLN: Training Vision-Language Navigation Agents with Reflective Reasoning",
+      "section": "deep",
+      "tags": [
+        {
+          "kind": "query",
+          "label": "vvvpg"
+        }
+      ],
+      "score": 9.0,
+      "evidence": "具备反思推理与闭环纠错的视觉语言导航智能体",
+      "first_seen_at": "2026-08-01 02:00:02 UTC",
+      "updated_at": "2026-08-01 02:00:02 UTC"
+    },
+    {
+      "paper_id": "2607.13597v2",
+      "route": "20260703-20260801/2607.13597v2-semantic-anchoring-for-robotic-action-representations",
+      "title": "Semantic Anchoring for Robotic Action Representations",
+      "section": "deep",
+      "tags": [
+        {
+          "kind": "query",
+          "label": "vvvpg"
+        }
+      ],
+      "score": 9.0,
+      "evidence": "面向具身智能体的VLA动作表示语义研究",
+      "first_seen_at": "2026-08-01 02:00:02 UTC",
+      "updated_at": "2026-08-01 02:00:02 UTC"
+    },
+    {
+      "paper_id": "2607.13624v1",
+      "route": "20260703-20260801/2607.13624v1-from-language-to-navigation-goals-a-vision-language-approach-for-semantic-navigation-of-mobile-robots-using-rgb-d-perception",
+      "title": "From Language to Navigation Goals: A Vision-Language Approach for Semantic Navigation of Mobile Robots Using RGB-D Perception",
+      "section": "deep",
+      "tags": [
+        {
+          "kind": "query",
+          "label": "vvvpg"
+        }
+      ],
+      "score": 9.0,
+      "evidence": "语言驱动的移动机器人语义导航，结合RGB-D感知",
+      "first_seen_at": "2026-08-01 02:00:02 UTC",
+      "updated_at": "2026-08-01 02:00:02 UTC"
+    },
+    {
+      "paper_id": "2607.13926v1",
+      "route": "20260703-20260801/2607.13926v1-s-squared-vla-decoupling-semantic-and-spatial-streams-in-vision-language-action-models-for-autonomous-driving",
+      "title": "S-squared-VLA: Decoupling Semantic and Spatial Streams in Vision-Language-Action Models for Autonomous Driving",
+      "section": "deep",
+      "tags": [
+        {
+          "kind": "query",
+          "label": "vvvpg"
+        }
+      ],
+      "score": 9.0,
+      "evidence": "自动驾驶中解耦语义与空间流的视觉-语言-动作模型",
+      "first_seen_at": "2026-08-01 02:00:02 UTC",
+      "updated_at": "2026-08-01 02:00:02 UTC"
+    },
+    {
+      "paper_id": "2607.14187v1",
+      "route": "20260703-20260801/2607.14187v1-rxbrain-embodied-cognition-foundation-model-with-joint-language-visual-reasoning-and-imagination",
+      "title": "RxBrain: Embodied Cognition Foundation Model with Joint Language-Visual Reasoning and Imagination",
+      "section": "deep",
+      "tags": [
+        {
+          "kind": "query",
+          "label": "vvvpg"
+        }
+      ],
+      "score": 9.0,
+      "evidence": "联合语言-视觉推理的具身认知基础模型",
+      "first_seen_at": "2026-08-01 02:00:02 UTC",
+      "updated_at": "2026-08-01 02:00:02 UTC"
+    },
+    {
+      "paper_id": "2607.14514v1",
+      "route": "20260703-20260801/2607.14514v1-vtm-nav-hierarchical-visual-topological-memory-for-cross-episode-object-goal-navigation",
+      "title": "VTM-Nav: Hierarchical Visual-Topological Memory for Cross-Episode Object-Goal Navigation",
+      "section": "deep",
+      "tags": [
+        {
+          "kind": "query",
+          "label": "vvvpg"
+        }
+      ],
+      "score": 9.0,
+      "evidence": "利用VLM在跨场景目标导航中进行经验重用",
+      "first_seen_at": "2026-08-01 02:00:02 UTC",
+      "updated_at": "2026-08-01 02:00:02 UTC"
+    },
+    {
+      "paper_id": "2607.15942v1",
+      "route": "20260703-20260801/2607.15942v1-more-with-less-a-large-scale-remote-sensing-vlm-with-a-simple-recipe",
+      "title": "More with Less: a Large Scale Remote Sensing VLM with a Simple Recipe",
+      "section": "deep",
+      "tags": [
+        {
+          "kind": "query",
+          "label": "vvvpg"
+        }
+      ],
+      "score": 9.0,
+      "evidence": "大规模遥感视觉语言模型，用简单配方取得竞争性或最优性能",
+      "first_seen_at": "2026-08-01 02:00:02 UTC",
+      "updated_at": "2026-08-01 02:00:02 UTC"
+    },
+    {
+      "paper_id": "2607.16806v1",
+      "route": "20260703-20260801/2607.16806v1-token-wise-latent-streaming-from-slow-reasoners-to-fast-planners-for-dynamic-vision-language-navigation",
+      "title": "Token-Wise Latent Streaming from Slow Reasoners to Fast Planners for Dynamic Vision Language Navigation",
+      "section": "deep",
+      "tags": [
+        {
+          "kind": "query",
+          "label": "vvvpg"
+        }
+      ],
+      "score": 9.0,
+      "evidence": "动态视觉语言导航与令牌级潜在流式传输",
+      "first_seen_at": "2026-08-01 02:00:02 UTC",
+      "updated_at": "2026-08-01 02:00:02 UTC"
+    },
+    {
+      "paper_id": "2607.17386v1",
+      "route": "20260703-20260801/2607.17386v1-skyvlam-multimodal-large-language-model-for-uav-video-understanding-in-remote-sensing",
+      "title": "SkyVLaM: Multimodal Large Language Model for UAV Video Understanding in Remote Sensing",
+      "section": "deep",
+      "tags": [
+        {
+          "kind": "query",
+          "label": "vvvpg"
+        }
+      ],
+      "score": 9.0,
+      "evidence": "面向遥感无人机视频理解的多模态大语言模型",
+      "first_seen_at": "2026-08-01 02:00:02 UTC",
+      "updated_at": "2026-08-01 02:00:02 UTC"
+    },
+    {
+      "paper_id": "2607.17806v1",
+      "route": "20260703-20260801/2607.17806v1-pgn-design-and-implementation-of-a-vision-language-navigation-system-based-on-pangu-multimodal-foundation-model",
+      "title": "PGN: Design and Implementation of a Vision-Language Navigation System Based on Pangu Multimodal Foundation Model",
+      "section": "deep",
+      "tags": [
+        {
+          "kind": "query",
+          "label": "vvvpg"
+        }
+      ],
+      "score": 9.0,
+      "evidence": "基于多模态大模型的离线视觉语言导航系统",
+      "first_seen_at": "2026-08-01 02:00:02 UTC",
+      "updated_at": "2026-08-01 02:00:02 UTC"
+    },
+    {
+      "paper_id": "2607.18042v2",
+      "route": "20260703-20260801/2607.18042v2-anticipate-before-acting-future-state-conditioned-vision-language-navigation",
+      "title": "Anticipate Before Acting: Future-State-Conditioned Vision-Language Navigation",
+      "section": "deep",
+      "tags": [
+        {
+          "kind": "query",
+          "label": "vvvpg"
+        }
+      ],
+      "score": 9.0,
+      "evidence": "未来状态条件的端到端视觉-语言导航方法",
+      "first_seen_at": "2026-08-01 02:00:02 UTC",
+      "updated_at": "2026-08-01 02:00:02 UTC"
+    },
+    {
+      "paper_id": "2607.18580v1",
+      "route": "20260703-20260801/2607.18580v1-step-signal-temporal-logic-for-precise-specifications-for-action-generation-with-vision-language-models",
+      "title": "STeP: Signal Temporal Logic for Precise Specifications for Action Generation with Vision Language Models",
+      "section": "deep",
+      "tags": [
+        {
+          "kind": "query",
+          "label": "vvvpg"
+        }
+      ],
+      "score": 9.0,
+      "evidence": "基于信号时序逻辑的视觉语言动作模型，实现精确指令动作生成",
+      "first_seen_at": "2026-08-01 02:00:02 UTC",
+      "updated_at": "2026-08-01 02:00:02 UTC"
+    },
+    {
+      "paper_id": "2607.19288v1",
+      "route": "20260703-20260801/2607.19288v1-no-training-better-flights-test-time-scaled-vlms-for-uav-navigation",
+      "title": "No Training, Better Flights: Test-Time Scaled VLMs for UAV Navigation",
+      "section": "deep",
+      "tags": [
+        {
+          "kind": "query",
+          "label": "vvvpg"
+        }
+      ],
+      "score": 9.0,
+      "evidence": "无人机导航中的VLM测试时缩放",
+      "first_seen_at": "2026-08-01 02:00:02 UTC",
+      "updated_at": "2026-08-01 02:00:02 UTC"
+    },
+    {
+      "paper_id": "2607.19857v1",
+      "route": "20260703-20260801/2607.19857v1-memory-augmented-multimodal-large-language-models-for-small-object-understanding-in-streaming-aerial-videos",
+      "title": "Memory-Augmented Multimodal Large Language Models for Small Object Understanding in Streaming Aerial Videos",
+      "section": "deep",
+      "tags": [
+        {
+          "kind": "query",
+          "label": "vvvpg"
+        }
+      ],
+      "score": 9.0,
+      "evidence": "面向流式无人机视频小目标理解的内存增强多模态大语言模型",
+      "first_seen_at": "2026-08-01 02:00:02 UTC",
+      "updated_at": "2026-08-01 02:00:02 UTC"
+    },
+    {
+      "paper_id": "2607.20284v1",
+      "route": "20260703-20260801/2607.20284v1-multimodal-large-language-models-for-remote-sensing-image-understanding-domain-specific-or-general-purpose",
+      "title": "Multimodal Large Language Models for Remote Sensing Image Understanding: Domain-Specific or General-Purpose?",
+      "section": "deep",
+      "tags": [
+        {
+          "kind": "query",
+          "label": "vvvpg"
+        }
+      ],
+      "score": 9.0,
+      "evidence": "遥感图像理解多模态大模型综述与诊断评估",
+      "first_seen_at": "2026-08-01 02:00:02 UTC",
+      "updated_at": "2026-08-01 02:00:02 UTC"
+    },
+    {
+      "paper_id": "2607.22205v2",
+      "route": "20260703-20260801/2607.22205v2-filling-before-advancing-capability-gap-driven-post-training-for-scenario-specialized-remote-sensing-mllms",
+      "title": "Filling Before Advancing: Capability-Gap-Driven Post-Training for Scenario-Specialized Remote Sensing MLLMs",
+      "section": "deep",
+      "tags": [
+        {
+          "kind": "query",
+          "label": "vvvpg"
+        }
+      ],
+      "score": 9.0,
+      "evidence": "面向遥感影像场景专业化的多模态大语言模型，匹配卫星/航空影像分析需求",
+      "first_seen_at": "2026-08-01 02:00:02 UTC",
+      "updated_at": "2026-08-01 02:00:02 UTC"
+    },
+    {
+      "paper_id": "2607.22226v1",
+      "route": "20260703-20260801/2607.22226v1-offline-vision-language-navigation-with-geometric-goal-localization-for-outdoor-environments",
+      "title": "Offline Vision-Language Navigation with Geometric Goal Localization for Outdoor Environments",
+      "section": "deep",
+      "tags": [
+        {
+          "kind": "query",
+          "label": "vvvpg"
+        }
+      ],
+      "score": 9.0,
+      "evidence": "室外视觉语言导航与几何目标定位",
+      "first_seen_at": "2026-08-01 02:00:02 UTC",
+      "updated_at": "2026-08-01 02:00:02 UTC"
+    },
+    {
+      "paper_id": "2607.23181v1",
+      "route": "20260703-20260801/2607.23181v1-towards-dual-brain-minimal-sufficient-representation-for-vision-language-navigation",
+      "title": "Towards Dual-Brain Minimal Sufficient Representation for Vision-Language Navigation",
+      "section": "deep",
+      "tags": [
+        {
+          "kind": "query",
+          "label": "vvvpg"
+        }
+      ],
+      "score": 9.0,
+      "evidence": "面向连续环境视觉语言导航的最小充分表示",
+      "first_seen_at": "2026-08-01 02:00:02 UTC",
+      "updated_at": "2026-08-01 02:00:02 UTC"
+    },
+    {
+      "paper_id": "2607.24159v1",
+      "route": "20260703-20260801/2607.24159v1-deva-decoupled-video-action-model-with-physical-guidance-for-robot-policy-learning",
+      "title": "DeVA: Decoupled Video-Action Model with physical guidance for robot policy learning",
+      "section": "deep",
+      "tags": [
+        {
+          "kind": "query",
+          "label": "vvvpg"
+        }
+      ],
+      "score": 9.0,
+      "evidence": "面向语言条件机器人策略学习的解耦视频-动作模型",
+      "first_seen_at": "2026-08-01 02:00:02 UTC",
+      "updated_at": "2026-08-01 02:00:02 UTC"
+    },
+    {
+      "paper_id": "2607.24485v2",
+      "route": "20260703-20260801/2607.24485v2--learning-touch-augmented-vision-language-action-models-from-future-visual-supervision",
+      "title": "τ: Learning Touch-Augmented Vision-Language-Action Models from Future Visual Supervision",
+      "section": "deep",
+      "tags": [
+        {
+          "kind": "query",
+          "label": "vvvpg"
+        }
+      ],
+      "score": 9.0,
+      "evidence": "触觉增强的视觉-语言-动作模型，用于接触丰富的机器人操作",
+      "first_seen_at": "2026-08-01 02:00:02 UTC",
+      "updated_at": "2026-08-01 02:00:02 UTC"
+    },
+    {
+      "paper_id": "2607.25563v1",
+      "route": "20260703-20260801/2607.25563v1-few-shot-open-vocabulary-remote-sensing-segmentation-via-textual-inversion",
+      "title": "Few-Shot Open-Vocabulary Remote Sensing Segmentation via Textual Inversion",
+      "section": "deep",
+      "tags": [
+        {
+          "kind": "query",
+          "label": "vvvpg"
+        }
+      ],
+      "score": 9.0,
+      "evidence": "通过文本反演实现遥感影像的少样本开集分割",
+      "first_seen_at": "2026-08-01 02:00:02 UTC",
+      "updated_at": "2026-08-01 02:00:02 UTC"
+    },
+    {
+      "paper_id": "2607.25993v1",
+      "route": "20260703-20260801/2607.25993v1-beyond-zooming-learning-multi-tool-visual-reasoning-for-ultra-high-resolution-remote-sensing",
+      "title": "Beyond Zooming: Learning Multi-Tool Visual Reasoning for Ultra-High-Resolution Remote Sensing",
+      "section": "deep",
+      "tags": [
+        {
+          "kind": "query",
+          "label": "vvvpg"
+        }
+      ],
+      "score": 9.0,
+      "evidence": "面向超高分辨率遥感影像的多模态大语言模型推理",
+      "first_seen_at": "2026-08-01 02:00:02 UTC",
+      "updated_at": "2026-08-01 02:00:02 UTC"
+    },
+    {
+      "paper_id": "2607.26148v1",
+      "route": "20260703-20260801/2607.26148v1-embodied-agents-take-control-minimal-interface-zero-shot-agents-rival-industrial-scale-policies-in-vision-and-language-navigation",
+      "title": "Embodied Agents Take Control: Minimal-Interface Zero-Shot Agents Rival Industrial-Scale Policies in Vision-and-Language Navigation",
+      "section": "deep",
+      "tags": [
+        {
+          "kind": "query",
+          "label": "vvvpg"
+        }
+      ],
+      "score": 9.0,
+      "evidence": "具身智能体在视觉语言导航中的极简接口控制",
+      "first_seen_at": "2026-08-01 02:00:02 UTC",
+      "updated_at": "2026-08-01 02:00:02 UTC"
+    },
+    {
+      "paper_id": "2607.26513v1",
+      "route": "20260703-20260801/2607.26513v1-explicit-kinematic-guidance-from-analytic-concepts-for-vision-language-action-models",
+      "title": "Explicit Kinematic Guidance from Analytic Concepts for Vision-Language-Action Models",
+      "section": "deep",
+      "tags": [
+        {
+          "kind": "query",
+          "label": "vvvpg"
+        }
+      ],
+      "score": 9.0,
+      "evidence": "使用视觉基础模型的显式运动学引导增强VLA模型，实现高精度操作",
+      "first_seen_at": "2026-08-01 02:00:02 UTC",
+      "updated_at": "2026-08-01 02:00:02 UTC"
+    },
+    {
+      "paper_id": "2607.03143v1",
+      "route": "20260703-20260801/2607.03143v1-text-as-partial-constraint-core-residual-alignment-for-robust-vision-language-learning",
+      "title": "Text as Partial Constraint: Core-Residual Alignment for Robust Vision-Language Learning",
+      "section": "quick",
+      "tags": [
+        {
+          "kind": "query",
+          "label": "vvvpg"
+        }
+      ],
+      "score": 8.0,
+      "evidence": "视觉语言对齐与稳健表示学习",
+      "first_seen_at": "2026-08-01 02:00:02 UTC",
+      "updated_at": "2026-08-01 02:00:02 UTC"
+    },
+    {
+      "paper_id": "2607.03624v1",
+      "route": "20260703-20260801/2607.03624v1-radio1d-elastic-representations-for-condensed-vision-modeling",
+      "title": "RADIO1D: Elastic Representations for Condensed Vision Modeling",
+      "section": "quick",
+      "tags": [
+        {
+          "kind": "query",
+          "label": "vvvpg"
+        }
+      ],
+      "score": 8.0,
+      "evidence": "紧凑一维视觉表示支持迁移学习",
+      "first_seen_at": "2026-08-01 02:00:02 UTC",
+      "updated_at": "2026-08-01 02:00:02 UTC"
+    },
+    {
+      "paper_id": "2607.04593v1",
+      "route": "20260703-20260801/2607.04593v1-torino-token-reduction-via-interpretable-concept-overlap-in-vision-language-models",
+      "title": "TORINO: Token Reduction via Interpretable Concept Overlap in Vision-Language Models",
+      "section": "quick",
+      "tags": [
+        {
+          "kind": "query",
+          "label": "vvvpg"
+        }
+      ],
+      "score": 8.0,
+      "evidence": "面向通用视觉语言模型的可解释标记缩减方法",
+      "first_seen_at": "2026-08-01 02:00:02 UTC",
+      "updated_at": "2026-08-01 02:00:02 UTC"
+    },
+    {
+      "paper_id": "2607.06032v1",
+      "route": "20260703-20260801/2607.06032v1-uncertainty-aware-cross-modal-remote-sensing-image-text-retrieval-via-evidential-learning",
+      "title": "Uncertainty-Aware Cross-Modal Remote Sensing Image-Text Retrieval via Evidential Learning",
+      "section": "quick",
+      "tags": [
+        {
+          "kind": "query",
+          "label": "vvvpg"
+        }
+      ],
+      "score": 8.0,
+      "evidence": "不确定性感知的遥感图像-文本跨模态检索",
+      "first_seen_at": "2026-08-01 02:00:02 UTC",
+      "updated_at": "2026-08-01 02:00:02 UTC"
+    },
+    {
+      "paper_id": "2607.02909v1",
+      "route": "20260703-20260801/2607.02909v1-learning-taxonomic-trees-with-hierarchical-representation-regularization-for-large-multimodal-models",
+      "title": "Learning Taxonomic Trees with Hierarchical Representation Regularization for Large Multimodal Models",
+      "section": "quick",
+      "tags": [
+        {
+          "kind": "query",
+          "label": "vvvpg"
+        }
+      ],
+      "score": 7.0,
+      "evidence": "面向多模态模型的层次表示正则化，提升视觉-语言层级理解一致性",
+      "first_seen_at": "2026-08-01 02:00:02 UTC",
+      "updated_at": "2026-08-01 02:00:02 UTC"
+    },
+    {
+      "paper_id": "2607.12319v1",
+      "route": "20260703-20260801/2607.12319v1-dm-kg-a-novel-method-for-boosting-spatial-cognition-of-vision-language-models-in-street-view-imagery",
+      "title": "DM-KG: A Novel Method for Boosting Spatial Cognition of Vision-Language Models in Street View Imagery",
+      "section": "quick",
+      "tags": [
+        {
+          "kind": "query",
+          "label": "vvvpg"
+        }
+      ],
+      "score": 7.0,
+      "evidence": "提升VLM在街景影像上的空间认知能力",
+      "first_seen_at": "2026-08-01 02:00:02 UTC",
+      "updated_at": "2026-08-01 02:00:02 UTC"
+    },
+    {
+      "paper_id": "2607.12450v1",
+      "route": "20260703-20260801/2607.12450v1-let-rgb-be-the-language-of-vision",
+      "title": "Let RGB Be the Language of Vision",
+      "section": "quick",
+      "tags": [
+        {
+          "kind": "query",
+          "label": "vvvpg"
+        }
+      ],
+      "score": 7.0,
+      "evidence": "统一的RGB到RGB转换公式实现可迁移的视觉表示",
+      "first_seen_at": "2026-08-01 02:00:02 UTC",
+      "updated_at": "2026-08-01 02:00:02 UTC"
+    },
+    {
+      "paper_id": "2607.12786v1",
+      "route": "20260703-20260801/2607.12786v1-core-a-comprehensive-framework-for-cross-image-comparative-reasoning-in-vision-language-models",
+      "title": "CoRe: A Comprehensive Framework for Cross-Image Comparative Reasoning in Vision-Language Models",
+      "section": "quick",
+      "tags": [
+        {
+          "kind": "query",
+          "label": "vvvpg"
+        }
+      ],
+      "score": 7.0,
+      "evidence": "多模态视觉语言模型推理、数据集与基准",
+      "first_seen_at": "2026-08-01 02:00:02 UTC",
+      "updated_at": "2026-08-01 02:00:02 UTC"
+    },
+    {
+      "paper_id": "2607.04610v1",
+      "route": "20260703-20260801/2607.04610v1-robovista-evaluating-vision-language-models-for-diverse-robot-applications",
+      "title": "RoboVista: Evaluating Vision Language Models for Diverse Robot Applications",
+      "section": "quick",
+      "tags": [
+        {
+          "kind": "query",
+          "label": "vvvpg"
+        }
+      ],
+      "score": 6.0,
+      "evidence": "面向多种机器人应用的VLM模块化评估基准与框架",
+      "first_seen_at": "2026-08-01 02:00:02 UTC",
+      "updated_at": "2026-08-01 02:00:02 UTC"
+    },
+    {
+      "paper_id": "2607.10797v1",
+      "route": "20260703-20260801/2607.10797v1-compositional-context-fine-tuning-vision-language-model-for-complex-assembly-action-understanding-from-videos",
+      "title": "Compositional Context Fine-Tuning Vision-Language Model for Complex Assembly Action Understanding from Videos",
+      "section": "quick",
+      "tags": [
+        {
+          "kind": "query",
+          "label": "vvvpg"
+        }
+      ],
+      "score": 6.0,
+      "evidence": "面向装配动作理解的VLM微调，可迁移到机器人操作与维护任务",
+      "first_seen_at": "2026-08-01 02:00:02 UTC",
+      "updated_at": "2026-08-01 02:00:02 UTC"
+    },
+    {
+      "paper_id": "2607.13500v1",
+      "route": "20260703-20260801/2607.13500v1-attention-free-and-lightweight-token-reduction-for-efficient-vision-language-models",
+      "title": "Attention-Free and Lightweight Token Reduction for Efficient Vision-Language Models",
+      "section": "quick",
+      "tags": [
+        {
+          "kind": "query",
+          "label": "vvvpg"
+        }
+      ],
+      "score": 6.0,
+      "evidence": "通过令牌缩减实现高效视觉语言模型推理",
+      "first_seen_at": "2026-08-01 02:00:02 UTC",
+      "updated_at": "2026-08-01 02:00:02 UTC"
+    }
+  ]
+}
