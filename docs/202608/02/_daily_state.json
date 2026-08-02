@@ -1,0 +1,313 @@
+{
+  "date": "20260802",
+  "date_label": "",
+  "generated_at": "2026-08-02 20:47:14 UTC",
+  "recommend_exists": true,
+  "run_count": 1,
+  "papers": [
+    {
+      "paper_id": "2607.22999v1",
+      "route": "202608/02/2607.22999v1-wcm-world-cognition-model-for-generalizable-human-robot-interaction",
+      "title": "WCM: World-Cognition Model for Generalizable Human-Robot Interaction",
+      "section": "deep",
+      "tags": [
+        {
+          "kind": "query",
+          "label": "vvvpg"
+        }
+      ],
+      "score": 9.0,
+      "evidence": "结合感知、推理与动作的具身智能体，基于视觉-语言-动作范式",
+      "first_seen_at": "2026-08-02 20:47:14 UTC",
+      "updated_at": "2026-08-02 20:47:14 UTC"
+    },
+    {
+      "paper_id": "2607.23784v1",
+      "route": "202608/02/2607.23784v1-a-few-words-go-a-long-way-language-guided-robot-policy-synthesis",
+      "title": "A Few Words Go a Long Way: Language Guided Robot Policy Synthesis",
+      "section": "deep",
+      "tags": [
+        {
+          "kind": "query",
+          "label": "vvvpg"
+        }
+      ],
+      "score": 9.0,
+      "evidence": "基于视觉和语言输入合成模块化机器人操作策略",
+      "first_seen_at": "2026-08-02 20:47:14 UTC",
+      "updated_at": "2026-08-02 20:47:14 UTC"
+    },
+    {
+      "paper_id": "2607.24904v1",
+      "route": "202608/02/2607.24904v1-mage-vl-an-efficient-codec-native-streaming-multimodal-foundation-model",
+      "title": "Mage-VL: An Efficient Codec-Native Streaming Multimodal Foundation Model",
+      "section": "deep",
+      "tags": [
+        {
+          "kind": "query",
+          "label": "vvvpg"
+        }
+      ],
+      "score": 9.0,
+      "evidence": "高效的编码原生态流式多模态基础模型，用于实时多模态理解",
+      "first_seen_at": "2026-08-02 20:47:14 UTC",
+      "updated_at": "2026-08-02 20:47:14 UTC"
+    },
+    {
+      "paper_id": "2607.25448v1",
+      "route": "202608/02/2607.25448v1-room-mediated-co-occurrence-for-zero-shot-object-centric-semantic-navigation-via-frontier-scoring",
+      "title": "Room-Mediated Co-occurrence for Zero-Shot Object-Centric Semantic Navigation via Frontier Scoring",
+      "section": "deep",
+      "tags": [
+        {
+          "kind": "query",
+          "label": "vvvpg"
+        }
+      ],
+      "score": 9.0,
+      "evidence": "基于CLIP视觉-语言先验的零样本语义导航",
+      "first_seen_at": "2026-08-02 20:47:14 UTC",
+      "updated_at": "2026-08-02 20:47:14 UTC"
+    },
+    {
+      "paper_id": "2607.25527v1",
+      "route": "202608/02/2607.25527v1-argus-unified-towards-a-compact-and-economical-unified-model-for-image-understanding-and-generation",
+      "title": "Argus-Unified: Towards A Compact and Economical Unified Model for Image Understanding and Generation",
+      "section": "deep",
+      "tags": [
+        {
+          "kind": "query",
+          "label": "vvvpg"
+        }
+      ],
+      "score": 9.0,
+      "evidence": "融合图像理解与生成的多模态模型，基于预训练VLM先验",
+      "first_seen_at": "2026-08-02 20:47:14 UTC",
+      "updated_at": "2026-08-02 20:47:14 UTC"
+    },
+    {
+      "paper_id": "2607.27703v1",
+      "route": "202608/02/2607.27703v1-spatialcli-learning-to-reason-with-spatial-tools-then-without-them",
+      "title": "SpatialCLI: Learning to Reason With Spatial Tools, Then Without Them",
+      "section": "deep",
+      "tags": [
+        {
+          "kind": "query",
+          "label": "vvvpg"
+        }
+      ],
+      "score": 9.0,
+      "evidence": "面向具身智能体的VLM空间推理框架，先工具后内化",
+      "first_seen_at": "2026-08-02 20:47:14 UTC",
+      "updated_at": "2026-08-02 20:47:14 UTC"
+    },
+    {
+      "paper_id": "2607.27881v1",
+      "route": "202608/02/2607.27881v1-robobridge-a-modular-framework-for-bridging-policies-to-robust-real-world-robotic-agents",
+      "title": "RoboBRIDGE: A Modular Framework for Bridging Policies to Robust Real-World Robotic Agents",
+      "section": "deep",
+      "tags": [
+        {
+          "kind": "query",
+          "label": "vvvpg"
+        }
+      ],
+      "score": 9.0,
+      "evidence": "将预训练VLA策略转化为鲁棒真实世界机器人智能体的模块化框架",
+      "first_seen_at": "2026-08-02 20:47:14 UTC",
+      "updated_at": "2026-08-02 20:47:14 UTC"
+    },
+    {
+      "paper_id": "2607.28474v1",
+      "route": "202608/02/2607.28474v1-tea-agrivln-traversability-estimation-alarm-for-agricultural-vision-and-language-navigation",
+      "title": "TEA-AgriVLN: Traversability Estimation Alarm for Agricultural Vision-and-Language Navigation",
+      "section": "deep",
+      "tags": [
+        {
+          "kind": "query",
+          "label": "vvvpg"
+        }
+      ],
+      "score": 9.0,
+      "evidence": "面向农业场景的连续环境视觉-语言导航，具备可通行性估计",
+      "first_seen_at": "2026-08-02 20:47:14 UTC",
+      "updated_at": "2026-08-02 20:47:14 UTC"
+    },
+    {
+      "paper_id": "2607.14966v1",
+      "route": "202608/02/2607.14966v1-u-shaped-multi-granularity-learning-for-vision-language-models",
+      "title": "U-shaped Multi-granularity Learning for Vision-Language Models",
+      "section": "quick",
+      "tags": [
+        {
+          "kind": "query",
+          "label": "vvvpg"
+        }
+      ],
+      "score": 8.0,
+      "evidence": "U型多粒度提示学习用于视觉语言模型",
+      "first_seen_at": "2026-08-02 20:47:14 UTC",
+      "updated_at": "2026-08-02 20:47:14 UTC"
+    },
+    {
+      "paper_id": "2607.15758v1",
+      "route": "202608/02/2607.15758v1-skillnav-score-level-skill-intervention-for-zero-shot-object-goal-navigation",
+      "title": "SkillNav: Score-Level Skill Intervention for Zero-Shot Object Goal Navigation",
+      "section": "quick",
+      "tags": [
+        {
+          "kind": "query",
+          "label": "vvvpg"
+        }
+      ],
+      "score": 8.0,
+      "evidence": "面向VLM零样本导航的技能干预",
+      "first_seen_at": "2026-08-02 20:47:14 UTC",
+      "updated_at": "2026-08-02 20:47:14 UTC"
+    },
+    {
+      "paper_id": "2607.16305v1",
+      "route": "202608/02/2607.16305v1-lookme-lookup-based-multimodal-embeddings-for-layer-injection-in-vision-language-models",
+      "title": "LookME: Lookup-Based Multimodal Embeddings for Layer Injection in Vision-Language Models",
+      "section": "quick",
+      "tags": [
+        {
+          "kind": "query",
+          "label": "vvvpg"
+        }
+      ],
+      "score": 8.0,
+      "evidence": "利用查找式多模态嵌入实现高效视觉语言理解架构",
+      "first_seen_at": "2026-08-02 20:47:14 UTC",
+      "updated_at": "2026-08-02 20:47:14 UTC"
+    },
+    {
+      "paper_id": "2607.16560v1",
+      "route": "202608/02/2607.16560v1-from-modalities-to-propositions-a-language-centric-framework-for-multimodal-intelligence",
+      "title": "From Modalities to Propositions: A Language-Centric Framework for Multimodal Intelligence",
+      "section": "quick",
+      "tags": [
+        {
+          "kind": "query",
+          "label": "vvvpg"
+        }
+      ],
+      "score": 8.0,
+      "evidence": "多模态理解的语言中心命题框架",
+      "first_seen_at": "2026-08-02 20:47:14 UTC",
+      "updated_at": "2026-08-02 20:47:14 UTC"
+    },
+    {
+      "paper_id": "2607.23125v1",
+      "route": "202608/02/2607.23125v1-self-boosting-vision-language-models-with-noisy-student-on-policy-self-distillation",
+      "title": "Self-Boosting Vision-Language Models with Noisy Student On-Policy Self-Distillation",
+      "section": "quick",
+      "tags": [
+        {
+          "kind": "query",
+          "label": "vvvpg"
+        }
+      ],
+      "score": 7.0,
+      "evidence": "无需外部监督即可改进视觉语言模型指令跟随能力的自蒸馏方法",
+      "first_seen_at": "2026-08-02 20:47:14 UTC",
+      "updated_at": "2026-08-02 20:47:14 UTC"
+    },
+    {
+      "paper_id": "2607.23271v1",
+      "route": "202608/02/2607.23271v1-what-clip-knows-but-cannot-say-recovering-negation-from-frozen-intermediate-features",
+      "title": "What CLIP Knows but Cannot Say: Recovering Negation from Frozen Intermediate Features",
+      "section": "quick",
+      "tags": [
+        {
+          "kind": "query",
+          "label": "vvvpg"
+        }
+      ],
+      "score": 7.0,
+      "evidence": "通过中间特征对CLIP否定语义进行后处理修正",
+      "first_seen_at": "2026-08-02 20:47:14 UTC",
+      "updated_at": "2026-08-02 20:47:14 UTC"
+    },
+    {
+      "paper_id": "2607.23797v1",
+      "route": "202608/02/2607.23797v1-memory-for-attention-language-conditioned-re-perception-with-a-vision--language--motion-map",
+      "title": "Memory for Attention: Language-Conditioned Re-Perception with a Vision--Language--Motion Map",
+      "section": "quick",
+      "tags": [
+        {
+          "kind": "query",
+          "label": "vvvpg"
+        }
+      ],
+      "score": 7.0,
+      "evidence": "使用语言条件地图进行机器人导航与重感知",
+      "first_seen_at": "2026-08-02 20:47:14 UTC",
+      "updated_at": "2026-08-02 20:47:14 UTC"
+    },
+    {
+      "paper_id": "2607.24424v1",
+      "route": "202608/02/2607.24424v1-mavie-a-multi-scale-adaptive-vision-encoder-for-fine-grained-visual-perception-and-efficient-multimodal-reasoning",
+      "title": "MAViE: A Multi-scale Adaptive Vision Encoder for Fine-grained Visual Perception and Efficient Multimodal Reasoning",
+      "section": "quick",
+      "tags": [
+        {
+          "kind": "query",
+          "label": "vvvpg"
+        }
+      ],
+      "score": 7.0,
+      "evidence": "用于视觉语言模型高效多模态推理的多尺度自适应视觉编码器",
+      "first_seen_at": "2026-08-02 20:47:14 UTC",
+      "updated_at": "2026-08-02 20:47:14 UTC"
+    },
+    {
+      "paper_id": "2607.23024v1",
+      "route": "202608/02/2607.23024v1-when-less-is-more-a-controlled-benchmark-of-lightweight-cnns-for-satellite-land-cover-segmentation-on-deepglobe",
+      "title": "When Less Is More: A Controlled Benchmark of Lightweight CNNs for Satellite Land-Cover Segmentation on DeepGlobe",
+      "section": "quick",
+      "tags": [
+        {
+          "kind": "query",
+          "label": "vvvpg"
+        }
+      ],
+      "score": 6.0,
+      "evidence": "卫星土地覆盖分割轻量级CNN基准",
+      "first_seen_at": "2026-08-02 20:47:14 UTC",
+      "updated_at": "2026-08-02 20:47:14 UTC"
+    },
+    {
+      "paper_id": "2607.23631v1",
+      "route": "202608/02/2607.23631v1-pathselect-sequential-token-selection-for-whole-slide-pathology",
+      "title": "PathSelect: Sequential Token Selection for Whole Slide Pathology",
+      "section": "quick",
+      "tags": [
+        {
+          "kind": "query",
+          "label": "vvvpg"
+        }
+      ],
+      "score": 6.0,
+      "evidence": "面向千兆像素病理图像的视觉语言模型令牌剪枝方法",
+      "first_seen_at": "2026-08-02 20:47:14 UTC",
+      "updated_at": "2026-08-02 20:47:14 UTC"
+    },
+    {
+      "paper_id": "2607.23921v1",
+      "route": "202608/02/2607.23921v1-ddvt-dynamic-dual-level-vision-transformer-fusion-network-for-answer-grounding-in-visual-question-answering",
+      "title": "DDVT: Dynamic Dual-level Vision Transformer Fusion Network for Answer Grounding in Visual Question Answering",
+      "section": "quick",
+      "tags": [
+        {
+          "kind": "query",
+          "label": "vvvpg"
+        }
+      ],
+      "score": 6.0,
+      "evidence": "面向多模态视觉问答的视觉Transformer融合方法",
+      "first_seen_at": "2026-08-02 20:47:14 UTC",
+      "updated_at": "2026-08-02 20:47:14 UTC"
+    }
+  ]
+}
