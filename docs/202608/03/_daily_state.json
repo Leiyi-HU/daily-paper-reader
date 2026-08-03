@@ -1,0 +1,249 @@
+{
+  "date": "20260803",
+  "date_label": "",
+  "generated_at": "2026-08-03 20:39:13 UTC",
+  "recommend_exists": true,
+  "run_count": 1,
+  "papers": [
+    {
+      "paper_id": "2607.18231v1",
+      "route": "202608/03/2607.18231v1-fm-vla-force-based-memory-for-vision-language-action-models-in-contact-rich-manipulation",
+      "title": "FM-VLA: Force-based Memory for Vision-Language-Action Models in Contact-Rich Manipulation",
+      "section": "deep",
+      "tags": [
+        {
+          "kind": "query",
+          "label": "vvvpg"
+        }
+      ],
+      "score": 8.0,
+      "evidence": "基于力记忆的视觉语言行动模型用于接触丰富操作",
+      "first_seen_at": "2026-08-03 20:39:13 UTC",
+      "updated_at": "2026-08-03 20:39:13 UTC"
+    },
+    {
+      "paper_id": "2607.21036v1",
+      "route": "202608/03/2607.21036v1-geothreat-transferable-targeted-adversarial-attacks-on-large-vision-language-models-for-remote-sensing-image-interpretation",
+      "title": "GeoThreat: Transferable Targeted Adversarial Attacks on Large Vision-Language Models for Remote Sensing Image Interpretation",
+      "section": "deep",
+      "tags": [
+        {
+          "kind": "query",
+          "label": "vvvpg"
+        }
+      ],
+      "score": 8.0,
+      "evidence": "面向遥感影像解译的大视觉语言模型对抗鲁棒性研究",
+      "first_seen_at": "2026-08-03 20:39:13 UTC",
+      "updated_at": "2026-08-03 20:39:13 UTC"
+    },
+    {
+      "paper_id": "2607.21973v1",
+      "route": "202608/03/2607.21973v1-rethinking-layer-wise-information-allocation-for-vision-foundation-model-adaptation",
+      "title": "Rethinking Layer-Wise Information Allocation for Vision Foundation Model Adaptation",
+      "section": "deep",
+      "tags": [
+        {
+          "kind": "query",
+          "label": "vvvpg"
+        }
+      ],
+      "score": 8.0,
+      "evidence": "面向可迁移表征学习的大规模预训练视觉基础模型适配",
+      "first_seen_at": "2026-08-03 20:39:13 UTC",
+      "updated_at": "2026-08-03 20:39:13 UTC"
+    },
+    {
+      "paper_id": "2607.22013v1",
+      "route": "202608/03/2607.22013v1-visual-saliency-steering-distillation-for-multimodal-chain-of-thought-reasoning",
+      "title": "Visual Saliency Steering Distillation for Multimodal Chain-of-Thought Reasoning",
+      "section": "deep",
+      "tags": [
+        {
+          "kind": "query",
+          "label": "vvvpg"
+        }
+      ],
+      "score": 8.0,
+      "evidence": "通过引导跨模态特征来改进多模态链式推理",
+      "first_seen_at": "2026-08-03 20:39:13 UTC",
+      "updated_at": "2026-08-03 20:39:13 UTC"
+    },
+    {
+      "paper_id": "2607.22355v1",
+      "route": "202608/03/2607.22355v1-siphy-single-image-physical-property-reasoning",
+      "title": "SiPhy: Single-Image Physical Property Reasoning",
+      "section": "deep",
+      "tags": [
+        {
+          "kind": "query",
+          "label": "vvvpg"
+        }
+      ],
+      "score": 8.0,
+      "evidence": "利用VLM和CLIP对齐视觉线索与语言材料知识进行物理属性推理。",
+      "first_seen_at": "2026-08-03 20:39:13 UTC",
+      "updated_at": "2026-08-03 20:39:13 UTC"
+    },
+    {
+      "paper_id": "2607.22997v1",
+      "route": "202608/03/2607.22997v1-real2sim2real-for-vision-language-action-manipulation-an-amd-rocm-based-pipeline",
+      "title": "Real2Sim2Real for Vision-Language-Action Manipulation: An AMD ROCm-Based Pipeline",
+      "section": "quick",
+      "tags": [
+        {
+          "kind": "query",
+          "label": "vvvpg"
+        }
+      ],
+      "score": 8.0,
+      "evidence": "面向具身操控的端到端VLA训练与部署技术栈",
+      "first_seen_at": "2026-08-03 20:39:13 UTC",
+      "updated_at": "2026-08-03 20:39:13 UTC"
+    },
+    {
+      "paper_id": "2607.23673v1",
+      "route": "202608/03/2607.23673v1-contrastive-parameter-disentanglement-for-multi-modal-remote-sensing-image-generation",
+      "title": "Contrastive Parameter Disentanglement for Multi-modal Remote Sensing Image Generation",
+      "section": "quick",
+      "tags": [
+        {
+          "kind": "query",
+          "label": "vvvpg"
+        }
+      ],
+      "score": 8.0,
+      "evidence": "文本提示驱动的多模态遥感图像生成",
+      "first_seen_at": "2026-08-03 20:39:13 UTC",
+      "updated_at": "2026-08-03 20:39:13 UTC"
+    },
+    {
+      "paper_id": "2607.24008v1",
+      "route": "202608/03/2607.24008v1-futurertc-real-time-robot-execution-with-anticipatory-conditioned-action-chunking",
+      "title": "FutureRTC: Real-Time Robot Execution with Anticipatory-Conditioned Action Chunking",
+      "section": "quick",
+      "tags": [
+        {
+          "kind": "query",
+          "label": "vvvpg"
+        }
+      ],
+      "score": 8.0,
+      "evidence": "实时VLA策略执行中的异步动作分块方法",
+      "first_seen_at": "2026-08-03 20:39:13 UTC",
+      "updated_at": "2026-08-03 20:39:13 UTC"
+    },
+    {
+      "paper_id": "2607.24148v1",
+      "route": "202608/03/2607.24148v1-a-motion-aware-vector-quantization-framework-with-centroid-reuse-for-efficient-vla-inference",
+      "title": "A Motion-Aware Vector Quantization Framework with Centroid Reuse for Efficient VLA Inference",
+      "section": "quick",
+      "tags": [
+        {
+          "kind": "query",
+          "label": "vvvpg"
+        }
+      ],
+      "score": 8.0,
+      "evidence": "基于运动感知量化的VLA高效推理",
+      "first_seen_at": "2026-08-03 20:39:13 UTC",
+      "updated_at": "2026-08-03 20:39:13 UTC"
+    },
+    {
+      "paper_id": "2607.24447v1",
+      "route": "202608/03/2607.24447v1-rp-opsd-resolution-privileged-on-policy-self-distillation-for-multimodal-large-language-models",
+      "title": "RP-OPSD: Resolution-Privileged On-Policy Self-Distillation for Multimodal Large Language Models",
+      "section": "quick",
+      "tags": [
+        {
+          "kind": "query",
+          "label": "vvvpg"
+        }
+      ],
+      "score": 8.0,
+      "evidence": "利用分辨率特权的策略内自蒸馏训练多模态大语言模型",
+      "first_seen_at": "2026-08-03 20:39:13 UTC",
+      "updated_at": "2026-08-03 20:39:13 UTC"
+    },
+    {
+      "paper_id": "2607.25516v1",
+      "route": "202608/03/2607.25516v1-a-causality-aware-infer-diagnose-refine-framework-for-test-time-modality-adaptation-in-vla-models",
+      "title": "A Causality-aware Infer-diagnose-refine Framework for Test-time Modality Adaptation in VLA Models",
+      "section": "quick",
+      "tags": [
+        {
+          "kind": "query",
+          "label": "vvvpg"
+        }
+      ],
+      "score": 8.0,
+      "evidence": "面向VLA动作预测的测试时模态自适应框架",
+      "first_seen_at": "2026-08-03 20:39:13 UTC",
+      "updated_at": "2026-08-03 20:39:13 UTC"
+    },
+    {
+      "paper_id": "2607.26107v1",
+      "route": "202608/03/2607.26107v1-traceclip-recovering-local-semantics-from-patch-to-cls-contributions",
+      "title": "TraceCLIP: Recovering Local Semantics from Patch-to-CLS Contributions",
+      "section": "quick",
+      "tags": [
+        {
+          "kind": "query",
+          "label": "vvvpg"
+        }
+      ],
+      "score": 8.0,
+      "evidence": "基于CLIP的稠密视觉语言理解，恢复局部语义",
+      "first_seen_at": "2026-08-03 20:39:13 UTC",
+      "updated_at": "2026-08-03 20:39:13 UTC"
+    },
+    {
+      "paper_id": "2607.27145v1",
+      "route": "202608/03/2607.27145v1-explainable-and-resource-efficient-spatial-reasoning-in-multimodal-llms-for-decision-critical-applications",
+      "title": "Explainable and Resource-Efficient Spatial Reasoning in Multimodal LLMs for Decision-Critical Applications",
+      "section": "quick",
+      "tags": [
+        {
+          "kind": "query",
+          "label": "vvvpg"
+        }
+      ],
+      "score": 8.0,
+      "evidence": "面向机器人与具身AI等决策关键应用，提升多模态大语言模型空间推理能力",
+      "first_seen_at": "2026-08-03 20:39:13 UTC",
+      "updated_at": "2026-08-03 20:39:13 UTC"
+    },
+    {
+      "paper_id": "2607.27902v1",
+      "route": "202608/03/2607.27902v1-one-patch-is-enough-reinforcement-optimized-visual-token-grounding-for-mllm-based-scene-text-spotting",
+      "title": "One Patch Is Enough: Reinforcement-Optimized Visual Token Grounding for MLLM-Based Scene Text Spotting",
+      "section": "quick",
+      "tags": [
+        {
+          "kind": "query",
+          "label": "vvvpg"
+        }
+      ],
+      "score": 8.0,
+      "evidence": "基于多模态大模型的视觉令牌定位实现图文场景文字识别",
+      "first_seen_at": "2026-08-03 20:39:13 UTC",
+      "updated_at": "2026-08-03 20:39:13 UTC"
+    },
+    {
+      "paper_id": "2607.27959v1",
+      "route": "202608/03/2607.27959v1-fire-enhancing-mllms-with-fine-grained-context-learning-for-complex-image-retrieval",
+      "title": "FiRE: Enhancing MLLMs with Fine-Grained Context Learning for Complex Image Retrieval",
+      "section": "quick",
+      "tags": [
+        {
+          "kind": "query",
+          "label": "vvvpg"
+        }
+      ],
+      "score": 8.0,
+      "evidence": "面向复杂图像检索的多模态大语言模型细粒度上下文学习",
+      "first_seen_at": "2026-08-03 20:39:13 UTC",
+      "updated_at": "2026-08-03 20:39:13 UTC"
+    }
+  ]
+}
