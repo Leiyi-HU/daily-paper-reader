@@ -41,17 +41,17 @@
 <section class="dpr-home-dashboard-card dpr-home-report-card">
   <div class="dpr-home-dashboard-header">
     <div>
-      <span class="dpr-home-dashboard-kicker">2026-08-03</span>
+      <span class="dpr-home-dashboard-kicker">2026-08-04</span>
       <h3 class="dpr-home-dashboard-title">今日汇总</h3>
     </div>
-    <strong class="dpr-home-dashboard-count">共 15 篇</strong>
+    <strong class="dpr-home-dashboard-count">共 2 篇</strong>
   </div>
   <dl class="dpr-home-dashboard-stats">
     <div class="dpr-home-dashboard-stat"><dt>累计更新</dt><dd>1 次</dd></div>
-    <div class="dpr-home-dashboard-stat"><dt>精读</dt><dd>5</dd></div>
-    <div class="dpr-home-dashboard-stat"><dt>速读</dt><dd>10</dd></div>
+    <div class="dpr-home-dashboard-stat"><dt>精读</dt><dd>2</dd></div>
+    <div class="dpr-home-dashboard-stat"><dt>速读</dt><dd>0</dd></div>
   </dl>
-  <p class="dpr-home-dashboard-body">最近更新：2026-08-03 20:39:13 UTC<br>状态：成功</p>
+  <p class="dpr-home-dashboard-body">最近更新：2026-08-04 20:31:55 UTC<br>状态：成功</p>
 </section>
 <section class="dpr-home-dashboard-card dpr-home-brief-card">
   <div class="dpr-home-dashboard-header">
@@ -62,9 +62,7 @@
     <strong class="dpr-home-dashboard-count">AI</strong>
   </div>
   <div class="dpr-home-dashboard-body">
-<p>今日共处理15篇论文，精读5篇、速读10篇，核心聚焦视觉-语言-动作模型与多模态遥感方向。</p>
-<p>最值得关注的是接触丰富操作中的记忆增强VLA模型（FM-VLA）与遥感大模型的迁移对抗攻击（GeoThreat），均获8.0分。</p>
-<p>建议普通读者优先关注多模态模型在机器人物理交互与遥感安全领域的交叉应用，这两篇是理解当前边界的快速入口。</p>
+<p>今日精读2篇：聚焦风电叶片缺陷检测与视觉语言模型偏见两大前沿。最值得看的是BladeYOLO以弱显著性感知实现少标注下的缺陷定位，以及新研究揭示仅靠扩大模型规模无法消除偏见。建议关注这两项技术如何平衡精度与公平性，后续可追踪其开源代码与数据集。</p>
   </div>
 </section>
 <section class="dpr-home-dashboard-card dpr-home-deep-card">
@@ -73,12 +71,12 @@
       <span class="dpr-home-dashboard-kicker">今日累计</span>
       <h3 class="dpr-home-dashboard-title">精读推荐</h3>
     </div>
-    <strong class="dpr-home-dashboard-count">5 篇</strong>
+    <strong class="dpr-home-dashboard-count">2 篇</strong>
   </div>
   <div class="dpr-home-dashboard-body">
-<ul class="dpr-home-dashboard-paper-list"><li><span class="dpr-home-dashboard-paper-title" title="FM-VLA: Force-based Memory for Vision-Language-Action Models in Contact-Rich Manipulation">FM-VLA: Force-based Memory for Vision-Language-Action Models in Contact-Rich Manipulation</span></li><li><span class="dpr-home-dashboard-paper-title" title="GeoThreat: Transferable Targeted Adversarial Attacks on Large Vision-Language Models for Remote Sensing Image Interpretation">GeoThreat: Transferable Targeted Adversarial Attacks on Large Vision-Language Models for Remote Sensing Image Interpretation</span></li><li><span class="dpr-home-dashboard-paper-title" title="Rethinking Layer-Wise Information Allocation for Vision Foundation Model Adaptation">Rethinking Layer-Wise Information Allocation for Vision Foundation Model Adaptation</span></li></ul>
+<ul class="dpr-home-dashboard-paper-list"><li><span class="dpr-home-dashboard-paper-title" title="BladeYOLO: Wind Turbine Blade Defect Detection with Limited Annotations and Weak-Saliency Awareness">BladeYOLO: Wind Turbine Blade Defect Detection with Limited Annotations and Weak-Saliency Awareness</span></li><li><span class="dpr-home-dashboard-paper-title" title="Scaling Vision-Language Models Is Not Enough to Mitigate Bias">Scaling Vision-Language Models Is Not Enough to Mitigate Bias</span></li></ul>
   </div>
-  <div class="dpr-home-dashboard-tags"><span class="dpr-home-dashboard-tag">vvvpg <strong>5</strong></span></div>
+  <div class="dpr-home-dashboard-tags"><span class="dpr-home-dashboard-tag">vvvpg <strong>2</strong></span></div>
 </section>
 <section class="dpr-home-dashboard-card dpr-home-skim-card">
   <div class="dpr-home-dashboard-header">
@@ -86,12 +84,12 @@
       <span class="dpr-home-dashboard-kicker">今日累计</span>
       <h3 class="dpr-home-dashboard-title">速读推荐</h3>
     </div>
-    <strong class="dpr-home-dashboard-count">10 篇</strong>
+    <strong class="dpr-home-dashboard-count">0 篇</strong>
   </div>
   <div class="dpr-home-dashboard-body">
-<ul class="dpr-home-dashboard-paper-list"><li><span class="dpr-home-dashboard-paper-title" title="Real2Sim2Real for Vision-Language-Action Manipulation: An AMD ROCm-Based Pipeline">Real2Sim2Real for Vision-Language-Action Manipulation: An AMD ROCm-Based Pipeline</span></li><li><span class="dpr-home-dashboard-paper-title" title="Contrastive Parameter Disentanglement for Multi-modal Remote Sensing Image Generation">Contrastive Parameter Disentanglement for Multi-modal Remote Sensing Image Generation</span></li><li><span class="dpr-home-dashboard-paper-title" title="FutureRTC: Real-Time Robot Execution with Anticipatory-Conditioned Action Chunking">FutureRTC: Real-Time Robot Execution with Anticipatory-Conditioned Action Chunking</span></li></ul>
+<p class="dpr-home-dashboard-empty">今日暂无推荐。</p>
   </div>
-  <div class="dpr-home-dashboard-tags"><span class="dpr-home-dashboard-tag">vvvpg <strong>10</strong></span></div>
+
 </section>
 </div>
 

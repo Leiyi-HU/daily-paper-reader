@@ -1,0 +1,41 @@
+{
+  "date": "20260804",
+  "date_label": "",
+  "generated_at": "2026-08-04 20:31:55 UTC",
+  "recommend_exists": true,
+  "run_count": 1,
+  "papers": [
+    {
+      "paper_id": "2607.28065v1",
+      "route": "202608/04/2607.28065v1-bladeyolo-wind-turbine-blade-defect-detection-with-limited-annotations-and-weak-saliency-awareness",
+      "title": "BladeYOLO: Wind Turbine Blade Defect Detection with Limited Annotations and Weak-Saliency Awareness",
+      "section": "deep",
+      "tags": [
+        {
+          "kind": "query",
+          "label": "vvvpg"
+        }
+      ],
+      "score": 8.0,
+      "evidence": "将DINOv3自监督预训练视觉骨干迁移至叶片缺陷检测",
+      "first_seen_at": "2026-08-04 20:31:55 UTC",
+      "updated_at": "2026-08-04 20:31:55 UTC"
+    },
+    {
+      "paper_id": "2607.28211v1",
+      "route": "202608/04/2607.28211v1-scaling-vision-language-models-is-not-enough-to-mitigate-bias",
+      "title": "Scaling Vision-Language Models Is Not Enough to Mitigate Bias",
+      "section": "deep",
+      "tags": [
+        {
+          "kind": "query",
+          "label": "vvvpg"
+        }
+      ],
+      "score": 8.0,
+      "evidence": "大规模视觉语言模型偏差实证研究",
+      "first_seen_at": "2026-08-04 20:31:55 UTC",
+      "updated_at": "2026-08-04 20:31:55 UTC"
+    }
+  ]
+}

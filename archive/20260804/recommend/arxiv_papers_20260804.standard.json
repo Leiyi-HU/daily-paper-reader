@@ -1,0 +1,96 @@
+{
+  "mode": "standard",
+  "generated_at": "2026-08-04T20:29:40.854451+00:00",
+  "stats": {
+    "mode": "standard",
+    "tag_count": 0,
+    "deep_divecandidates": 2,
+    "deep_cap": 5,
+    "deep_selected": 2,
+    "quick_candidates": 0,
+    "quick_skim_target": 10,
+    "quick_selected": 0
+  },
+  "deep_dive": [
+    {
+      "id": "2607.28065v1",
+      "source": "arxiv",
+      "title": "BladeYOLO: Wind Turbine Blade Defect Detection with Limited Annotations and Weak-Saliency Awareness",
+      "abstract": "Wind turbine blade defect detection remains highly challenging in real-world inspection scenarios due to limited on-site data and the subtle visual characteristics of defects. In practice, blade defects are often small-scale, low-contrast, and difficult to distinguish from complex backgrounds, which significantly limits the robustness of existing detectors. To address these challenges, we propose BladeYOLO, a defect detection framework for wind turbine blades. Specifically, we integrate a Vision Transformer (ViT) backbone initialized with DINOv3 self-supervised pre-trained weights into YOLOv12-L, enabling the transfer of large-scale generic visual priors to blade defect detection and improving feature representation under limited training annotations. To enhance the perception of subtle defects, we further develop a Mamba-guided Weak-Defect Enhancement module, which consists of a Detail-Enhanced Multi-scale Branch for preserving high-frequency structural cues and a Cross-Mamba module for progressively propagating high-level semantic guidance to shallow features. In addition, we introduce a lightweight Style-Injector module that captures environment-related style information via Fourier decomposition and injects it into selected ViT self-attention layers, thereby improving robustness against environment-induced appearance variations. Extensive experiments demonstrate that BladeYOLO achieves superior performance on the WTBlade-Defect dataset, with additional annotation-budget experiments showing its favorable performance under reduced training annotations. Evaluation on the public Wind Surface Defect dataset further provides supportive evidence for the cross-dataset robustness of BladeYOLO. In particular, on this public dataset, BladeYOLO outperforms the best competing method by 3.5\\% in mAP$_{50}$ and 2.5\\% in mAP$_{50-95}$.",
+      "authors": [
+        "Yabin Xu",
+        "Fangtao Zhang",
+        "Fan Wang",
+        "Zhan Wang",
+        "Honghua Chen",
+        "Mingqiang Wei",
+        "Haoran Xie",
+        "Sam Kwong"
+      ],
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "published": "2026-07-30T11:42:33+00:00",
+      "link": "https://arxiv.org/pdf/2607.28065v1",
+      "tags": [
+        "keyword:vvvpg",
+        "query:vvvpg"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "DINOv3 self-supervised pretrained visual backbone transferred to blade defect detection",
+      "llm_evidence_cn": "将DINOv3自监督预训练视觉骨干迁移至叶片缺陷检测",
+      "llm_evidence": "将DINOv3自监督预训练视觉骨干迁移至叶片缺陷检测",
+      "canonical_evidence": "将DINOv3自监督预训练视觉骨干迁移至叶片缺陷检测",
+      "llm_tldr_en": "BladeYOLO integrates a DINOv3-pretrained Vision Transformer backbone into YOLOv12-L, enabling transfer of large-scale visual priors to wind turbine blade defect detection, improving robustness with limited annotations.",
+      "llm_tldr_cn": "针对风力发电机叶片缺陷检测中现场数据有限、缺陷尺度小且低对比度的问题，提出BladeYOLO。将DINOv3自监督预训练的ViT骨干集成到YOLOv12-L中，迁移大规模通用视觉先验。在有限标注下改善了特征表示与弱显著性缺陷的检测鲁棒性。实验表明该方法在真实检测任务中优于现有检测器。",
+      "llm_tldr": "针对风力发电机叶片缺陷检测中现场数据有限、缺陷尺度小且低对比度的问题，提出BladeYOLO。将DINOv3自监督预训练的ViT骨干集成到YOLOv12-L中，迁移大规模通用视觉先验。在有限标注下改善了特征表示与弱显著性缺陷的检测鲁棒性。实验表明该方法在真实检测任务中优于现有检测器。",
+      "llm_tags": [
+        "query:vvvpg"
+      ],
+      "matched_query_tag": "query:vvvpg",
+      "matched_query_text": "large scale pretrained visual model for transferable representation learning",
+      "matched_requirement_id": "req-3",
+      "selection_source": "carryover_cache",
+      "paper_id": "2607.28065v1"
+    },
+    {
+      "id": "2607.28211v1",
+      "source": "arxiv",
+      "title": "Scaling Vision-Language Models Is Not Enough to Mitigate Bias",
+      "abstract": "Vision-Language Models (VLMs) such as CLIP are now foundational to multimodal systems, yet their robustness to spurious correlations remains poorly understood at scale. We present the first large-scale empirical study of 194 publicly available VLMs, including 16 model families, covering a wide range of model sizes, 24 training datasets, and three evaluation benchmarks, namely ImageNet (overall performance), CelebA (typical single-attribute bias), and UrbanCars (complex multi-attribute biases). Across these settings, the Spearman correlation between model scale and performance weakens as evaluation shifts from ImageNet ($ρ{=}0.68$) to single-attribute ($ρ{=}0.48$) and further to multi-attribute ($ρ{=}0.05$) bias benchmarks. In contrast, properties of the training data (size and quality) show more consistent relationships with worst-group accuracy across both bias benchmarks. Notably, curated datasets yield improvements of up to 25% over uncurated alternatives at a comparable scale. Finally, the effect of architectural choices (e.g., patch size, image resolution) is highly context-dependent, varying with the nature of the benchmark, including the type of bias and its spatial distribution within images.",
+      "authors": [
+        "Ioannis Sarridis",
+        "Ioannis Kompatsiaris",
+        "Symeon Papadopoulos"
+      ],
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "published": "2026-07-30T13:49:16+00:00",
+      "link": "https://arxiv.org/pdf/2607.28211v1",
+      "tags": [
+        "keyword:vvvpg",
+        "query:vvvpg"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "Large-scale empirical study of vision-language models and bias",
+      "llm_evidence_cn": "大规模视觉语言模型偏差实证研究",
+      "llm_evidence": "大规模视觉语言模型偏差实证研究",
+      "canonical_evidence": "大规模视觉语言模型偏差实证研究",
+      "llm_tldr_en": "Presents the first large-scale study of 194 public VLMs on bias benchmarks, showing model scale alone does not mitigate spurious correlations and training data properties matter more.",
+      "llm_tldr_cn": "针对大规模视觉语言模型（VLM）对虚假相关性的鲁棒性缺乏理解的问题，论文对194个公开VLM、16个模型家族、24个训练数据集及三个评测基准开展首个大规模实证研究。结果发现，从ImageNet到单属性偏差再到多属性偏差基准，模型规模与性能的相关性从0.68降至0.05，说明单纯扩大规模并不足以缓解偏差。研究还指出训练数据属性对鲁棒性的影响更大，为构建更公平可靠的VLM提供了实证依据。",
+      "llm_tldr": "针对大规模视觉语言模型（VLM）对虚假相关性的鲁棒性缺乏理解的问题，论文对194个公开VLM、16个模型家族、24个训练数据集及三个评测基准开展首个大规模实证研究。结果发现，从ImageNet到单属性偏差再到多属性偏差基准，模型规模与性能的相关性从0.68降至0.05，说明单纯扩大规模并不足以缓解偏差。研究还指出训练数据属性对鲁棒性的影响更大，为构建更公平可靠的VLM提供了实证依据。",
+      "llm_tags": [
+        "query:vvvpg"
+      ],
+      "matched_query_tag": "query:vvvpg",
+      "matched_query_text": "multimodal model integrating image and text understanding",
+      "matched_requirement_id": "req-1",
+      "selection_source": "carryover_cache",
+      "paper_id": "2607.28211v1"
+    }
+  ],
+  "quick_skim": []
+}
